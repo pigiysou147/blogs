@@ -22,11 +22,14 @@ export default hopeTheme({
   // 导航栏
   navbar,
 
+  // editLink:false,
+
+  contributors:false,
+
   // 侧边栏
   sidebar,
 
   // 页脚
-  footer: "",
   displayFooter: true,
   copyright: "Copyright © 2019-present Silly",
   // 博客相关
