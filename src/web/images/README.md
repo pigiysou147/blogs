@@ -1,6 +1,8 @@
 ---
 date: 2023-02-01
 category: 图片
+star: 1
+sticky: 1
 ---
 # 图片教程 
 
