@@ -15,7 +15,7 @@ export default hopeTheme({
 
   // logo: "https://theme-hope-assets.vuejs.press/logo.svg",
 
-  repo: "blogs/blogs",
+  repo: "https://github.com/pigiysou147/blogs",
 
   docsDir: "src",
 
