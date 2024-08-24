@@ -1,7 +1,8 @@
 ---
 date: 2024-03-31
 category: css
-
+star: 1
+sticky: 1
 ---
 # CSS教程
 <small>本教程主要参考[Google 开发者网站](https://web.dev/)文章和[mdn](https://developer.mozilla.org/)文章，经过翻译整理</small>
