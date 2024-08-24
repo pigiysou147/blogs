@@ -25,7 +25,6 @@
     "@11ty/eleventy-cache-assets": "^2.3.0",
     "@mdn/browser-compat-data": "^5.5.46",
     "axios": "^1.7.4",
-    "img-localizer": "^0.2.3",
     "markdown-link-extractor": "^4.0.2",
     "yargs": "^17.7.2"
   }
