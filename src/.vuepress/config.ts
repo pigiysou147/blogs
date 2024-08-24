@@ -7,7 +7,7 @@ export default defineUserConfig({
 
   lang: "zh-CN",
   title: "silly blogs",
-  description: "vuepress-theme-hope 的博客演示",
+  description: "silly blogs",
 
   theme,
 
