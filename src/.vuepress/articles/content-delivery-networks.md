@@ -1,23 +1,5 @@
 # 内容分发网络 (CDN) 
 
-
-
-bookmark_border
-
-
-
-通过使用内容分发网络来提升性能。
-
-
-
-![Katie Hempenius](https://web.dev/images/authors/katiehempenius.jpg?hl=zh-cn)
-
-Katie Hempenius
-
-
-
-
-
 内容分发网络 (CDN) 使用分布式服务器网络向用户提供资源，从而提高网站性能。由于 CDN 可减少服务器负载，因此可以降低服务器费用，并且非常适合处理流量高峰。本文介绍了 CDN 的工作原理，并针对选择、配置和优化 CDN 设置提供了与平台无关的指导。
 
 ## 概览
