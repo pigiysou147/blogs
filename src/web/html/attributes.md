@@ -7,7 +7,7 @@ tag:
 
 # 属性
 
-[HTML 概述](/web/html/overview#attributes)中简要讨论了属性；现在，我们将进行深入探讨。
+[HTML 概述](/blogs/web/html/overview#attributes)中简要讨论了属性；现在，我们将进行深入探讨。
 
 属性是让 HTML 如此强大的原因。属性是起始标记中显示的以空格分隔的名称和名称/值对，用于提供相应元素的相关信息和功能。
 
@@ -116,7 +116,7 @@ href 属性提供激活链接后用户会转到的超链接。如果网址包含
 
 #### CSS 选择器
 
-在 CSS 中，您可以使用 ID 选择器（如 `#feedback`）来定位每个版块，或者使用区分大小写的[属性选择器](/web/css/selectors#attribute_selector) `[id="feedback"]`（为降低[特异性](https://developer.mozilla.org/docs/Web/CSS/Specificity)）。
+在 CSS 中，您可以使用 ID 选择器（如 `#feedback`）来定位每个版块，或者使用区分大小写的[属性选择器](/blogs/web/css/selectors#attribute_selector) `[id="feedback"]`（为降低[特异性](https://developer.mozilla.org/docs/Web/CSS/Specificity)）。
 
 #### 设计脚本
 
@@ -169,7 +169,7 @@ const switchViaSelector = document.querySelector("#switch");
 
 #### 其他无障碍用途
 
-在无障碍功能和易用性上使用`id`不仅限于标签。在[文字简介](/web/html/text-basics)中，通过将 `<h2>` 的 `id` 引用为 `<section>` 的 `aria-labelledby` 的值以提供无障碍名称，将 `<section>` 转换为区域地标：
+在无障碍功能和易用性上使用`id`不仅限于标签。在[文字简介](/blogs/web/html/text-basics)中，通过将 `<h2>` 的 `id` 引用为 `<section>` 的 `aria-labelledby` 的值以提供无障碍名称，将 `<section>` 转换为区域地标：
 
 ```html
 <section id="about" aria-label ledby="about_heading">
@@ -192,7 +192,7 @@ const switchViaSelector = document.querySelector("#switch");
 
 样式仅应用于设置了该属性的元素，如果嵌套元素或 `<style>` 块或样式表中的其他样式声明未覆盖，后代会继承继承的属性值。由于该值相当于仅应用于相应元素的单个样式块的内容，因此不能用于生成的内容、制作关键帧动画或应用任何其他 @ 规则。
 
-虽然 `style` 确实是全局属性，但不建议使用它。而应在单独的文件或文件中定义样式。 也就是说，`style` 属性在开发过程中可以派上用场，以便实现快速样式设置，例如用于测试目的。然后，选择“solution”样式并将其粘贴在关联的 [CSS](/web/css) 文件中。
+虽然 `style` 确实是全局属性，但不建议使用它。而应在单独的文件或文件中定义样式。 也就是说，`style` 属性在开发过程中可以派上用场，以便实现快速样式设置，例如用于测试目的。然后，选择“solution”样式并将其粘贴在关联的 [CSS](/blogs/web/css) 文件中。
 
 ### `tabindex`
 
@@ -213,7 +213,7 @@ const switchViaSelector = document.querySelector("#switch");
 
 [`button` 的 `role`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles/button_role) 用于告知屏幕阅读器用户，此元素的行为应类似于按钮。JavaScript 用于确保按钮功能承诺得到遵守，包括处理 [click](https://developer.mozilla.org/docs/Web/API/Element/click_event) 和 [keydown](https://developer.mozilla.org/docs/Web/API/Element/keydown_event) 事件，以及处理 Enter 键和空格键的按键操作。
 
-表单控件、链接、按钮和[内容可修改](/web/html/attributes#contenteditable)元素能够获得焦点；当键盘用户点击 Tab 键时，焦点会移到下一个可聚焦元素，就好像它们已设置 `tabindex="0"` 一样。默认情况下，其他元素不可聚焦。为这些元素添加 `tabindex` 属性可让这些元素在其他情况下无法获得焦点。
+表单控件、链接、按钮和[内容可修改](/blogs/web/html/attributes#contenteditable)元素能够获得焦点；当键盘用户点击 Tab 键时，焦点会移到下一个可聚焦元素，就好像它们已设置 `tabindex="0"` 一样。默认情况下，其他元素不可聚焦。为这些元素添加 `tabindex` 属性可让这些元素在其他情况下无法获得焦点。
 
 如果文档包含的 `tabindex` 为 `1` 或更高的元素，这些元素会包含在单独的标签页序列中。正如您在代码笔中看到的，按 Tab 键从低到高的顺序从单独的序列开始，然后再按源顺序按常规序列进行选择。
 

@@ -41,7 +41,7 @@ myObj.myProperty;
 >true
 ```
 
-例如，当 `[[Writable]]` 具有 `false` 值时，尝试为关联属性设置新值时，会在严格模式之外静默失败，并在[严格模式](/web/javascript/appendix#strict-mode)下抛出错误：
+例如，当 `[[Writable]]` 具有 `false` 值时，尝试为关联属性设置新值时，会在严格模式之外静默失败，并在[严格模式](/blogs/web/javascript/appendix#strict-mode)下抛出错误：
 
 ```javascript
 {

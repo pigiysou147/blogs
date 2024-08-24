@@ -6,7 +6,7 @@ tags:
 ---
 # 视频表现
 
-在[上一单元](/web/performance/image-performance)中，您学习了与图片相关的一些性能技术。图片是网络上广泛使用的资源类型，但要谨慎优化并考虑用户的视口，则会占用大量带宽。
+在[上一单元](/blogs/web/performance/image-performance)中，您学习了与图片相关的一些性能技术。图片是网络上广泛使用的资源类型，但要谨慎优化并考虑用户的视口，则会占用大量带宽。
 
 但是，图片并不是网络上常见的唯一媒体类型。视频是网页上常用的另一种媒体类型。查看一些可能的优化措施之前，请务必先了解 `<video>` 元素的工作原理。
 
@@ -100,6 +100,6 @@ GIF 动画可能会非常大，特别是当它有许多包含复杂细节的帧�
 
 鉴于这种现实，第三方视频嵌入可能会显著影响网页性能。根据 HTTP Archive，YouTube 嵌入网站的主线程阻塞超过 [1.7 秒](https://almanac.httparchive.org/en/2022/third-parties#fig-8)。长时间阻塞主线程是一个严重的用户体验问题，可能会影响网页的 [Interaction to Next Paint (INP)](https://web.dev/articles/inp)。不过，您可以在初始页面加载期间不立即加载嵌入内容，而是为嵌入创建一个占位符，并在用户与之互动时将其替换为实际的视频嵌入，从而做出妥协。
 
-**重要提示** ：如需了解有关 Facade，请参阅[介绍延迟加载图像和 `<iframe>` 元素的模块中的 Facade 的部分](/web/performance/lazy-load-images-and-iframe-elements#facades)。## 视频演示
+**重要提示** ：如需了解有关 Facade，请参阅[介绍延迟加载图像和 `<iframe>` 元素的模块中的 Facade 的部分](/blogs/web/performance/lazy-load-images-and-iframe-elements#facades)。## 视频演示
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi" loading="lazy" src="https://glitch.com/embed/#!/embed/learn-performance-video?attributionHidden=true&amp;sidebarCollapsed=true&amp;previewSize=100" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="学习效果视频"></iframe>

@@ -71,7 +71,7 @@ export default hopeTheme({
       // },
     },
   },
-
+ 
   // 加密配置
   encrypt: {
     config: {
@@ -105,7 +105,7 @@ export default hopeTheme({
     docsearch: {
       appId: "YTV220JG6D",
       apiKey: "3b72d77a58e52810b9ee148fd8c71464",
-      indexName: "silly-blogs",
+      indexName: "silly-hope-blogs",
     },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。

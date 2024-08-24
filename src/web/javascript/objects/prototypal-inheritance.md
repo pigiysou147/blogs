@@ -8,7 +8,7 @@ tag:
 
 # 原型继承
 
-与[其他数据类型](/web/javascript/appendix#prototyal-inheritance)一样，对象会继承内置 `Object` 原型的属性和方法，这意味着生成的对象既包含您已定义的属性，也包含 prototype 属性（包含从原型继承的方法）：
+与[其他数据类型](/blogs/web/javascript/appendix#prototyal-inheritance)一样，对象会继承内置 `Object` 原型的属性和方法，这意味着生成的对象既包含您已定义的属性，也包含 prototype 属性（包含从原型继承的方法）：
 
 ```javascript
 let myObject ={
@@ -114,7 +114,7 @@ Object.setPrototypeOf( myObj, protoParent );
 
 为了区分继承的属性和作者定义的属性，后者通常称为对象的“自己的属性”。
 
-如果指定属性是对象的直接属性，内置 `Object.hasOwn()` 方法会返回 `true`；如果该属性是继承的或不存在，则内置方法返回 `false`。请尽可能使用 [`Object.hasOwn()`](https://caniuse.com/mdn-javascript_builtins_object_hasown)，而不要使用继承的 `hasOwnProperty()` 方法，因为该方法不支持 [`Object.create()`](/web/javascript/objects/property-descriptors)。
+如果指定属性是对象的直接属性，内置 `Object.hasOwn()` 方法会返回 `true`；如果该属性是继承的或不存在，则内置方法返回 `false`。请尽可能使用 [`Object.hasOwn()`](https://caniuse.com/mdn-javascript_builtins_object_hasown)，而不要使用继承的 `hasOwnProperty()` 方法，因为该方法不支持 [`Object.create()`](/blogs/web/javascript/objects/property-descriptors)。
 
 ```javascript
 let myObject ={

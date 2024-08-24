@@ -20,7 +20,7 @@ DOM 是用于访问和处理文档的 API。DOM 是文档中所有节点的树�
 
 ![DOM/ARIA。](images/the-domaria-e1b8e9eeb7aed.png)
 
-您可以在浏览器开发者工具中检查的树状表示法就是[无障碍树](/web/accessibility/aria-html#the_accessibility_tree)。AOM 基于 DOM；同样，无障碍功能树包含代表所有标记元素、属性和文本节点的对象：
+您可以在浏览器开发者工具中检查的树状表示法就是[无障碍树](/blogs/web/accessibility/aria-html#the_accessibility_tree)。AOM 基于 DOM；同样，无障碍功能树包含代表所有标记元素、属性和文本节点的对象：
 
 ![AOM 示例。](images/an-example-aom-ec190ded5718e.png)
 
@@ -52,7 +52,7 @@ HTML 接口 API 并非仅限于访问属性值。DOM 可帮助您深入了解界
 
 ## 可用的元素接口
 
-除了一些[版块元素](/web/html/headings-and-sections)，我们在本系列中到目前为止所涵盖但尚未介绍的大部分 HTML 元素都有关联的 DOM 接口。所有元素的基本接口已恰如其分地命名为[元素](https://developer.mozilla.org/docs/Web/API/Element)。[`HTMLElement`](https://developer.mozilla.org/docs/Web/API/HTMLElement) 继承自 Element，所有特定于 HTML 元素的接口均继承自 Element。某些元素特定接口是由多个相似的元素实现的。
+除了一些[版块元素](/blogs/web/html/headings-and-sections)，我们在本系列中到目前为止所涵盖但尚未介绍的大部分 HTML 元素都有关联的 DOM 接口。所有元素的基本接口已恰如其分地命名为[元素](https://developer.mozilla.org/docs/Web/API/Element)。[`HTMLElement`](https://developer.mozilla.org/docs/Web/API/HTMLElement) 继承自 Element，所有特定于 HTML 元素的接口均继承自 Element。某些元素特定接口是由多个相似的元素实现的。
 
 这些接口包括：
 
@@ -122,7 +122,7 @@ HTML 接口 API 并非仅限于访问属性值。DOM 可帮助您深入了解界
 
 ## 其他接口
 
-此外，还有其他接口可用于操控 DOM 节点的分支位置。为我们提供了 [`addEventListener()`](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener) 和 [`removeEventListener()`](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener) 的 [`EventTarget`](https://developer.mozilla.org/docs/Web/API/EventTarget) 接口会由 [`Node`](https://developer.mozilla.org/docs/Web/API/Node) 和 [`Window`](https://developer.mozilla.org/docs/Web/API/Window) 接口继承。而 Element、Document 和 DocumentFragment（我们在[自定义元素](/web/html/template)中看到的这些接口）接口则继承自 Node，而 HTMLElement 接口则继承自 Element。
+此外，还有其他接口可用于操控 DOM 节点的分支位置。为我们提供了 [`addEventListener()`](https://developer.mozilla.org/docs/Web/API/EventTarget/addEventListener) 和 [`removeEventListener()`](https://developer.mozilla.org/docs/Web/API/EventTarget/removeEventListener) 的 [`EventTarget`](https://developer.mozilla.org/docs/Web/API/EventTarget) 接口会由 [`Node`](https://developer.mozilla.org/docs/Web/API/Node) 和 [`Window`](https://developer.mozilla.org/docs/Web/API/Window) 接口继承。而 Element、Document 和 DocumentFragment（我们在[自定义元素](/blogs/web/html/template)中看到的这些接口）接口则继承自 Node，而 HTMLElement 接口则继承自 Element。
 
 ### `node` **接口**
 
@@ -141,7 +141,7 @@ const walk_the_DOM =function walk(node, callback){
 };
 ```
 
-我们使用了 Node 的 [`appendChild()`](https://developer.mozilla.org/docs/Web/API/Node/appendChild) 和 [`cloneNode()`](https://developer.mozilla.org/docs/Web/API/Node/cloneNode) 方法来定义[自定义元素](/web/html/template)。Node 接口提供了许多用于查询和操控 DOM 的实用属性和方法。
+我们使用了 Node 的 [`appendChild()`](https://developer.mozilla.org/docs/Web/API/Node/appendChild) 和 [`cloneNode()`](https://developer.mozilla.org/docs/Web/API/Node/cloneNode) 方法来定义[自定义元素](/blogs/web/html/template)。Node 接口提供了许多用于查询和操控 DOM 的实用属性和方法。
 
 ```javascript
 customElements.define('star-rating',

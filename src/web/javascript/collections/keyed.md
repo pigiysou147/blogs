@@ -25,7 +25,7 @@ myMap;
 >Map(0)
 ```
 
-您可以采用类似于数组（或任何[迭代对象](/web/javascript/control-flow#iterators)）的语法，在地图中预填充数据，该数组包含由两个元素组成的类似数组的对象。这两个元素数据结构中每个元素的第一个元素都成为键，而第二个元素则成为与该键关联的值。实际上，最简单的形式是一个数组，其中每个元素本身都是由两个元素组成的数组，即要添加到映射的元素的键和值：
+您可以采用类似于数组（或任何[迭代对象](/blogs/web/javascript/control-flow#iterators)）的语法，在地图中预填充数据，该数组包含由两个元素组成的类似数组的对象。这两个元素数据结构中每个元素的第一个元素都成为键，而第二个元素则成为与该键关联的值。实际上，最简单的形式是一个数组，其中每个元素本身都是由两个元素组成的数组，即要添加到映射的元素的键和值：
 
 ```javascript
 const myMap =newMap([
@@ -98,7 +98,7 @@ myMap;
 
 ### WeakMap
 
-WeakMap 是一种包含“弱”[references](/web/javascript/appendix#by-reference-by-value)的映射，这些引用必须是对尚未添加到全局符号注册表中的对象或[符号](/web/javascript/data-types/symbol)的引用。
+WeakMap 是一种包含“弱”[references](/blogs/web/javascript/appendix#by-reference-by-value)的映射，这些引用必须是对尚未添加到全局符号注册表中的对象或[符号](/blogs/web/javascript/data-types/symbol)的引用。
 
 如需创建 WeakMap，请使用 `WeakMap()` 构造函数：
 
@@ -109,7 +109,7 @@ myWeakMap;
 >WeakMap(0)
 ```
 
-WeakMap 的语法与 Map 类似，但 WeakMaps 不可[迭代](/web/javascript/control-flow#iterators)，如果尝试将除对象或符号以外的任何值用作键，就会导致语法错误。如果 WeakMap 之外不存在对某个键的[references](/web/javascript/appendix#by-reference-by-value)，该对象或符号以及 WeakMap 中的关联值都符合[垃圾回收](/web/javascript/appendix#memory-allocation)条件。
+WeakMap 的语法与 Map 类似，但 WeakMaps 不可[迭代](/blogs/web/javascript/control-flow#iterators)，如果尝试将除对象或符号以外的任何值用作键，就会导致语法错误。如果 WeakMap 之外不存在对某个键的[references](/blogs/web/javascript/appendix#by-reference-by-value)，该对象或符号以及 WeakMap 中的关联值都符合[垃圾回收](/blogs/web/javascript/appendix#memory-allocation)条件。
 
 这支持多种用例，例如使用对对象的引用作为键，在 WeakMap 中存储与对象关联的元数据。如果没有其他引用指向此对象，并且该对象已从内存中移除，关联的元数据也会被移除。
 
@@ -163,7 +163,7 @@ mySet;
 >Set[]
 ```
 
-虽然集不是编入索引的集合，也不适合这样使用，但集合中的元素会按照插入顺序进行迭代[](/web/javascript/control-flow#iterators)。系统会跳过尝试向集添加重复元素值的操作，并保留原始广告订单：
+虽然集不是编入索引的集合，也不适合这样使用，但集合中的元素会按照插入顺序进行迭代[](/blogs/web/javascript/control-flow#iterators)。系统会跳过尝试向集添加重复元素值的操作，并保留原始广告订单：
 
 ```javascript
 const mySet =newSet([1,2,3]);
@@ -190,7 +190,7 @@ myArray;
 
 ### WeakSet
 
-WeakSet 是仅包含[可回收值](/web/javascript/appendix#memory-allocation)的集，例如对尚未添加到全局符号注册表的对象或[符号](/web/javascript/data-types/symbol)的引用。
+WeakSet 是仅包含[可回收值](/blogs/web/javascript/appendix#memory-allocation)的集，例如对尚未添加到全局符号注册表的对象或[符号](/blogs/web/javascript/data-types/symbol)的引用。
 
 如需创建 WeakSet，请使用 `WeakSet()` 构造函数：
 
@@ -201,6 +201,6 @@ myWeakSet;
 >WeakSet[]
 ```
 
-WeakSet 语法与 Set 类似，但 WeakSet 不可[迭代](/web/javascript/control-flow#iterators)，并且尝试添加除对象或符号以外的任何值都会导致语法错误。与 WeakMap 一样，当没有任何对 WeakSet 所引用的值的其他[references](/web/javascript/appendix#by-reference-by-value)时，该值将符合[垃圾回收](/web/javascript/appendix#memory-allocation)条件。
+WeakSet 语法与 Set 类似，但 WeakSet 不可[迭代](/blogs/web/javascript/control-flow#iterators)，并且尝试添加除对象或符号以外的任何值都会导致语法错误。与 WeakMap 一样，当没有任何对 WeakSet 所引用的值的其他[references](/blogs/web/javascript/appendix#by-reference-by-value)时，该值将符合[垃圾回收](/blogs/web/javascript/appendix#memory-allocation)条件。
 
 这适用于各种用例，例如聚合相关对象的单个可迭代集合。如果没有其他对 WeakSet 所引用的对象的引用，相关元素也会从 WeakSet 中移除。

@@ -50,7 +50,7 @@ category: html
 
 在前面的两个 Codepen 中，您会注意到指向摘要的 [inline-start](https://developer.mozilla.org/docs/Web/CSS/CSS_Logical_Properties) 端的箭头。披露声明 widget 通常使用一个旋转（或扭动）的小三角形显示在屏幕上，该三角形用于指示打开/关闭状态，并且三角形旁边带有一个标签。`<summary>` 元素的内容用来为披露信息 widget 添加标签。 每个部分顶部的旋转箭头是在 `<summary>` 元素上设置的 [`::marker`](https://developer.mozilla.org/docs/Web/CSS/::marker)。与列表项一样，`<summary>` 元素支持 [`list-style`](https://developer.mozilla.org/docs/Web/CSS/list-style) 简写属性及其简写属性，包括 [`list-style-type`](https://developer.mozilla.org/docs/Web/CSS/list-style-type)。您可以使用 CSS 设置披露三角形的样式，包括将使用的标记从三角形更改为任何其他项目符号类型，包括带有 [`list-style-image`](https://developer.mozilla.org/docs/Web/CSS/list-style-image) 的图片。
 
-如需应用其他样式，请使用类似于 [`details summary::marker`](/web/css/pseudo-elements#marker) 的选择器。`::marker` [伪元素](/web/css/selectors#pseudo-element)仅接受有限数量的样式。常见的做法是移除 `::marker` 并将其替换为更便于样式的 [`::before`](https://developer.mozilla.org/docs/Web/CSS/::before)，因为 CSS 样式会根据 open 属性的存在（或不存在）来略微更改所生成内容的样式。您可以通过设置 `list-style: none` 来移除披露声明 widget 图标，或者将标记的[内容](https://developer.mozilla.org/docs/Web/CSS/content)设置为 `none`，但应始终添加视觉指示，以告知视力正常的用户摘要内容是一个切换按钮，该按钮会在激活时显示和隐藏内容。
+如需应用其他样式，请使用类似于 [`details summary::marker`](/blogs/web/css/pseudo-elements#marker) 的选择器。`::marker` [伪元素](/blogs/web/css/selectors#pseudo-element)仅接受有限数量的样式。常见的做法是移除 `::marker` 并将其替换为更便于样式的 [`::before`](https://developer.mozilla.org/docs/Web/CSS/::before)，因为 CSS 样式会根据 open 属性的存在（或不存在）来略微更改所生成内容的样式。您可以通过设置 `list-style: none` 来移除披露声明 widget 图标，或者将标记的[内容](https://developer.mozilla.org/docs/Web/CSS/content)设置为 `none`，但应始终添加视觉指示，以告知视力正常的用户摘要内容是一个切换按钮，该按钮会在激活时显示和隐藏内容。
 
 ```css
 details summary::before {
@@ -71,7 +71,7 @@ details[open]summary::before {
 
 ## 错误的处理方式
 
-如果您未添加 `<summary>`，浏览器将为您创建一个：带有标记和“details”一词。此摘要是影子根的一部分，因此不会应用作者 CSS 摘要样式。[](/web/html/template#shadow_dom)遗憾的是，Safari 不在[键盘焦点顺序](https://bugs.webkit.org/show_bug.cgi?id=249904)中包含详细信息。
+如果您未添加 `<summary>`，浏览器将为您创建一个：带有标记和“details”一词。此摘要是影子根的一部分，因此不会应用作者 CSS 摘要样式。[](/blogs/web/html/template#shadow_dom)遗憾的是，Safari 不在[键盘焦点顺序](https://bugs.webkit.org/show_bug.cgi?id=249904)中包含详细信息。
 
 如果您添加了 `<summary>`，但它不是 `<details>` 中的第一个元素，浏览器仍会按预期显示摘要。如果您在摘要中包含链接、标签或其他互动元素，它也不会失败，但浏览器会以不同的方式处理互动内容中的互动内容。例如，如果您在摘要中包含某个链接，有些浏览器会将摘要和链接同时添加到默认的标签页显示顺序中，但其他浏览器不会默认聚焦于该链接。如果您点击嵌套在 `<summary>` 中的 `<label>`，某些浏览器会将焦点置于关联的表单控件上；其他浏览器会将焦点置于表单控件上，并将 `<details>` 切换为开启或关闭。
 

@@ -105,7 +105,7 @@ myFunction("String.");
 >true
 ```
 
-[箭头函数表达式](/web/javascript/functions/function-expressions#arrow-functions)的独特之处在于，当箭头函数正文包含单个表达式且不包含块语法时，系统会暗示 `return` 关键字：
+[箭头函数表达式](/blogs/web/javascript/functions/function-expressions#arrow-functions)的独特之处在于，当箭头函数正文包含单个表达式且不包含块语法时，系统会暗示 `return` 关键字：
 
 ```javascript
 const myFunction =()=>2+2;

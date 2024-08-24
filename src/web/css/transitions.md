@@ -53,7 +53,7 @@ tags:
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/QWgdyZx?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上的 web-dot-dev 的 Pen QWgdyZx" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-我们的 [CSS 动画模块](/web/css/animations#animation-timing-function)很好地概述了计时函数。
+我们的 [CSS 动画模块](/blogs/web/css/animations#animation-timing-function)很好地概述了计时函数。
 
 您可以使用 [DevTools](https://developer.chrome.com/docs/devtools/css/animations) 实时尝试不同的计时函数。
 
@@ -105,7 +105,7 @@ tags:
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/GRErowE?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="来自 Codepen 上的 web-dot-dev 的 Pen GRErowE" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-请查看[我们的“函数”模块](/web/css/functions)中[有关转换的部分](/web/css/functions#transforms)。
+请查看[我们的“函数”模块](/blogs/web/css/functions)中[有关转换的部分](/blogs/web/css/functions#transforms)。
 
 ### 颜色
 
@@ -113,9 +113,9 @@ tags:
 
 `color`、`background-color` 和 `border-color` 属性只是可以在互动时转换颜色的几个位置。
 
-**注意** ：颜色过渡通常不需要晚于[运动减少](/web/css/transitions#accessibility_considerations)偏好设置。请做出最佳判断。
+**注意** ：颜色过渡通常不需要晚于[运动减少](/blogs/web/css/transitions#accessibility_considerations)偏好设置。请做出最佳判断。
 
-请查看[关于颜色的模块](/web/css/color)。
+请查看[关于颜色的模块](/blogs/web/css/color)。
 
 ### 阴影
 
@@ -123,7 +123,7 @@ tags:
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/gORgPQx?height=300&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="由 web-dot-dev 在 Codepen 上开发的 Pen gORgPQx" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 300px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-请查看[我们关于阴影的模块](/web/css/shadows)。
+请查看[我们关于阴影的模块](/blogs/web/css/shadows)。
 
 ### 过滤条件
 
@@ -131,19 +131,19 @@ tags:
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/PojWZxJ?height=350&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="来自 Codepen 上的 web-dot-dev 的 Pen PojWZxJ" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 350px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-请参阅[关于过滤器的单元](/web/css/filters)。
+请参阅[关于过滤器的单元](/blogs/web/css/filters)。
 
 ## 转换触发器
 
-您的 CSS 必须包含状态更改和触发该状态更改的事件，才能使 CSS 转换生效。此类触发器的一个典型示例是 `:hover` [伪类](/web/css/pseudo-classes)。当用户将光标悬停在某个元素上时，此伪类会进行匹配。
+您的 CSS 必须包含状态更改和触发该状态更改的事件，才能使 CSS 转换生效。此类触发器的一个典型示例是 `:hover` [伪类](/blogs/web/css/pseudo-classes)。当用户将光标悬停在某个元素上时，此伪类会进行匹配。
 
 下面列出了一些可以触发元素状态变化的伪类和事件。
 
-- [`:hover`](/web/css/pseudo-classes#hover)：如果光标位于相应元素上方，则匹配。
-- [`:focus`](/web/css/pseudo-classes#focus_focus-within_and_focus-visible)：如果元素获得焦点，则匹配。
-- [`:focus-within`](/web/css/pseudo-classes#focus_focus-within_and_focus-visible)：如果元素或其任何后代获得焦点，则匹配。
-- [`:target`](/web/css/pseudo-classes#target)：如果当前网址的[片段](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web#fragment)与元素的 ID 匹配，则匹配。
-- [`:active`](/web/css/pseudo-classes#active)：在元素激活时（通常是在鼠标上按下时）匹配。
+- [`:hover`](/blogs/web/css/pseudo-classes#hover)：如果光标位于相应元素上方，则匹配。
+- [`:focus`](/blogs/web/css/pseudo-classes#focus_focus-within_and_focus-visible)：如果元素获得焦点，则匹配。
+- [`:focus-within`](/blogs/web/css/pseudo-classes#focus_focus-within_and_focus-visible)：如果元素或其任何后代获得焦点，则匹配。
+- [`:target`](/blogs/web/css/pseudo-classes#target)：如果当前网址的[片段](https://developer.mozilla.org/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web#fragment)与元素的 ID 匹配，则匹配。
+- [`:active`](/blogs/web/css/pseudo-classes#active)：在元素激活时（通常是在鼠标上按下时）匹配。
 - `class` 与 JavaScript 之间的变化：当元素的 CSS `class` 通过 JavaScript 发生更改时，CSS 会转换已更改的符合条件的属性。
 
 ## 进入或退出时的不同过渡效果
@@ -185,4 +185,4 @@ CSS 过渡并非适用于所有人。对于有些人，过渡和动画可能会�
 ```
 
 
-**注意** ：在关于[动画和动画](/web/accessibility/motion)的“学习无障碍”模块中，您可以了解如何为网站增添乐趣，同时又不会给某些用户带来问题。
+**注意** ：在关于[动画和动画](/blogs/web/accessibility/motion)的“学习无障碍”模块中，您可以了解如何为网站增添乐趣，同时又不会给某些用户带来问题。

@@ -38,7 +38,7 @@ CSS 具有 [`box-shadow`](https://developer.mozilla.org/docs/Web/CSS/box-shadow)
 2. **垂直偏移**：正数表示从顶部向下推移，负数表示将其从底部向上推。
 3. **模糊半径**：数值越大，阴影越模糊，阴影越小，阴影越清晰。
 4. **扩散半径**（可选）：数值越大，阴影的大小就越大；数值越小，阴影的大小就越小；如果设为 0，则与**模糊处理半径**的大小相同。
-5. **颜色**：[任何有效的颜色值](/web/css/color)。 如果未定义，将使用计算出的文本颜色。
+5. **颜色**：[任何有效的颜色值](/blogs/web/css/color)。 如果未定义，将使用计算出的文本颜色。
 
 如需将框阴影设为内部阴影而不是默认外部阴影，请在其他属性之前添加 `inset` 关键字。
 
@@ -163,7 +163,7 @@ CSS 具有 [`box-shadow`](https://developer.mozilla.org/docs/Web/CSS/box-shadow)
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/eYgGdvm?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="由 web-dot-dev 在 Codepen 上开发的 Pen eYgGdvm" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
 
-**关键术语** ：我们将在另一个单元中介绍 CSS [过滤器](/web/css/filters)，但简而言之，过滤器可让您将多种图形效果应用于元素的像素。
+**关键术语** ：我们将在另一个单元中介绍 CSS [过滤器](/blogs/web/css/filters)，但简而言之，过滤器可让您将多种图形效果应用于元素的像素。
 
 `drop-shadow` 过滤条件与 `box-shadow` 具有相同的值，但不允许使用 `inset` 关键字和 `spread` 值。您可以通过向 `filter` 属性添加多个 `drop-shadow` 值实例来添加任意数量的阴影。每个阴影都将使用最后一个阴影作为定位参考点。
 

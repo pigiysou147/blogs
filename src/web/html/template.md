@@ -134,7 +134,7 @@ shadowRoot.appendChild(starRating.cloneNode(true));
 
 Shadow DOM 将 CSS 样式的作用域限定为每个影子树，将其与文档的其余部分隔离开来。这意味着外部 CSS 不适用于您的组件，并且组件样式对文档的其余部分没有影响，除非我们特意将它们设置为。
 
-由于我们已将内容附加到 shadow DOM，因此可以包含一个 [`<style>`](/web/html/document-structure#css) 元素，以便为自定义元素提供封装 CSS。
+由于我们已将内容附加到 shadow DOM，因此可以包含一个 [`<style>`](/blogs/web/html/document-structure#css) 元素，以便为自定义元素提供封装 CSS。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/dyqbYme?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上的 web-dot-dev 提供的 Pen dyqbYme" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 

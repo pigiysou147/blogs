@@ -7,7 +7,7 @@ tag:
 ---
 # this关键字
 
-关键字 `this` 是指在调用函数时绑定到函数的对象的值，也就是说，根据函数是作为方法调用、独立函数还是[构造函数](/web/javascript/functions/new)调用，其值会有所不同。
+关键字 `this` 是指在调用函数时绑定到函数的对象的值，也就是说，根据函数是作为方法调用、独立函数还是[构造函数](/blogs/web/javascript/functions/new)调用，其值会有所不同。
 
 调用函数时，它会在后台创建关键字 `this` 的实例，作为对包含该函数的对象的引用，从而允许从其作用域内访问与其一起定义的属性和方法。在某些方面，对 `this` 的使用类似于使用通过 `const` 声明的变量。与常量一样，您无法移除 `this`，也无法为其重新赋值，但可以更改 `this` 关键字包含的对象的方法和属性。
 
@@ -77,11 +77,11 @@ myObject.myMethod();
 
 `this` 的值可能取决于函数及其封装对象的定义方式。相反，`this` 值的上下文是当前执行上下文。在这种情况下，执行上下文是 `myObject` 对象正在调用 `myMethod` 方法，因此 `myObject` 是 `this` 的值。在前面的示例中，这似乎是一项技术性问题，但对于 `this` 的更高级用法，需要注意它是一个基本区别。
 
-通常，使用 `this` 时请不要预期周围的代码具有任何特定结构。此规则的例外情况是 ES5 [箭头函数](/web/javascript/functions/function-expressions#arrow-functions)。
+通常，使用 `this` 时请不要预期周围的代码具有任何特定结构。此规则的例外情况是 ES5 [箭头函数](/blogs/web/javascript/functions/function-expressions#arrow-functions)。
 
 ### 箭头函数中的 `this`
 
-在[箭头函数](/web/javascript/functions/function-expressions#arrow-functions)中，`this` 解析为[*词法封闭环境*](https://262.ecma-international.org/6.0/#sec-arrow-function-definitions-runtime-semantics-evaluation)中的绑定。这意味着，箭头函数中的 `this` 引用该函数最接近的上下文中 `this` 的值：
+在[箭头函数](/blogs/web/javascript/functions/function-expressions#arrow-functions)中，`this` 解析为[*词法封闭环境*](https://262.ecma-international.org/6.0/#sec-arrow-function-definitions-runtime-semantics-evaluation)中的绑定。这意味着，箭头函数中的 `this` 引用该函数最接近的上下文中 `this` 的值：
 
 ```javascript
 let myObject ={
@@ -191,7 +191,7 @@ myFunction.call(null);
 >Window{...}
 ```
 
-同样，如果调用函数的方式会为 `this` 提供原始值，该值将替换为在严格模式之外的[原始值的封装容器对象](/web/javascript/appendix#prototypal-inheritance)：
+同样，如果调用函数的方式会为 `this` 提供原始值，该值将替换为在严格模式之外的[原始值的封装容器对象](/blogs/web/javascript/appendix#prototypal-inheritance)：
 
 ```javascript
 let myFunction =function(){
@@ -223,7 +223,7 @@ myFunction.call(null);
 
 ## `new` **绑定**
 
-通过 `new` 关键字将[类](/web/javascript/classes)用作构造函数时，`this` 会引用新创建的实例：
+通过 `new` 关键字将[类](/blogs/web/javascript/classes)用作构造函数时，`this` 会引用新创建的实例：
 
 ```javascript
 classMyClass{

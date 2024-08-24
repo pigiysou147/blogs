@@ -53,7 +53,7 @@ HTML 本身提供了一些设置空间元素的方法。 借助 `<br> ` 和 `<hr
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/YzNQeyb?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="来自 Codepen 上的 web-dot-dev 的 Pen YzNQeyb" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
 
-您还可以为外边距使用 `auto` 值。 对于大小受限的块级元素，`auto` 外边距会在其应用方向上占用可用空间。[Flexbox 模块](/web/css/flexbox)中的这个模块就是一个很好的例子，在该模块中，项会互相推开。
+您还可以为外边距使用 `auto` 值。 对于大小受限的块级元素，`auto` 外边距会在其应用方向上占用可用空间。[Flexbox 模块](/blogs/web/css/flexbox)中的这个模块就是一个很好的例子，在该模块中，项会互相推开。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/poRELbR?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="由 web-dot-dev 在 Codepen 上撰写的 Pen poRELbR" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
@@ -72,7 +72,7 @@ HTML 本身提供了一些设置空间元素的方法。 借助 `<br> ` 和 `<hr
 
 在此示例中，从顶部和底部（块）两侧移除了外边距，`auto` 共享左侧和右侧（内嵌）之间的空间。
 
-**注意** ：在前面介绍[逻辑属性](/web/css/logical-properties)的单元中，您了解到可以使用 `margin-block-start`、`margin-inline-end`、`margin-block-end` 和 `margin-inline-start`，而无需指定 `margin-top`、`margin-right`、`margin-bottom` 和 `margin-left`。
+**注意** ：在前面介绍[逻辑属性](/blogs/web/css/logical-properties)的单元中，您了解到可以使用 `margin-block-start`、`margin-inline-end`、`margin-block-end` 和 `margin-inline-start`，而无需指定 `margin-top`、`margin-right`、`margin-bottom` 和 `margin-left`。
 
 ### 负值外边距
 
@@ -117,7 +117,7 @@ p {
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/YzNQavQ?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="由 web-dot-dev 在 Codepen 上开发的 Pen YzNQavQ" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
 
-在[布局课程](/web/css/layout)中，您已了解 Flexbox 容器和网格容器与块容器非常相似，但处理其子元素的方式截然不同。外边距收起的情况也是如此。
+在[布局课程](/blogs/web/css/layout)中，您已了解 Flexbox 容器和网格容器与块容器非常相似，但处理其子元素的方式截然不同。外边距收起的情况也是如此。
 
 如果我们使用本课程中的原始示例，并通过列方向应用 Flexbox，则外边距会合并，而不是收起。 这可以通过布局工作实现可预测性，这正是 Flexbox 和网格容器的设计目标。
 
@@ -132,7 +132,7 @@ p {
 
 ![一个带有向内箭头的框，表示内边距位于框内](images/a-box-arrows-pointing-in-2872ab772a788.png)
 
-`padding` 也可能影响元素的总体尺寸，具体取决于您使用的框模型（我们在[框模型课程](/web/css/box-model)中对此进行了介绍）。
+`padding` 也可能影响元素的总体尺寸，具体取决于您使用的框模型（我们在[框模型课程](/blogs/web/css/box-model)中对此进行了介绍）。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/eYgRrzz?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上 web-dot-dev 的 Pen eYgRrzz" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
@@ -141,7 +141,7 @@ p {
 
 ## Positioning
 
-同样，[layout](/web/css/layout) 模块中也对此进行了介绍，如果您为 `position` 设置的值是 `static` 以外的任何值，则可以使用 `top`、`right`、`bottom` 和 `left` 属性来设置元素间距。这些方向值的行为方式存在一些差异：
+同样，[layout](/blogs/web/css/layout) 模块中也对此进行了介绍，如果您为 `position` 设置的值是 `static` 以外的任何值，则可以使用 `top`、`right`、`bottom` 和 `left` 属性来设置元素间距。这些方向值的行为方式存在一些差异：
 
 - 具有 `position: relative` 的元素将保持其在文档流中的位置，即使您设置了这些值也是如此。它们还会以元素的位置为参照物。
 - 具有 `position: absolute` 的元素将基于相对父项的位置建立方向值。
@@ -150,7 +150,7 @@ p {
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/NWdNGZB?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="由 web-dot-dev 在 Codepen 上的 Pen NWdNGZB" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-在[逻辑属性](/web/css/logical-properties)模块中，您将了解 `inset-block` 和 `inset-inline` 属性，这两个属性可用于设置遵循写入模式的方向值。
+在[逻辑属性](/blogs/web/css/logical-properties)模块中，您将了解 `inset-block` 和 `inset-inline` 属性，这两个属性可用于设置遵循写入模式的方向值。
 
 这两个属性都是组合了 `start` 和 `end` 值的简写形式，因此可以接受为 `start` 和 `end` 设置的一个值或两个单独的值。
 
@@ -158,7 +158,7 @@ p {
 
 最后，在网格和 Flexbox 中，您可以使用 `gap` 属性在子元素之间创建空间。 `gap` 属性是 `row-gap` 和 `column-gap` 的简写形式，它接受一个或两个值，可以是长度或百分比。您也可以使用 `unset`、`initial` 和 `inherit` 等关键字。如果您只定义一个值，则相同的 `gap` 将同时应用于行和列，但如果您同时定义了这两个值，则第一个值为 `row-gap`，第二个值为 `column-gap`。
 
-借助 Flexbox 和网格，您还可以使用其分布和对齐功能创建空间，[网格模块](/web/css/grid)和 [Flexbox 模块](/web/css/flexbox)对此进行了介绍。
+借助 Flexbox 和网格，您还可以使用其分布和对齐功能创建空间，[网格模块](/blogs/web/css/grid)和 [Flexbox 模块](/blogs/web/css/flexbox)对此进行了介绍。
 
 ![带有间隙的网格的示意图](images/a-diagram-representation-5f42dbf13f58c.svg)
 

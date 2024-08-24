@@ -18,7 +18,7 @@ tags:
 
 焦点样式可以帮助使用设备（例如键盘或[开关控件](https://www.24a11y.com/2018/i-used-a-switch-control-for-a-day/)）的用户浏览网站并与网站互动。如果某个元素获得焦点，但没有视觉指示，用户可能会忘记焦点所在的元素。这可能会导致导航问题，并在用户打开错误的链接等情况下引发不必要的行为。
 
-**注意 ** ：如需详细了解无障碍对无障碍的重要性，请参阅[了解无障碍：专注](/web/accessibility/focus)；如需详细了解如何在 HTML 中管理焦点，请参阅[学习 HTML：专注](/web/html/focus)。## 元素如何获得焦点
+**注意 ** ：如需详细了解无障碍对无障碍的重要性，请参阅[了解无障碍：专注](/blogs/web/accessibility/focus)；如需详细了解如何在 HTML 中管理焦点，请参阅[学习 HTML：专注](/blogs/web/html/focus)。## 元素如何获得焦点
 
 某些元素可自动聚焦；这些是接受交互和输入的元素，例如 `<a>`、`<button>`、`<input>` 和 `<select>`。简而言之，就是所有表单元素、按钮和链接。 通常，您可以使用 *Tab* 键浏览网站的可聚焦元素，在页面上前进，使用 *shift* + *Tab* 键向后移动。
 
@@ -30,7 +30,7 @@ tags:
 
 元素获得焦点时，浏览器的默认行为是显示聚焦环。此聚焦环因浏览器和操作系统而异。
 
-您可以通过在[伪类课程](/web/css/pseudo-classes)中了解的 `:focus`、`:focus-within` 和 `:focus-visible` 伪类，通过 CSS 更改此行为。请务必设置与元素的默认样式形成**对比**的焦点样式。例如，一种常见的方法是利用 `outline` 属性。
+您可以通过在[伪类课程](/blogs/web/css/pseudo-classes)中了解的 `:focus`、`:focus-within` 和 `:focus-visible` 伪类，通过 CSS 更改此行为。请务必设置与元素的默认样式形成**对比**的焦点样式。例如，一种常见的方法是利用 `outline` 属性。
 
 ```css
 a:focus {

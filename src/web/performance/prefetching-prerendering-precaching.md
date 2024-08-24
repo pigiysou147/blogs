@@ -6,7 +6,7 @@ tags:
 ---
 # 预提取、预渲染和 Service Worker 预缓存
 
-在前几个单元中，您了解了[延迟加载 JavaScript](/web/performance/defer-javascript) 和[延迟加载图片和 `<iframe>` 元素](/web/performance/lazy-load-images-and-iframe-elements)等概念。延迟加载资源会在页面初始加载期间减少网络用量和 CPU 使用率，方法是在需要资源的位置下载资源，而不是预先加载资源，以免资源被闲置。这可以缩短初始网页加载时间，但如果驱动后续互动所需的资源在发生时尚未加载，则后续互动可能会出现延迟。
+在前几个单元中，您了解了[延迟加载 JavaScript](/blogs/web/performance/defer-javascript) 和[延迟加载图片和 `<iframe>` 元素](/blogs/web/performance/lazy-load-images-and-iframe-elements)等概念。延迟加载资源会在页面初始加载期间减少网络用量和 CPU 使用率，方法是在需要资源的位置下载资源，而不是预先加载资源，以免资源被闲置。这可以缩短初始网页加载时间，但如果驱动后续互动所需的资源在发生时尚未加载，则后续互动可能会出现延迟。
 
 例如，如果页面包含自定义日期选择器，您可以将日期选择器的资源延迟到用户与该元素互动之后。但是，按需加载日期选择器的资源可能会导致延迟（可能略微），但也可能不会发生，具体取决于用户的网络连接和/或设备功能，直至资源下载、解析并可供执行。
 
@@ -31,7 +31,7 @@ tags:
 
 上述 HTML 代码段会告知浏览器，它可以在 `date-picker.js` 和 `date-picker.css` 空闲后预提取。您也可以在用户与 JavaScript 中的页面互动时动态预提取资源。
 
-[除 Safari 外，所有现代浏览器都支持 `prefetch`](https://caniuse.com/link-rel-prefetch)，后者通过标志提供。如果您迫切需要以适用于所有浏览器的方式预先加载网站的资源，并且您使用了 Service Worker，请阅读本单元中有关[使用 Service Worker 预缓存资源](/web/performance/prefetching-prerendering-precaching#service_worker_precaching)的后续部分。
+[除 Safari 外，所有现代浏览器都支持 `prefetch`](https://caniuse.com/link-rel-prefetch)，后者通过标志提供。如果您迫切需要以适用于所有浏览器的方式预先加载网站的资源，并且您使用了 Service Worker，请阅读本单元中有关[使用 Service Worker 预缓存资源](/blogs/web/performance/prefetching-prerendering-precaching#service_worker_precaching)的后续部分。
 
 ## 预提取网页，加快日后的导航速度
 

@@ -46,7 +46,7 @@ Number("The number 3.");
 >NaN
 ```
 
-如[原型继承](/web/javascript/appendix#prototyal-inheritance)中所述，您可能几乎没有理由将 `Number` 对象用作构造函数，因为它会创建 `Number` 对象，而不是数字字面量。
+如[原型继承](/blogs/web/javascript/appendix#prototyal-inheritance)中所述，您可能几乎没有理由将 `Number` 对象用作构造函数，因为它会创建 `Number` 对象，而不是数字字面量。
 
 ```javascript
 let numObject =newNumber(15);

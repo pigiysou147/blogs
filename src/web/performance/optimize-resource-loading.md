@@ -6,13 +6,13 @@ tags:
 ---
 # 优化资源加载
 
-在上一个单元中，我们探索了[关键渲染路径背后的一些理论](/web/performance/understanding-the-critical-path)，并说明了阻止渲染和解析器阻止的资源会如何延迟网页的初始渲染。现在您已经了解了其背后的一些理论，接下来就可以学习一些用于优化关键渲染路径的技巧了。
+在上一个单元中，我们探索了[关键渲染路径背后的一些理论](/blogs/web/performance/understanding-the-critical-path)，并说明了阻止渲染和解析器阻止的资源会如何延迟网页的初始渲染。现在您已经了解了其背后的一些理论，接下来就可以学习一些用于优化关键渲染路径的技巧了。
 
 网页加载时，其 HTML 中会引用许多资源，这些资源通过 CSS 提供网页的外观和布局，并通过 JavaScript 提供互动性。在本单元中，我们介绍了一些与这些资源相关的重要概念，以及它们对网页加载时间的影响。
 
 ## 渲染阻塞
 
-如[上一单元](/web/performance/understanding-the-critical-path)中所述，CSS 是一种阻塞渲染的资源，因为它会阻止浏览器渲染任何内容，直至您构建了 [CSS 对象模型 (CSSOM)](https://developer.mozilla.org/docs/Web/API/CSS_Object_Model)。[](https://web.dev/articles/critical-rendering-path/render-blocking-css)浏览器会阻止呈现，以防止出现[非样式内容闪烁 (FOUC)](https://en.wikipedia.org/wiki/Flash_of_unstyled_content)，这从用户体验的角度来看是不希望发生的。
+如[上一单元](/blogs/web/performance/understanding-the-critical-path)中所述，CSS 是一种阻塞渲染的资源，因为它会阻止浏览器渲染任何内容，直至您构建了 [CSS 对象模型 (CSSOM)](https://developer.mozilla.org/docs/Web/API/CSS_Object_Model)。[](https://web.dev/articles/critical-rendering-path/render-blocking-css)浏览器会阻止呈现，以防止出现[非样式内容闪烁 (FOUC)](https://en.wikipedia.org/wiki/Flash_of_unstyled_content)，这从用户体验的角度来看是不希望发生的。
 
 一般来说，FOUC 是您通常不会看到的，但了解这个概念很重要，以便您了解浏览器为何在 CSS 下载并应用到网页之前阻止呈现网页。渲染阻塞未必是不可取的，但您需要通过对 CSS 进行优化来最大限度地缩短其持续时间。
 
@@ -40,7 +40,7 @@ tags:
 
 这些资源加载模式都是后来发现的资源，因此无法从预加载扫描器中受益。请尽可能避免。但是，如果无法避免此类模式，您或许可以使用 `preload` 提示来避免资源发现延迟。
 
-**注意** ：[关于资源提示的下一个单元](/web/performance/resource-hints)介绍了 `preload` 资源提示。## CSS
+**注意** ：[关于资源提示的下一个单元](/blogs/web/performance/resource-hints)介绍了 `preload` 资源提示。## CSS
 
 CSS 决定了网页的呈现方式和布局。如前所述，CSS 是一种阻止呈现的资源，因此优化 CSS 可能会对整体网页加载时间产生重大影响。
 

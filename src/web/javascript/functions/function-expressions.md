@@ -82,7 +82,7 @@ const myFunction =()=>{};
 const myFunction = myParameter =>{};
 ```
 
-当您希望函数正文[返回单个表达式的值](/web/javascript/functions/return)时，既不需要将函数正文用大括号括起来，也不需要使用 [`return` 关键字](/web/javascript/functions/return)：
+当您希望函数正文[返回单个表达式的值](/blogs/web/javascript/functions/return)时，既不需要将函数正文用大括号括起来，也不需要使用 [`return` 关键字](/blogs/web/javascript/functions/return)：
 
 ```javascript
 const myFunction =()=>2+2
@@ -91,7 +91,7 @@ myFunction()
 >4
 ```
 
-箭头函数的独特之处在于，它们没有自己的 [`arguments`](/web/javascript/functions#function-calling) 或 [`this`](/web/javascript/functions/this) 值上下文。相反，它们会从箭头函数的[词法封闭环境](https://262.ecma-international.org/6.0/#sec-arrow-function-definitions-runtime-semantics-evaluation)（提供这些上下文的最近封闭函数）中继承这两个值。
+箭头函数的独特之处在于，它们没有自己的 [`arguments`](/blogs/web/javascript/functions#function-calling) 或 [`this`](/blogs/web/javascript/functions/this) 值上下文。相反，它们会从箭头函数的[词法封闭环境](https://262.ecma-international.org/6.0/#sec-arrow-function-definitions-runtime-semantics-evaluation)（提供这些上下文的最近封闭函数）中继承这两个值。
 
 ```javascript
 function myParentFunction(){
@@ -108,7 +108,7 @@ let myInstance =new myParentFunction();
 
 ### 调用箭头函数
 
-箭头函数绑定参数的方式与[其他类型的函数](/web/javascript/functions#function-calling)不同。箭头函数正文中的 `arguments` 对象会从该箭头函数最近的[词法封闭环境](https://262.ecma-international.org/6.0/#sec-arrow-function-definitions-runtime-semantics-evaluation)继承其值：
+箭头函数绑定参数的方式与[其他类型的函数](/blogs/web/javascript/functions#function-calling)不同。箭头函数正文中的 `arguments` 对象会从该箭头函数最近的[词法封闭环境](https://262.ecma-international.org/6.0/#sec-arrow-function-definitions-runtime-semantics-evaluation)继承其值：
 
 ```javascript
 function myFunction(){
@@ -136,7 +136,7 @@ myArrowFunction(true);
 
 ### 立即调用的函数表达式 (IIFE)
 
-立即调用的函数表达式 (IIFE)，有时也称为“自动执行匿名函数”，是一种在定义后立即调用的函数表达式。IIFE 使用通过将函数封装在[分组运算符](/web/javascript/introduction#expressions)中创建的函数表达式。然后，第二个匹配的圆括号会调用函数，要么紧跟在函数定义本身后面，要么紧跟在分组运算符后面。如果您使用的是标准函数，则两种方法之间没有实际区别：
+立即调用的函数表达式 (IIFE)，有时也称为“自动执行匿名函数”，是一种在定义后立即调用的函数表达式。IIFE 使用通过将函数封装在[分组运算符](/blogs/web/javascript/introduction#expressions)中创建的函数表达式。然后，第二个匹配的圆括号会调用函数，要么紧跟在函数定义本身后面，要么紧跟在分组运算符后面。如果您使用的是标准函数，则两种方法之间没有实际区别：
 
 ```javascript
 (function(){
@@ -172,4 +172,4 @@ myArrowFunction(true);
 >"IIFE."
 ```
 
-旧版应用，经常使用 IIFE 来管理范围，特别是使用[函数范围的变量](/web/javascript/data-types/variable#function-scope)和[函数声明](/web/javascript/functions#declarations)来避免污染[全局范围](/web/javascript/data-types/variable#global-scope)。在 ES6 中引入[块作用域](/web/javascript/data-types/variable#block-scope)之前，通常的做法是将整个脚本封装在 IIFE 中，以防止全局作用域造成意外污染。
+旧版应用，经常使用 IIFE 来管理范围，特别是使用[函数范围的变量](/blogs/web/javascript/data-types/variable#function-scope)和[函数声明](/blogs/web/javascript/functions#declarations)来避免污染[全局范围](/blogs/web/javascript/data-types/variable#global-scope)。在 ES6 中引入[块作用域](/blogs/web/javascript/data-types/variable#block-scope)之前，通常的做法是将整个脚本封装在 IIFE 中，以防止全局作用域造成意外污染。

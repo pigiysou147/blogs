@@ -24,7 +24,7 @@ typeofMyClass;
 >"function"
 ```
 
-部分添加的类是为了简化高级 JavaScript 功能的使用，让它更有吸引力，因此有时被称为“语法糖”。不过，类不只是为处理[原型继承](/web/javascript/appendix#prototypal-inheritance)提供有用的简写形式。引入类语法创造了机会，既能解决 JavaScript 中长期存在的设计问题，又不会造成向后兼容性问题。例如，类正文中的所有代码始终在[严格模式](/web/javascript/appendix#strict-mode)下进行评估。
+部分添加的类是为了简化高级 JavaScript 功能的使用，让它更有吸引力，因此有时被称为“语法糖”。不过，类不只是为处理[原型继承](/blogs/web/javascript/appendix#prototypal-inheritance)提供有用的简写形式。引入类语法创造了机会，既能解决 JavaScript 中长期存在的设计问题，又不会造成向后兼容性问题。例如，类正文中的所有代码始终在[严格模式](/blogs/web/javascript/appendix#strict-mode)下进行评估。
 
 如需创建类的实例，请使用 `new` 运算符。
 
@@ -52,7 +52,7 @@ myClassInstance.classMethod();
 >"My class method."
 ```
 
-在类中定义的方法将成为所生成实例原型上的方法。鉴于[原型链](/web/javascript/objects/property-descriptors)的性质，您可以直接对生成的对象调用这些方法：
+在类中定义的方法将成为所生成实例原型上的方法。鉴于[原型链](/blogs/web/javascript/objects/property-descriptors)的性质，您可以直接对生成的对象调用这些方法：
 
 ```javascript
 classMyClass{
@@ -203,7 +203,7 @@ MyVariable.name;
 >"MyClass"
 ```
 
-使用类表达式初始化变量时，系统会按预期遵循该变量的[提升规则](/web/javascript/data-types/variable#hoisting)。类声明遵循[与 `let` 和 `const` 相同的“时间死区”规则](/web/javascript/data-types/variable#hoisting)，并且其行为就像尚未提升到当前范围的顶部一样，这意味着在类声明之前调用类会导致错误：
+使用类表达式初始化变量时，系统会按预期遵循该变量的[提升规则](/blogs/web/javascript/data-types/variable#hoisting)。类声明遵循[与 `let` 和 `const` 相同的“时间死区”规则](/blogs/web/javascript/data-types/variable#hoisting)，并且其行为就像尚未提升到当前范围的顶部一样，这意味着在类声明之前调用类会导致错误：
 
 ```javascript
 {

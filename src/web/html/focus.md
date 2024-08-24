@@ -4,9 +4,9 @@ category: html
 ---
 # 专注
 
-默认情况下，互动元素（包括[表单控件](/web/html/forms)、[链接](/web/html/links)和按钮）可聚焦和按 Tab 键。可 Tab 键的元素是文档依序焦点导航顺序的一部分。其他元素为非活跃元素，这意味着它们不具有互动性。使用 HTML 属性，可以使交互元素具有互动性，也可以使 inert 元素具有互动性。
+默认情况下，互动元素（包括[表单控件](/blogs/web/html/forms)、[链接](/blogs/web/html/links)和按钮）可聚焦和按 Tab 键。可 Tab 键的元素是文档依序焦点导航顺序的一部分。其他元素为非活跃元素，这意味着它们不具有互动性。使用 HTML 属性，可以使交互元素具有互动性，也可以使 inert 元素具有互动性。
 
-**注意 ** ：出于易用性方面的原因，请始终确保用户知道哪个元素具有焦点。添加 CSS [`:focus`](https://developer.mozilla.org/docs/Web/CSS/:focus)、[`:focus-visible`](https://developer.mozilla.org/docs/Web/CSS/:focus-visible) 和 [`:focus-within`](https://developer.mozilla.org/docs/Web/CSS/:focus-within) 样式（可选）。这一点非常重要：[CSS](/web/css/focus) 和[无障碍功能](/web/accessibility/focus)学习路线中都有专门介绍焦点样式的“学习”部分。默认情况下，导航焦点顺序与视觉顺序相同，即源代码顺序。有一些 HTML 属性可以改变这种顺序，CSS 属性可以改变内容的视觉顺序。使用 HTML 更改 Tab 键顺序，或使用 CSS 更改可视呈现顺序可能会影响用户体验。
+**注意 ** ：出于易用性方面的原因，请始终确保用户知道哪个元素具有焦点。添加 CSS [`:focus`](https://developer.mozilla.org/docs/Web/CSS/:focus)、[`:focus-visible`](https://developer.mozilla.org/docs/Web/CSS/:focus-visible) 和 [`:focus-within`](https://developer.mozilla.org/docs/Web/CSS/:focus-within) 样式（可选）。这一点非常重要：[CSS](/blogs/web/css/focus) 和[无障碍功能](/blogs/web/accessibility/focus)学习路线中都有专门介绍焦点样式的“学习”部分。默认情况下，导航焦点顺序与视觉顺序相同，即源代码顺序。有一些 HTML 属性可以改变这种顺序，CSS 属性可以改变内容的视觉顺序。使用 HTML 更改 Tab 键顺序，或使用 CSS 更改可视呈现顺序可能会影响用户体验。
 
 不要使用 CSS 和 HTML 改变感知的和实际的 Tab 键顺序顺序。如以下两个示例所示，标签页顺序与视觉预期顺序不一致，会让用户感到困惑，而且不利于用户体验。
 
@@ -26,11 +26,11 @@ category: html
 
 ### `tabindex` **属性**
 
-[属性](/web/html/attributes#tabindex)中引入的全局 [`tabindex`](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/tabindex) 属性可让原本无法获得焦点的元素获得焦点，这些元素通常使用 Tab 键，因此得名。
+[属性](/blogs/web/html/attributes#tabindex)中引入的全局 [`tabindex`](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/tabindex) 属性可让原本无法获得焦点的元素获得焦点，这些元素通常使用 Tab 键，因此得名。
 
 `tabindex` 属性接受整数值。负值可使元素可聚焦，但不能设为 Tab 键。如果 `tabindex` 值为 `0`，则可将该元素设置为可聚焦和以 Tab 键形式显示，从而将应用了该元素的元素按源代码顺序添加到依序焦点导航顺序。如果值为 1 或更大值，则相应元素可聚焦并可按 Tab 键，但会将其添加到优先按 Tab 键序列序列中，因此，如上文所述，应避免使用它。
 
-在本页面中，分享按钮 `<share-action>` 是一个[自定义元素](/web/html/template)。`tabindex="0"` 会将这个通常无法聚焦的元素添加到键盘的默认 Tab 键顺序中：
+在本页面中，分享按钮 `<share-action>` 是一个[自定义元素](/blogs/web/html/template)。`tabindex="0"` 会将这个通常无法聚焦的元素添加到键盘的默认 Tab 键顺序中：
 
 ```html
 <share-action authors="@front-end.social/@estellevw" data-action="click" data-category="web.dev" data-icon="share" data-label="share, mastodon" role="button" tabindex="0">
@@ -41,7 +41,7 @@ category: html
 </share-action>
 ```
 
-**注意 ** ：[`role="button"`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles/button_role) 会告知屏幕阅读器用户此元素的行为方式应与 [`<button>`](https://developer.mozilla.org/docs/Web/HTML/Element/button) 类似。创建模仿现有语义元素（包括 [ARIA 角色](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles)）的自定义元素是适当且符合预期的。该元素必须提供要复制的元素的所有功能。为此，可以扩展复制的元素（例如扩展 [`HTMLButtonElement`](https://developer.mozilla.org/docs/Web/API/HTMLButtonElement)），或添加 `tabindex="0"` 并使用 JavaScript 对所模仿的元素的所有功能进行编程，包括处理指针事件以及按 Enter 键和空格键的按键操作。如果按钮使用的是 `<button>`（而不是创建自定义元素），那么 `tabindex` 和 `role` 属性就没必要，浏览器会提供指针和键盘事件。此页面上还有另一个自定义元素：[本地导航](/web/html/navigation#local_navigation)有一个自定义元素为负的 `tabindex` 值：
+**注意 ** ：[`role="button"`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles/button_role) 会告知屏幕阅读器用户此元素的行为方式应与 [`<button>`](https://developer.mozilla.org/docs/Web/HTML/Element/button) 类似。创建模仿现有语义元素（包括 [ARIA 角色](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Roles)）的自定义元素是适当且符合预期的。该元素必须提供要复制的元素的所有功能。为此，可以扩展复制的元素（例如扩展 [`HTMLButtonElement`](https://developer.mozilla.org/docs/Web/API/HTMLButtonElement)），或添加 `tabindex="0"` 并使用 JavaScript 对所模仿的元素的所有功能进行编程，包括处理指针事件以及按 Enter 键和空格键的按键操作。如果按钮使用的是 `<button>`（而不是创建自定义元素），那么 `tabindex` 和 `role` 属性就没必要，浏览器会提供指针和键盘事件。此页面上还有另一个自定义元素：[本地导航](/blogs/web/html/navigation#local_navigation)有一个自定义元素为负的 `tabindex` 值：
 
 ```html
 <web-navigation-drawer type="standard" tabindex="-1">
@@ -61,13 +61,13 @@ category: html
 
 ### `contenteditable` **属性**
 
-我们之前讨论了 [`contenteditable`](/web/html/attributes#contenteditable) 属性。在任何元素上设置 `contenteditable="true"` 都会使其可修改、可聚焦，并将成为标签页顺序的一部分。焦点行为与设置 `tabindex="0"` 类似，但并不相同。嵌套的 `contenteditable` 元素可聚焦，但不能按 Tab 键操作。如需使嵌套的 `contenteditable` 元素可标签页，请添加 `tabindex="0"`，这会将其添加到焦点顺序导航顺序中。
+我们之前讨论了 [`contenteditable`](/blogs/web/html/attributes#contenteditable) 属性。在任何元素上设置 `contenteditable="true"` 都会使其可修改、可聚焦，并将成为标签页顺序的一部分。焦点行为与设置 `tabindex="0"` 类似，但并不相同。嵌套的 `contenteditable` 元素可聚焦，但不能按 Tab 键操作。如需使嵌套的 `contenteditable` 元素可标签页，请添加 `tabindex="0"`，这会将其添加到焦点顺序导航顺序中。
 
 ## 让互动元素成为焦点
 
 ### `autofocus` **属性**
 
-虽然布尔值 [`autofocus`](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/autofocus) 是可以对任何元素设置的全局属性，但它并不能使 inert 元素具有互动性。网页加载时，设置了 `autofocus` 属性的第一个可聚焦元素就会获得焦点，前提是该元素已显示且未嵌套在 [`<dialog>`](/web/html/dialog) 中。
+虽然布尔值 [`autofocus`](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/autofocus) 是可以对任何元素设置的全局属性，但它并不能使 inert 元素具有互动性。网页加载时，设置了 `autofocus` 属性的第一个可聚焦元素就会获得焦点，前提是该元素已显示且未嵌套在 [`<dialog>`](/blogs/web/html/dialog) 中。
 
 自动将焦点置于内容上可能会让人感到困惑。对表单控件设置 `autofocus` 意味着表单控件会在网页加载时滚动到用户视野范围内。所有用户（包括屏幕阅读器用户和使用小视口的用户）可能看不到表单说明，甚至可能滚动过表单控件正常可见的标签。`autofocus` 属性不会更改文档的顺序焦点导航顺序。系统会跳过自动聚焦元素之前的序列中的元素。因此，不建议添加 `autofocus` 属性。
 
@@ -109,8 +109,8 @@ category: html
 
 向某个元素添加 `inert` 全局布尔值属性后，该元素和所有嵌套内容（既不可点击，也不能按 Tab 键操作）会被停用，并且会从无障碍功能树中移除。虽然 `inert` 可应用于任何元素，但通常用于内容版块，例如屏幕外或其他隐藏内容。
 
-将 `disabled` 应用于表单控件时，浏览器会提供默认样式，并且可以使用 [`:disabled`](https://developer.mozilla.org/docs/Web/CSS/:disabled) 伪类来设置样式。`inert` 属性不提供视觉指示符，也没有匹配的伪类（尽管 `[inert]` [属性选择器](/web/css/selectors#attribute_selector)一致）。
+将 `disabled` 应用于表单控件时，浏览器会提供默认样式，并且可以使用 [`:disabled`](https://developer.mozilla.org/docs/Web/CSS/:disabled) 伪类来设置样式。`inert` 属性不提供视觉指示符，也没有匹配的伪类（尽管 `[inert]` [属性选择器](/blogs/web/css/selectors#attribute_selector)一致）。
 
 对可见内容使用 `inert` 而不用样式指示闲置性，这可能会导致用户体验不佳。由于 inert 内容无法供屏幕阅读器用户获取，因此当视力正常的屏幕阅读器用户在屏幕上看到无障碍工具无法获取的内容时，可能会导致混淆。通过 CSS 使惯性变得非常明显。
 
-确保焦点绝不会移至不可见的内容。对于呈现在屏幕之外且在获得焦点时不会自动进入用户视野的任何内容，应设置为“惯性”。如果内容处于隐藏状态，但在聚焦时进入用户视野范围内（例如本页上的[“跳至内容”链接](/web/html/navigation#skip_to_content_link)），则无需将其设为过时。
+确保焦点绝不会移至不可见的内容。对于呈现在屏幕之外且在获得焦点时不会自动进入用户视野的任何内容，应设置为“惯性”。如果内容处于隐藏状态，但在聚焦时进入用户视野范围内（例如本页上的[“跳至内容”链接](/blogs/web/html/navigation#skip_to_content_link)），则无需将其设为过时。

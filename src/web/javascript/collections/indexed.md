@@ -15,7 +15,7 @@ tag:
 
 ### 创建数组
 
-与基元数据类型一样，您可以通过两种方式创建数组：将其作为数组字面量，或者使用 `new Array()` 调用 JavaScript 的内置 `Array()` 构造函数。为变量分配数组提供了一种高度可移植和[可迭代](/web/javascript/control-flow#iterators)的方式来为单个标识符分配多个值。
+与基元数据类型一样，您可以通过两种方式创建数组：将其作为数组字面量，或者使用 `new Array()` 调用 JavaScript 的内置 `Array()` 构造函数。为变量分配数组提供了一种高度可移植和[可迭代](/blogs/web/javascript/control-flow#iterators)的方式来为单个标识符分配多个值。
 
 数组字面量语法使用一组方括号 (`[]`) 括住零个或多个以英文逗号分隔的数据值：
 
@@ -76,7 +76,7 @@ myArray;
 >Array(4)[true,<1 empty slot>,true,false]
 ```
 
-尽管空槽在任何上下文中都没有被视为有意义的值，但仍会计入数组的总长度，因此在[迭代](/web/javascript/control-flow#loops)数组值时可能会导致意外结果：
+尽管空槽在任何上下文中都没有被视为有意义的值，但仍会计入数组的总长度，因此在[迭代](/blogs/web/javascript/control-flow#loops)数组值时可能会导致意外结果：
 
 ```javascript
 const myArray =[1,,3,4];
@@ -95,7 +95,7 @@ for(const myValue of myArray ){
 
 此行为受 JavaScript 最早的一些设计决策的影响。避免在现代开发中使用稀疏数组。
 
-与基元一样，数组字面量会[继承其相应构造函数的属性和方法](/web/javascript/appendix#prototypal-inheritance)。由于数组是特殊形式的对象，因此数组字面量语法和 `new Array()` 语法会创建功能相同的结果：即从 `Array` 构造函数继承其原型的对象。
+与基元一样，数组字面量会[继承其相应构造函数的属性和方法](/blogs/web/javascript/appendix#prototypal-inheritance)。由于数组是特殊形式的对象，因此数组字面量语法和 `new Array()` 语法会创建功能相同的结果：即从 `Array` 构造函数继承其原型的对象。
 
 ```javascript
 const arrayLiteral =[];
@@ -163,7 +163,7 @@ myArray[9];
 
 ### 解构分配
 
-解构赋值是从数组或[对象](/web/javascript/objects)中提取一系列值并将其分配给一组标识符的简洁方法，此过程有时称为“解包”原始数据结构，但它不会修改原始数组或对象。
+解构赋值是从数组或[对象](/blogs/web/javascript/objects)中提取一系列值并将其分配给一组标识符的简洁方法，此过程有时称为“解包”原始数据结构，但它不会修改原始数组或对象。
 
 解构赋值使用类似于数组或对象的标识符列表来跟踪值。最简单形式称为“绑定模式”解构，每个值都会从数组或对象解包，并分配给相应的变量，并使用 `let` 或 `const`（或 `var`）进行初始化：
 
@@ -263,7 +263,7 @@ secondValue;
 >"Default string."
 ```
 
-解构不会将值强制转换为特定类型。这意味着，[&#34;falsy&#34;](/web/javascript/comparison#truthy-falsy) 值（例如空字符串 [`""`] 或 `null`）仍被视为有意义的解构值：
+解构不会将值强制转换为特定类型。这意味着，[&#34;falsy&#34;](/blogs/web/javascript/comparison#truthy-falsy) 值（例如空字符串 [`""`] 或 `null`）仍被视为有意义的解构值：
 
 ```javascript
 const myArray =[false,null,0,"",,undefined];
@@ -373,7 +373,7 @@ myMergedObj;
 >Object{ myProperty:true, additionalProperty:true}
 ```
 
-散布运算符会创建“浅”副本。这意味着它不会复制原始对象的原型设计和[非枚举](/web/javascript/objects/property-descriptors)属性。
+散布运算符会创建“浅”副本。这意味着它不会复制原始对象的原型设计和[非枚举](/blogs/web/javascript/objects/property-descriptors)属性。
 
 ```javascript
 const myCustomPrototype ={ protoProp:"My prototype."};
@@ -405,7 +405,7 @@ myNewObj;
 
 #### REST 运算符
 
-虽然运算符本身的语法相同，但其余运算符 (`...`) 会根据其使用的上下文执行相反的函数。REST 运算符会将多个元素组合成一个可迭代数据结构，而不是像[解构赋值](/web/javascript/collections/indexed#destructuring-assignment)中那样将可迭代数据结构扩展为单个元素或作为[函数参数](/web/javascript/functions)这样做。这个名称的意义在于，它用于收集一组数据值的“其余内容”。
+虽然运算符本身的语法相同，但其余运算符 (`...`) 会根据其使用的上下文执行相反的函数。REST 运算符会将多个元素组合成一个可迭代数据结构，而不是像[解构赋值](/blogs/web/javascript/collections/indexed#destructuring-assignment)中那样将可迭代数据结构扩展为单个元素或作为[函数参数](/blogs/web/javascript/functions)这样做。这个名称的意义在于，它用于收集一组数据值的“其余内容”。
 
 与解构分配一起使用时，该语法称为“rest 属性”语法。
 
@@ -424,7 +424,7 @@ remainingElements;
 >Array(3)["Third","Fourth","Fifth"]
 ```
 
-该语法用于[为函数提供无限数量的参数](/web/javascript/control-flow#iterators)时，称为“rest 参数”语法：
+该语法用于[为函数提供无限数量的参数](/blogs/web/javascript/control-flow#iterators)时，称为“rest 参数”语法：
 
 ```javascript
 function myFunction(...myParameters ){
@@ -449,4 +449,4 @@ myFunction(10,11,25);
 
 *类型化数组*是一项 ES6 功能，旨在存储结构化二进制数据，例如在处理上传的文件或 WebGL 时。
 
-与[符号](/web/javascript/data-types/symbol)一样，`%TypedArray%`  *固有函数* （通常记录为 `%TypedArray%` 或 `@@TypedArray`，因此不会被误认为全局属性）不是传统意义上的构造函数函数，您无法使用 `new` 调用该函数或直接调用它。相反，`%TypedArray%` 是指各个构造函数的父父类，每个构造函数都使用特定的二进制数据格式。固有 `%TypedArray%` 父类提供了所有 `%TypedArray%` 构造函数子类及其实例都会继承的属性和实用程序方法。
+与[符号](/blogs/web/javascript/data-types/symbol)一样，`%TypedArray%`  *固有函数* （通常记录为 `%TypedArray%` 或 `@@TypedArray`，因此不会被误认为全局属性）不是传统意义上的构造函数函数，您无法使用 `new` 调用该函数或直接调用它。相反，`%TypedArray%` 是指各个构造函数的父父类，每个构造函数都使用特定的二进制数据格式。固有 `%TypedArray%` 父类提供了所有 `%TypedArray%` 构造函数子类及其实例都会继承的属性和实用程序方法。

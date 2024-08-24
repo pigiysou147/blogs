@@ -66,7 +66,7 @@ bookmark_border
 </picture>
 ```
 
-当然，如果图片的比例因所选 `<source>` 元素而异，就会引发性能问题：`<img>` 仅支持单个 `width` 和 `height` 属性，但[省略这些属性可能会导致用户体验明显下降](/web/images/prescriptive##)。为了说明这一点，在 HTML 规范的基础上，[相对新近](https://github.com/whatwg/html/pull/5894)但[得到了很好的支持](https://developer.mozilla.org/docs/Web/HTML/Element/source#browser_compatibility)，允许对 `<source>` 元素使用 `height` 和 `width` 属性。这些调整可以减少布局偏移，就像在 `<img>` 上一样，并在布局中为选择的任何 `<source>` 元素预留适当的空间。
+当然，如果图片的比例因所选 `<source>` 元素而异，就会引发性能问题：`<img>` 仅支持单个 `width` 和 `height` 属性，但[省略这些属性可能会导致用户体验明显下降](/blogs/web/images/prescriptive##)。为了说明这一点，在 HTML 规范的基础上，[相对新近](https://github.com/whatwg/html/pull/5894)但[得到了很好的支持](https://developer.mozilla.org/docs/Web/HTML/Element/source#browser_compatibility)，允许对 `<source>` 元素使用 `height` 和 `width` 属性。这些调整可以减少布局偏移，就像在 `<img>` 上一样，并在布局中为选择的任何 `<source>` 元素预留适当的空间。
 
 ```html
 <picture>
@@ -99,7 +99,7 @@ bookmark_border
 
 借助 `type` 属性，您可以使用 `<picture>` 元素的单一请求决策引擎，仅向支持这些格式的浏览器提供图片格式。
 
-正如您在[图片格式和压缩](/web/images/avif#browser_support)中所学的，浏览器无法解析的编码甚至无法被识别为图片数据。
+正如您在[图片格式和压缩](/blogs/web/images/avif#browser_support)中所学的，浏览器无法解析的编码甚至无法被识别为图片数据。
 
 在引入 `<picture>` 元素之前，用于提供新图片格式的最可行前端解决方案要求浏览器先请求并尝试解析图片文件，然后再确定是否舍弃该文件并加载后备图片。一个常见的示例是包含以下几行的脚本：
 

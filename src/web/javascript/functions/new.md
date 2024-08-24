@@ -28,7 +28,7 @@ myObject.myProperty;
 >true
 ```
 
-构造函数函数中 [`this`](/web/javascript/functions/this) 的值引用正在创建的对象，以便在创建对象时使用属性和方法填充该对象。这样就可以创建包含数据值的对象，以及作为单个便携单元对这些数据执行操作所需的任何方法，这一概念称为“封装”：
+构造函数函数中 [`this`](/blogs/web/javascript/functions/this) 的值引用正在创建的对象，以便在创建对象时使用属性和方法填充该对象。这样就可以创建包含数据值的对象，以及作为单个便携单元对这些数据执行操作所需的任何方法，这一概念称为“封装”：
 
 ```javascript
 functionMyFunction( myArgument ){
@@ -44,7 +44,7 @@ myObject.doubleMyValue();
 >20
 ```
 
-[`this`](/web/javascript/functions/this) 是指函数的当前执行上下文，这意味着构造函数函数与任何其他函数遵循相同的 `this` 值规则。例如，某个用作构造函数的函数在独立调用时会对 `this` 的值使用[全局绑定](/web/javascript/functions/this#global-binding)：
+[`this`](/blogs/web/javascript/functions/this) 是指函数的当前执行上下文，这意味着构造函数函数与任何其他函数遵循相同的 `this` 值规则。例如，某个用作构造函数的函数在独立调用时会对 `this` 的值使用[全局绑定](/blogs/web/javascript/functions/this#global-binding)：
 
 ```javascript
 functionMyFunction(){
@@ -66,7 +66,7 @@ MyFunction();// Global `this` binding outside of strict mode is `globalThis`
 >undefined
 ```
 
-按照 JavaScript 的内置工厂函数建立的命名模式，构造函数标识符的第一个字符通常采用大写形式。虽然您有时会看到这两个术语可以互换使用，但构造函数函数（用于在使用 `new` 关键字调用时对新构造的对象执行操作的函数）与“工厂函数”不同，“工厂函数”在正常调用时会明确 [`return`](/web/javascript/functions/return) 一个对象：
+按照 JavaScript 的内置工厂函数建立的命名模式，构造函数标识符的第一个字符通常采用大写形式。虽然您有时会看到这两个术语可以互换使用，但构造函数函数（用于在使用 `new` 关键字调用时对新构造的对象执行操作的函数）与“工厂函数”不同，“工厂函数”在正常调用时会明确 [`return`](/blogs/web/javascript/functions/return) 一个对象：
 
 ```javascript
 function myFunction( myArgument =false){
@@ -78,4 +78,4 @@ myObject;
 >Object{ myProperty:true}
 ```
 
-虽然基本原则相同，但 ES6 中引入的功能更完善的 [Class](/web/javascript/classes) 语法更适合自定义构造函数函数的用例
+虽然基本原则相同，但 ES6 中引入的功能更完善的 [Class](/blogs/web/javascript/classes) 语法更适合自定义构造函数函数的用例

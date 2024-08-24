@@ -49,7 +49,7 @@ Symbol("My symbol.")===Symbol("My symbol.");
 >false
 ```
 
-与其他原始数据类型一样，符号会继承其 [prototype](/web/javascript/appendix#prototypal-inheritance) 的方法和属性。例如，您可以将说明作为已创建符号的继承属性进行访问：
+与其他原始数据类型一样，符号会继承其 [prototype](/blogs/web/javascript/appendix#prototypal-inheritance) 的方法和属性。例如，您可以将说明作为已创建符号的继承属性进行访问：
 
 ```javascript
 let mySymbol =Symbol("My symbol.");

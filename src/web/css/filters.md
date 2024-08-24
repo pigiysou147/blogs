@@ -138,7 +138,7 @@ category: css
 
 <BrowseSurport code="css.types.filter-function.hue-rotate" />
 
-您在[颜色课程](/web/css/color)中了解了 `hsl` 中的色调如何引用色轮的旋转，而此滤镜的工作原理与此相似。如果您传递某个角度（如度数或旋转），它会改变所有元素颜色的色调，从而改变引用的色轮部分。如果不传递任何参数，则不会执行任何操作。
+您在[颜色课程](/blogs/web/css/color)中了解了 `hsl` 中的色调如何引用色轮的旋转，而此滤镜的工作原理与此相似。如果您传递某个角度（如度数或旋转），它会改变所有元素颜色的色调，从而改变引用的色轮部分。如果不传递任何参数，则不会执行任何操作。
 
 ```css
 .my-element {   
@@ -162,7 +162,7 @@ category: css
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/PoWQrJr?height=450&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上由 web-dot-dev 开发的 Pen PoWQrJr" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 450px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-如需详细了解不同类型的阴影，请参阅 [shadows](/web/css/shadows) 模块。
+如需详细了解不同类型的阴影，请参阅 [shadows](/blogs/web/css/shadows) 模块。
 
 ### `url`
 

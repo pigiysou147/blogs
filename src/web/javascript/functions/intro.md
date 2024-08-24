@@ -7,7 +7,7 @@ tag:
 ---
 # 函数
 
-函数是一个可重复使用的模块化语句块，用于执行一组相关任务，例如根据提供给函数的实参计算和返回值。与[所有非原始值](/web/javascript/objects)一样，函数也是对象。它们是具有唯一性的对象，因为您可以调用它们来执行代码、以参数形式传递数据以及返回值。[return](/web/javascript/functions/return)
+函数是一个可重复使用的模块化语句块，用于执行一组相关任务，例如根据提供给函数的实参计算和返回值。与[所有非原始值](/blogs/web/javascript/objects)一样，函数也是对象。它们是具有唯一性的对象，因为您可以调用它们来执行代码、以参数形式传递数据以及返回值。[return](/blogs/web/javascript/functions/return)
 
 函数被视为“第一类”对象，这意味着尽管它们的行为独特，但其可在与任何其他 JavaScript 对象相同的上下文中使用。例如，可以将函数赋值给变量，作为参数传递给其他函数，并由其他函数返回。
 
@@ -17,11 +17,11 @@ function myFunction(){
 };
 ```
 
-定义为[对象](/web/javascript/objects)属性的函数通常称为“方法”。与[使用 `var` 声明的变量](/web/javascript/data-types/variable)一样，在封闭函数之外进行的函数声明会作为方法添加到[全局对象](/web/javascript/data-types/variable#global-scope)中。
+定义为[对象](/blogs/web/javascript/objects)属性的函数通常称为“方法”。与[使用 `var` 声明的变量](/blogs/web/javascript/data-types/variable)一样，在封闭函数之外进行的函数声明会作为方法添加到[全局对象](/blogs/web/javascript/data-types/variable#global-scope)中。
 
 ## 函数声明
 
-函数声明（也称为“函数语句”或“函数定义”）会创建一个命名函数，该函数可在其包含作用域内的其他位置调用。函数声明包含后跟一个标识符的 `function` 关键字、括在圆括号中的一系列以英文逗号分隔的参数，以及一个名为“函数正文”的[块语句](/web/javascript/introduction#block-statements)。您经常会遇到不以分号结尾的函数声明；由于函数声明是一种语句，因此 [ASI](/web/javascript/appendix#ASI) 可以推断出结尾的分号。
+函数声明（也称为“函数语句”或“函数定义”）会创建一个命名函数，该函数可在其包含作用域内的其他位置调用。函数声明包含后跟一个标识符的 `function` 关键字、括在圆括号中的一系列以英文逗号分隔的参数，以及一个名为“函数正文”的[块语句](/blogs/web/javascript/introduction#block-statements)。您经常会遇到不以分号结尾的函数声明；由于函数声明是一种语句，因此 [ASI](/blogs/web/javascript/appendix#ASI) 可以推断出结尾的分号。
 
 ```javascript
 function myFunction(){
@@ -32,7 +32,7 @@ myFunction();
 >"This is my function."
 ```
 
-作为受 JavaScript 早期设计决策的延续，函数声明与使用 `var` 声明的变量具有相同的旧版“提升”行为，这意味着函数声明会提升到其作用域顶部，并且可在声明之前调用，因此无论该范围是否受[严格模式](/web/javascript/appendix#strict-mode)控制：
+作为受 JavaScript 早期设计决策的延续，函数声明与使用 `var` 声明的变量具有相同的旧版“提升”行为，这意味着函数声明会提升到其作用域顶部，并且可在声明之前调用，因此无论该范围是否受[严格模式](/blogs/web/javascript/appendix#strict-mode)控制：
 
 ```javascript
 "use strict";
@@ -45,7 +45,7 @@ myFunction();
 >"This is my function."
 ```
 
-在[严格模式](/web/javascript/appendix#strict-mode)之外，函数声明会使用 JavaScript 的旧版[限定范围](/web/javascript/data-types/variable#scope)行为，这意味着函数声明的作用域限定为其最接近的封闭函数：
+在[严格模式](/blogs/web/javascript/appendix#strict-mode)之外，函数声明会使用 JavaScript 的旧版[限定范围](/blogs/web/javascript/data-types/variable#scope)行为，这意味着函数声明的作用域限定为其最接近的封闭函数：
 
 ```javascript
 function myFunction(){
@@ -62,7 +62,7 @@ myNestedFunction();
 >UncaughtReferenceError: myNestedFunction isnotdefined
 ```
 
-在[严格模式](/web/javascript/appendix#strict-mode)下，函数声明的作用域限定为最接近的封闭块，就像使用 `let` 或 `const` 声明的变量一样：
+在[严格模式](/blogs/web/javascript/appendix#strict-mode)下，函数声明的作用域限定为最接近的封闭块，就像使用 `let` 或 `const` 声明的变量一样：
 
 ```javascript
 "use strict";
@@ -138,7 +138,7 @@ myFunction();
 >"The value is: omitted."
 ```
 
-[非箭头](/web/javascript/functions/function-expressions#arrow-functions)函数的正文还可以访问零索引、类似于[数组](/web/javascript/collections/indexed#array)的 `arguments` 对象，该对象包含任何作为实参传递的值，无论函数定义是否指定了形参：
+[非箭头](/blogs/web/javascript/functions/function-expressions#arrow-functions)函数的正文还可以访问零索引、类似于[数组](/blogs/web/javascript/collections/indexed#array)的 `arguments` 对象，该对象包含任何作为实参传递的值，无论函数定义是否指定了形参：
 
 ```javascript
 function myFunction(){
@@ -166,7 +166,7 @@ myFunction("My first string","My second string","my third string");\
 >"My first string - My second string - my third string - "
 ```
 
-但是，在现代 JavaScript 开发中，这种可变函数的方法很少使用。更常见的做法是，使用更现代、更易读的 [rest 参数语法](/web/javascript/collections/indexed#rest-operator)，该语法会创建一个初始化为数组的命名参数，其中包含除明确指定的参数以外的任何参数：
+但是，在现代 JavaScript 开发中，这种可变函数的方法很少使用。更常见的做法是，使用更现代、更易读的 [rest 参数语法](/blogs/web/javascript/collections/indexed#rest-operator)，该语法会创建一个初始化为数组的命名参数，其中包含除明确指定的参数以外的任何参数：
 
 ```javascript
 function myFunction( mySeparator,...myStrings ){

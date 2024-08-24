@@ -6,7 +6,7 @@ tags:
 ---
 # Web Worker 的具体用例
 
-**试试看** ：本部分依靠 [Glitch 演示](https://exif-worker.glitch.me/)来说明如何使用 Web 工作器将工作从主线程分流到单独的线程。赶快去看看吧！在上一个单元中，我们概述了 [Web 工作器](/web/performance/web-worker-overview)。Web 工作器可以将 JavaScript 从主线程移到单独的网络工作器线程，以此来提高输入响应速度。当您的工作不需要直接访问主线程时，这有助于改善网站的 [Interaction to Next Paint (INP)](https://web.dev/articles/inp)。不过，仅有概览是不够的，本单元还将介绍 Web 工作器的具体用例。
+**试试看** ：本部分依靠 [Glitch 演示](https://exif-worker.glitch.me/)来说明如何使用 Web 工作器将工作从主线程分流到单独的线程。赶快去看看吧！在上一个单元中，我们概述了 [Web 工作器](/blogs/web/performance/web-worker-overview)。Web 工作器可以将 JavaScript 从主线程移到单独的网络工作器线程，以此来提高输入响应速度。当您的工作不需要直接访问主线程时，这有助于改善网站的 [Interaction to Next Paint (INP)](https://web.dev/articles/inp)。不过，仅有概览是不够的，本单元还将介绍 Web 工作器的具体用例。
 
 例如，网站需要从图片中去除 [Exif 元数据](https://en.wikipedia.org/wiki/Exif)，这并不是一个遥不可及的概念。事实上，Flickr 等网站为用户提供了查看 Exif 元数据的一种方法，用于了解有关其托管图片的技术细节，例如色深、相机品牌和型号以及其他数据。
 

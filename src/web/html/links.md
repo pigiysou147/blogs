@@ -10,7 +10,7 @@ category: html
 
 `<a>` 锚标记与 `href` 属性一起创建超链接。链接是互联网的支柱。[第一个网页](http://info.cern.ch/hypertext/WWW/TheProject.html)包含 25 个链接，上面写着“有关 W3 的所有在线内容都直接或间接链接到此文档”。网上的所有关于 W3 的内容也有直接或间接来自本文档的链接！
 
-自 Tim Berners-Lee 在 1991 年 8 月发布第一篇说明以来，网络的力量和 `<a>` 标记显著增长。链接表示两项资源之间的连接，其中一项资源就是当前文档。[`<a>`](https://developer.mozilla.org/docs/Web/HTML/Element/a)、[`<area>`](https://developer.mozilla.org/docs/Web/HTML/Element/area)、[`<form>`](https://developer.mozilla.org/docs/Web/HTML/Element/form) 和 [`<link>`](https://developer.mozilla.org/docs/Web/HTML/Element/link) 可以创建链接。您已了解 [`<link>`](/web/html/document-structure#other_uses_of_the_link_element)，将在单独的部分中发现各种[表单](/web/html/forms)。我们还提供了完整的[表单学习部分](/web/forms/form)。在本课中，您将了解并不那么简单的单字母 `<a>` 标记。
+自 Tim Berners-Lee 在 1991 年 8 月发布第一篇说明以来，网络的力量和 `<a>` 标记显著增长。链接表示两项资源之间的连接，其中一项资源就是当前文档。[`<a>`](https://developer.mozilla.org/docs/Web/HTML/Element/a)、[`<area>`](https://developer.mozilla.org/docs/Web/HTML/Element/area)、[`<form>`](https://developer.mozilla.org/docs/Web/HTML/Element/form) 和 [`<link>`](https://developer.mozilla.org/docs/Web/HTML/Element/link) 可以创建链接。您已了解 [`<link>`](/blogs/web/html/document-structure#other_uses_of_the_link_element)，将在单独的部分中发现各种[表单](/blogs/web/html/forms)。我们还提供了完整的[表单学习部分](/blogs/web/forms/form)。在本课中，您将了解并不那么简单的单字母 `<a>` 标记。
 
 ## `href` **属性**
 
@@ -28,7 +28,7 @@ category: html
 
 相对网址不包含协议或域名。它们与当前文件是“相对”的。MLW 是一个单页网站，但这个 HTML 系列包含多个版块。为了从此页面链接到属性课程，请使用相对网址 `<a href="../attributes/">Attributes</a>`。
 
-第二个链接只是一个[链接片段标识符](/web/html/attributes#link_fragment_identifier)，它会在当前网页上通过 `id="teachers",` 链接到该元素（如果有）。浏览器还支持两个“页首”链接：点击 `<a href="#top">Top</a>`（不区分大小写）或直接点击 `<a href="#">Top</a>` 会将用户滚动到页面顶部，除非存在 ID 为 `top` 的元素且大小写相同。
+第二个链接只是一个[链接片段标识符](/blogs/web/html/attributes#link_fragment_identifier)，它会在当前网页上通过 `id="teachers",` 链接到该元素（如果有）。浏览器还支持两个“页首”链接：点击 `<a href="#top">Top</a>`（不区分大小写）或直接点击 `<a href="#">Top</a>` 会将用户滚动到页面顶部，除非存在 ID 为 `top` 的元素且大小写相同。
 
 MLW 是一个相当长的文档。要保存滚动设置，您可以从“#Teachers”部分的底部添加回顶部的链接：
 
@@ -68,7 +68,7 @@ MLW 是一个相当长的文档。要保存滚动设置，您可以从“#Teache
 
 ## 浏览上下文
 
-借助 `target` 属性定义链接导航（和[表单提交](/web/html/forms)）的浏览上下文。我们通过 [`<base>`](/web/html/document-structure#base) 元素讨论了四个不区分大小写、带下划线的关键字。它们包含默认的 `_self`（即当前窗口）、`_blank`（在新标签页中打开链接）、`_parent`（如果当前链接嵌套在对象或 iframe 中，则为父级）和 `_top`（最顶层的祖先实体），在当前链接深层嵌套时尤其有用。如果链接未嵌套，则 `_top` 和 `_parent` 与 `_self` 相同。`target` 属性不限于以下四个关键术语：可以使用任何术语。
+借助 `target` 属性定义链接导航（和[表单提交](/blogs/web/html/forms)）的浏览上下文。我们通过 [`<base>`](/blogs/web/html/document-structure#base) 元素讨论了四个不区分大小写、带下划线的关键字。它们包含默认的 `_self`（即当前窗口）、`_blank`（在新标签页中打开链接）、`_parent`（如果当前链接嵌套在对象或 iframe 中，则为父级）和 `_top`（最顶层的祖先实体），在当前链接深层嵌套时尤其有用。如果链接未嵌套，则 `_top` 和 `_parent` 与 `_self` 相同。`target` 属性不限于以下四个关键术语：可以使用任何术语。
 
 每个浏览上下文（基本上是每个浏览器标签页）都有一个浏览上下文名称。链接可以在当前标签页、新的未命名标签页或新的或现有的已命名标签页中打开链接。默认情况下，名称为空字符串。如需在新标签页中打开链接，用户可以右键点击并选择“在新标签页中打开”。开发者可以通过添加 `target="_blank"` 来强制执行此操作。
 
@@ -78,7 +78,7 @@ MLW 是一个相当长的文档。要保存滚动设置，您可以从“#Teache
 
 如果您不希望“蜘蛛”程序跟踪该链接，则可以添加 `nofollow` 关键字。您可以添加 `external` 值来指示链接指向外部网址，而不是当前网域中的网页。`help` 关键字表示超链接将提供上下文相关帮助。将鼠标悬停在包含此 `rel` 值的链接上，系统会显示帮助光标，而不是普通的指针光标。 请勿仅为了获取帮助游标而使用此值，而应使用 CSS [`cursor` 属性](https://developer.mozilla.org/docs/Web/CSS/cursor)。`prev` 和 `next` 值可用于指向系列中上一个和下一个文档的链接。
 
-与 [`<link rel="alternative">`](/web/html/document-structure#alternate_versions_of_the_site) 类似，`<a rel="alternative">` 的含义取决于其他属性。RSS Feed 替代项也将包含 `type="application/rss+xml"` 或 `type="application/atom+xml`，其他格式将包含 `type` 属性，而翻译将包含 `hreflang` 属性。如果起始标记和结束标记之间的内容使用的是主文档语言以外的语言，请添加 `lang` 属性。 如果超链接文档的语言使用其他语言，请添加 `hreflang` 属性。
+与 [`<link rel="alternative">`](/blogs/web/html/document-structure#alternate_versions_of_the_site) 类似，`<a rel="alternative">` 的含义取决于其他属性。RSS Feed 替代项也将包含 `type="application/rss+xml"` 或 `type="application/atom+xml`，其他格式将包含 `type` 属性，而翻译将包含 `hreflang` 属性。如果起始标记和结束标记之间的内容使用的是主文档语言以外的语言，请添加 `lang` 属性。 如果超链接文档的语言使用其他语言，请添加 `hreflang` 属性。
 
 在此示例中，我们将翻译后网页的网址添加为 `href` 的值，rel="alternate" 以表明这是网站的备用版本；`hreflang` 属性提供翻译的语言：
 

@@ -38,7 +38,7 @@ myVariable;
 >4
 ```
 
-语句必须以英文分号结尾，才能得到正确解释。但是，在编写 JavaScript 时，这些分号并非始终是必需的。借助一项名为[自动分号插入](/web/javascript/appendix#ASI)的功能，如果缺少分号会导致错误，系统会将完整语句后面的换行符视为分号。
+语句必须以英文分号结尾，才能得到正确解释。但是，在编写 JavaScript 时，这些分号并非始终是必需的。借助一项名为[自动分号插入](/blogs/web/javascript/appendix#ASI)的功能，如果缺少分号会导致错误，系统会将完整语句后面的换行符视为分号。
 
 ASI 是纠错，并不是 JavaScript 本身许可的一个方面。由于过于依赖这种纠错可能会导致歧义，进而破坏代码，因此您仍应手动在每个语句结尾处添加英文分号。
 
@@ -46,7 +46,7 @@ ASI 是纠错，并不是 JavaScript 本身许可的一个方面。由于过于�
 
 代码块语句会将任意数量的语句和声明组合到一对大括号 (`{}`) 中。借助它，您可以在 JavaScript 只希望使用一个语句的位置组合语句。
 
-您将最常看到块语句以及[控制流](/web/javascript/control-flow)语句，例如 `if`：
+您将最常看到块语句以及[控制流](/blogs/web/javascript/control-flow)语句，例如 `if`：
 
 ```javascript
 if( x ===2){
@@ -63,7 +63,7 @@ if( x ===2){
 >4
 ```
 
-“分组运算符”是匹配的一对外括号，用于对表达式的各个部分进行分组，以确保将表达式的一部分作为一个单元进行评估。例如，您可以使用分组运算符来[override the mathematical order of operations](/web/javascript/data-types/number#operators)，或提高代码的可读性：
+“分组运算符”是匹配的一对外括号，用于对表达式的各个部分进行分组，以确保将表达式的一部分作为一个单元进行评估。例如，您可以使用分组运算符来[override the mathematical order of operations](/blogs/web/javascript/data-types/number#operators)，或提高代码的可读性：
 
 ```javascript
 2+2*4;
@@ -80,7 +80,7 @@ myVariable;
 
 ### 弱输入
 
-JavaScript 是一种弱类型语言，这意味着不需要将数据值明确标记为特定[数据类型](/web/javascript/data-types)。与强类型语言不同，JavaScript 可以从值的上下文推断出预期类型，并将值转换为该类型。此过程称为 *类型强制转换* 。
+JavaScript 是一种弱类型语言，这意味着不需要将数据值明确标记为特定[数据类型](/blogs/web/javascript/data-types)。与强类型语言不同，JavaScript 可以从值的上下文推断出预期类型，并将值转换为该类型。此过程称为 *类型强制转换* 。
 
 例如，如果您使用强类型语言（如 Python）向字符串值添加数字，则结果会出现错误：
 
@@ -168,7 +168,7 @@ let           x                             =           
 
 [ **令牌** ：`[let]` `[x]` `[=]` `[2]` ]
 
-换行也是如此，但在某些情况下，换行符可能会因[过早结束语句](/web/javascript/appendix#ASI)而引起问题：
+换行也是如此，但在某些情况下，换行符可能会因[过早结束语句](/blogs/web/javascript/appendix#ASI)而引起问题：
 
 ```javascript
 let x

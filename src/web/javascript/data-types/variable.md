@@ -39,7 +39,7 @@ tag:
 let camelCasedIdentifier =true;
 ```
 
-某些项目会根据上下文和数据性质使用其他命名惯例。例如，[类](/web/javascript/classes)的第一个字母通常大写，因此多词类名称通常使用驼峰式大小写的变体，通常称为“大驼峰式大小写”或 [Pascal](https://en.wikipedia.org/wiki/Pascal_(programming_language)) 大小写。
+某些项目会根据上下文和数据性质使用其他命名惯例。例如，[类](/blogs/web/javascript/classes)的第一个字母通常大写，因此多词类名称通常使用驼峰式大小写的变体，通常称为“大驼峰式大小写”或 [Pascal](https://en.wikipedia.org/wiki/Pascal_(programming_language)) 大小写。
 
 ```javascript
 classMyClass{
@@ -51,7 +51,7 @@ classMyClass{
 
 标识符不应过于具体地说明其包含的数据，因为其值可能会根据脚本对数据执行操作的方式或未来维护人员所做的决定而发生变化。例如，在项目中最初指定标识符 `miles` 的变量可能需要更改为以公里为单位的值，这需要维护人员更改对该变量的任何引用，以免将来出现混淆。为防止出现这种情况，请改用 `distance` 作为标识符。
 
-JavaScript 不会为以下划线字符 (`_`) 开头的标识符提供任何特殊权限或含义，但它们通常用于表示变量、方法或属性是“私有的”，这意味着变量、方法或属性只能用于包含该变量的对象的上下文，而不应在该上下文之外被访问或修改。这是从其他编程语言继承而来的惯例，并且早于添加 JavaScript [私有属性](/web/javascript/classes/class-fields#private)的时间。
+JavaScript 不会为以下划线字符 (`_`) 开头的标识符提供任何特殊权限或含义，但它们通常用于表示变量、方法或属性是“私有的”，这意味着变量、方法或属性只能用于包含该变量的对象的上下文，而不应在该上下文之外被访问或修改。这是从其他编程语言继承而来的惯例，并且早于添加 JavaScript [私有属性](/blogs/web/javascript/classes/class-fields#private)的时间。
 
 ## 变量声明
 
@@ -203,7 +203,7 @@ constantObject
 >Object{ firstvalue:true, secondvalue:false}
 ```
 
-包含对象的常量是[对可变数据值的不可变引用](/web/javascript/appendix#by-reference-by-value)。虽然常量本身无法更改，但引用对象的属性可以更改、添加或移除：
+包含对象的常量是[对可变数据值的不可变引用](/blogs/web/javascript/appendix#by-reference-by-value)。虽然常量本身无法更改，但引用对象的属性可以更改、添加或移除：
 
 ```javascript
 const constantObject ={"firstvalue":true};
@@ -222,7 +222,7 @@ constantObject =false
 
 ### 屏蔽范围
 
-您使用 `let` 或 `const` 声明的任何变量的作用域都限定为与其最接近的包含[块语句](/web/javascript/introduction#block-statements)，这意味着变量只能在该块中访问。如果尝试访问其所在块之外访问块级范围的变量，会导致与尝试访问不存在的变量相同的错误：
+您使用 `let` 或 `const` 声明的任何变量的作用域都限定为与其最接近的包含[块语句](/blogs/web/javascript/introduction#block-statements)，这意味着变量只能在该块中访问。如果尝试访问其所在块之外访问块级范围的变量，会导致与尝试访问不存在的变量相同的错误：
 
 ```javascript
 {
@@ -287,7 +287,7 @@ scopedConstant;
 
 ### 函数范围
 
-使用 `var` 声明的变量的作用域限定为其最接近的包含函数（或[类](/web/javascript/classes)内的[静态初始化块](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Static_initialization_blocks)）。
+使用 `var` 声明的变量的作用域限定为其最接近的包含函数（或[类](/blogs/web/javascript/classes)内的[静态初始化块](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes/Static_initialization_blocks)）。
 
 ```javascript
 function myFunction(){
@@ -382,7 +382,7 @@ unhoistedVariable;
 unhoistedVariable =true;
 ```
 
-[如前所述](/web/javascript/data-types/variable#declaration)，为已声明但未初始化的变量赋值 `undefined`。该行为也适用于提升的变量声明，但仅适用于使用 `var` 声明的声明。
+[如前所述](/blogs/web/javascript/data-types/variable#declaration)，为已声明但未初始化的变量赋值 `undefined`。该行为也适用于提升的变量声明，但仅适用于使用 `var` 声明的声明。
 
 ```javascript
 hoistedVariable

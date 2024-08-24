@@ -12,7 +12,7 @@ category: html
 
 以编码方式为作业选择合适的元素，这意味着您无需重构或注释掉 HTML。考虑对作业使用正确的元素时，通常都是为作业选择合适的元素。否则，您很可能不会这样做。
 
-至此您已[了解标记语义](/web/html/semantic-html)，也明白了选择正确元素的重要性。在了解了所有不同的元素之后，您通常无需花费太多精力（如果有）就能选择合适的元素。
+至此您已[了解标记语义](/blogs/web/html/semantic-html)，也明白了选择正确元素的重要性。在了解了所有不同的元素之后，您通常无需花费太多精力（如果有）就能选择合适的元素。
 
 ## 网站 `<header>`
 
@@ -79,7 +79,7 @@ CSS 可以确保（几乎）所有标记都能正常显示。但是，对所有�
 
 `<nav>` 元素将内容标识为导航。由于此 `<nav>` 嵌套在网站标题中，因此它是网站的主导航栏。如果将其嵌套在 `<article>` 或 `<section>` 中，则只是相应部分的内部导航。通过使用语义元素，您构建了一个有意义的[无障碍对象模型](https://developer.mozilla.org/docs/Glossary/Accessibility_tree) (AOM)。借助 AOM，屏幕阅读器可以告知用户此部分由一个主要导航块组成，用户可以浏览或跳过该块。
 
-通过使用 `</nav>` 和 `</header>` 结束标记，您就无需再使用注释来标识每个结束标记结束的哪个元素。此外，如果对不同的元素使用不同的标记，则无需再使用 `id` 和 `class` 钩子。CSS 选择器的[特异性](/web/css/specificity)可能较低；您可以使用 `header nav a` 定位链接，而不必担心冲突。
+通过使用 `</nav>` 和 `</header>` 结束标记，您就无需再使用注释来标识每个结束标记结束的哪个元素。此外，如果对不同的元素使用不同的标记，则无需再使用 `id` 和 `class` 钩子。CSS 选择器的[特异性](/blogs/web/css/specificity)可能较低；您可以使用 `header nav a` 定位链接，而不必担心冲突。
 
 您在编写标头时仅包含极少的 HTML，也没有类或 ID。使用语义 HTML 时，不需要这样做。
 
@@ -189,6 +189,6 @@ CSS 可以确保（几乎）所有标记都能正常显示。但是，对所有�
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/gOzxdxR?height=700&amp;theme-id=dark&amp;default-tab=html&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上的 web-dot-dev 的 Pen gOzxdxR"></iframe>
 
-**注意 ** ：此代码段仅包含 `<body>` 的内容。前面介绍了 [`<!doctype>`、`<html>`、`<body>` 和元信息](/web/html/metadata)。由于没有任何内容是独立的、完整的内容，因此 `<section>` 比 `<article>` 更合适；虽然每个部分都有标题，但每个版块都不能成为 `<footer>`。
+**注意 ** ：此代码段仅包含 `<body>` 的内容。前面介绍了 [`<!doctype>`、`<html>`、`<body>` 和元信息](/blogs/web/html/metadata)。由于没有任何内容是独立的、完整的内容，因此 `<section>` 比 `<article>` 更合适；虽然每个部分都有标题，但每个版块都不能成为 `<footer>`。
 
 到目前为止，您应该已经知道了，不过，请勿使用标题设置粗体或放大文本，而应改用 CSS。如果您想突出文本，也可以使用语义元素来实现这一点。我们会在更深入地介绍属性之后介绍这一点，并在讨论文本基础知识时填写页面的大部分内容。

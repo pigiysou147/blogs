@@ -16,7 +16,7 @@ tags:
 
 ## 背景颜色
 <BrowseSurport code="css.properties.background-color" />
-可以应用到背景图层的最简单的一种效果就是设置[颜色](/web/css/color)。`background-color` 的初始值为 `transparent`，允许父级的内容可见。在背景层上设置的有效颜色位于该元素上绘制的其他元素后面。
+可以应用到背景图层的最简单的一种效果就是设置[颜色](/blogs/web/css/color)。`background-color` 的初始值为 `transparent`，允许父级的内容可见。在背景层上设置的有效颜色位于该元素上绘制的其他元素后面。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/GRvqQZZ?height=850&amp;theme-id=dark&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="由 web-dot-dev 在 Codepen 上开发的 Pen GRvqQZZ" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
@@ -35,9 +35,9 @@ tags:
 
 ### CSS 渐变背景
 
-您可以使用多种[渐变](/web/css/gradients) CSS 函数生成在传递两种或更多颜色时的背景图片。
+您可以使用多种[渐变](/blogs/web/css/gradients) CSS 函数生成在传递两种或更多颜色时的背景图片。
 
-无论使用哪种渐变函数，生成的图片[本身的大小](/web/css/box-model#content_and_sizing)都会与可用空间大小相匹配。
+无论使用哪种渐变函数，生成的图片[本身的大小](/blogs/web/css/box-model#content_and_sizing)都会与可用空间大小相匹配。
 
 展示利用渐变函数应用背景图片的示例：
 

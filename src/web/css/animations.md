@@ -49,7 +49,7 @@ CSS [`@keyframes`](https://developer.mozilla.org/docs/Web/CSS/@keyframes) 与动
 }
 ```
 
-第一个重要部分是[自定义标识符 (`custom-ident`)](https://developer.mozilla.org/docs/Web/CSS/custom-ident)，即关键帧规则的名称。此示例中的标识符为 `my-animation`。自定义标识符的作用类似于[函数](/web/css/functions)名称，允许您在 CSS 代码中的其他位置引用关键帧规则。
+第一个重要部分是[自定义标识符 (`custom-ident`)](https://developer.mozilla.org/docs/Web/CSS/custom-ident)，即关键帧规则的名称。此示例中的标识符为 `my-animation`。自定义标识符的作用类似于[函数](/blogs/web/css/functions)名称，允许您在 CSS 代码中的其他位置引用关键帧规则。
 
 **注意** ：`` 在 CSS 中的各个位置都有使用，可让您为内容提供自己的名称。这些标识符区分大小写，并且在某些情况下，有些字词是您无法使用的。例如，在 CSS 网格中为行命名时，不能使用 `span` 一词。
 

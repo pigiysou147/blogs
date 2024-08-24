@@ -8,7 +8,7 @@ tags:
 
 
 
-到目前为止，您已经在本课程中了解了几个 CSS 函数。在 [grid](/web/css/grid) 模块中，我们介绍了 `minmax()` 和 `fit-content()`，它们可以帮助您调整元素大小。在 [color](/web/css/color) 模块中，我们介绍了 `rgb()` 和 `hsl()`，它们可帮助您定义颜色。
+到目前为止，您已经在本课程中了解了几个 CSS 函数。在 [grid](/blogs/web/css/grid) 模块中，我们介绍了 `minmax()` 和 `fit-content()`，它们可以帮助您调整元素大小。在 [color](/blogs/web/css/color) 模块中，我们介绍了 `rgb()` 和 `hsl()`，它们可帮助您定义颜色。
 
 与许多其他编程语言一样，[CSS 提供了大量内置函数](https://developer.mozilla.org/docs/Web/CSS/CSS_Functions)，您可以在需要时随时访问它们。
 
@@ -32,7 +32,7 @@ tags:
 }
 ```
 
-您学习了[伪类模块](/web/css/pseudo-classes)中的功能选择器，其中详细介绍了 [`:is()`](https://developer.mozilla.org/docs/Web/CSS/:is) 和 [`:not()`](https://developer.mozilla.org/docs/Web/CSS/:not) 等函数。传递到这些函数的参数为 CSS 选择器，然后对它们进行求值。 如果存在与元素匹配的元素，则系统会将其余 **CSS 规则**应用于这些元素。
+您学习了[伪类模块](/blogs/web/css/pseudo-classes)中的功能选择器，其中详细介绍了 [`:is()`](https://developer.mozilla.org/docs/Web/CSS/:is) 和 [`:not()`](https://developer.mozilla.org/docs/Web/CSS/:not) 等函数。传递到这些函数的参数为 CSS 选择器，然后对它们进行求值。 如果存在与元素匹配的元素，则系统会将其余 **CSS 规则**应用于这些元素。
 
 ## 自定义属性和 `var()`
 
@@ -81,7 +81,7 @@ a::after {
 
 ## 颜色函数
 
-您已经在 [color](/web/css/color) 模块中全面了解了颜色函数。如果您还没有读过此类内容，强烈建议您读一读。
+您已经在 [color](/blogs/web/css/color) 模块中全面了解了颜色函数。如果您还没有读过此类内容，强烈建议您读一读。
 
 CSS 中一些可用的颜色函数包括 `rgb()`、`rgba()`、`hsl()`、`hsla()`、`hwb()`、`lab()` 和 `lch()`。所有这些对象的形式都类似，其中传入配置参数，然后返回颜色。
 
@@ -131,7 +131,7 @@ CSS 中一些可用的颜色函数包括 `rgb()`、`rgba()`、`hsl()`、`hsla()`
 
 在此示例中，宽度应为 `20vw`（视口宽度的 20%）和 `30rem` 之间的最小值。高度应为 `20vh`（即**视口高度**的 20%）到 `20rem` 之间的最大值。
 
-**注意** ：我们在 [ssize](/web/css/sizing) 单位模块中介绍了 `vw` 和 `vh` 等单位。
+**注意** ：我们在 [ssize](/blogs/web/css/sizing) 单位模块中介绍了 `vw` 和 `vh` 等单位。
 
 ### clamp()
 
@@ -253,4 +253,4 @@ David Desandro 编写的这个示例来自他们的实用文章，展示了如�
 
 ## 动画函数、渐变和滤镜
 
-CSS 还提供一些函数来帮助您为元素[添加动画效果](/web/css/animations)、对其应用[渐变](/web/css/gradients)，以及使用图形[过滤器](/web/css/filters)来操纵元素的外观。 为了使本单元尽可能简洁明了，链接的模块中会对其进行介绍。 它们都遵循与本单元演示的函数类似的结构。
+CSS 还提供一些函数来帮助您为元素[添加动画效果](/blogs/web/css/animations)、对其应用[渐变](/blogs/web/css/gradients)，以及使用图形[过滤器](/blogs/web/css/filters)来操纵元素的外观。 为了使本单元尽可能简洁明了，链接的模块中会对其进行介绍。 它们都遵循与本单元演示的函数类似的结构。

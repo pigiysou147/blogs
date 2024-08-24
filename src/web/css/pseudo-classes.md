@@ -10,9 +10,9 @@ category: css
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/QWdMGjE?height=250&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="来自 Codepen 上的 web-dot-dev 的 Pen QWdMGjE" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 250px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-借助伪类，您可以根据状态变化和外部因素应用样式。这意味着，您的设计可以响应用户输入，例如电子邮件地址无效。[选择器](/web/css/selectors)模块介绍了这些内容，本单元将详细介绍这些内容。
+借助伪类，您可以根据状态变化和外部因素应用样式。这意味着，您的设计可以响应用户输入，例如电子邮件地址无效。[选择器](/blogs/web/css/selectors)模块介绍了这些内容，本单元将详细介绍这些内容。
 
-伪元素与伪元素（您可以在[上一个单元](/web/css/pseudo-elements)中详细了解）不同，伪*类*与元素可能所处的特定状态不同，它不会一般地为该元素的各个部分设置样式。
+伪元素与伪元素（您可以在[上一个单元](/blogs/web/css/pseudo-elements)中详细了解）不同，伪*类*与元素可能所处的特定状态不同，它不会一般地为该元素的各个部分设置样式。
 
 ## 互动状态
 

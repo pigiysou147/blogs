@@ -8,7 +8,7 @@ tags:
 
 模态对话框是网页上一种特殊类型的弹出式框：会打断用户专注于自身的弹出式窗口。有一些有效的[弹出对话框用例](https://www.nngroup.com/articles/modal-nonmodal-dialog/)，但在执行此操作之前应考虑清楚。模态对话框会迫使用户专注于特定内容，并暂时忽略页面的其余部分。
 
-对话框可以是模态（只能与对话框中的内容互动）或非模态（仍然可以与对话框外部的内容互动）。模态对话框会显示在其余页面内容之上。页面的其余部分是[自然](/web/html/focus)的，默认情况下会被半透明背景遮挡。
+对话框可以是模态（只能与对话框中的内容互动）或非模态（仍然可以与对话框外部的内容互动）。模态对话框会显示在其余页面内容之上。页面的其余部分是[自然](/blogs/web/html/focus)的，默认情况下会被半透明背景遮挡。
 
 用于创建对话框的语义 HTML [`<dialog>`](https://developer.mozilla.org/docs/Web/HTML/Element/dialog) 元素包含语义、键盘交互以及 [`HTMLDialogElement`](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement) 接口的所有属性和方法。
 
@@ -18,7 +18,7 @@ tags:
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/BaOBLNy?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="来自 Codepen 上的 web-dot-dev 的 Pen BaOBLNy" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-`HTMLDialogElement` 有三个主要方法，以及从 [`HTMLElement`](/web/html/apis) 继承的所有方法。
+`HTMLDialogElement` 有三个主要方法，以及从 [`HTMLElement`](/blogs/web/html/apis) 继承的所有方法。
 
 ```javascript
 dialog.show()/* opens the dialog */
@@ -32,7 +32,7 @@ dialog.close()/* closes the dialog */
 
 当对话框关闭时，无论是否处于模态状态，焦点都会返回到打开对话框的元素。如果您以编程方式打开并非基于用户操作的对话框，请重新考虑。如果必须这样做，请确保将焦点放回对话框打开之前的位置，尤其是当用户没有与对话框互动就关闭对话框时。
 
-有一个全局 [`inert`](/web/html/focus#the_inert_attribute) 属性可用于停用某个元素及其所有后代（活跃的对话框除外）。使用 `showModal()` 打开模态对话框时，可以免费执行惰化或停用；系统不会明确设置该属性。
+有一个全局 [`inert`](/blogs/web/html/focus#the_inert_attribute) 属性可用于停用某个元素及其所有后代（活跃的对话框除外）。使用 `showModal()` 打开模态对话框时，可以免费执行惰化或停用；系统不会明确设置该属性。
 
 可以使用 [`::backdrop`](https://developer.mozilla.org/docs/Web/CSS/::backdrop) 伪元素设置会遮挡除对话框以外所有其他内容的背景幕。仅当使用 `.showModal()` 方法显示 `<dialog>` 时，才会显示背景。该伪元素会匹配所有背景，包括使用 [FullScreen API](https://developer.mozilla.org/docs/Web/API/Fullscreen_API) 时显示的背景，例如在全屏模式下观看视频时，该模式与屏幕或显示器的宽高比不同。
 
@@ -60,7 +60,7 @@ dialog.close()/* closes the dialog */
 
 您可能已经注意到，在此示例中，为关闭 `<button>` 设置了 [`autofocus`](https://developer.mozilla.org/docs/Web/HTML/Global_attributes/autofocus) 属性。在 `<dialog>` 内设置了 `autofocus` 属性的元素在网页加载时不会获得焦点（除非页面在加载时对话框可见）。不过，当对话框打开时，它们将获得焦点。
 
-默认情况下，当对话框打开时，对话框中的第一个可聚焦元素将获得焦点，除非对话框中的其他元素设置了 `autofocus` 属性。为关闭按钮设置 `autofocus` 属性可确保该按钮在对话框打开时获得焦点。但是，[在 `<dialog>` 中包含 `autofocus`](/web/html/focus#giving_focus_to_interactive_elements) 时，只是要仔细考虑。系统会跳过自动聚焦元素之前出现的序列中的所有元素。 我们将在[专题课程](/web/html/focus)中进一步讨论此属性。
+默认情况下，当对话框打开时，对话框中的第一个可聚焦元素将获得焦点，除非对话框中的其他元素设置了 `autofocus` 属性。为关闭按钮设置 `autofocus` 属性可确保该按钮在对话框打开时获得焦点。但是，[在 `<dialog>` 中包含 `autofocus`](/blogs/web/html/focus#giving_focus_to_interactive_elements) 时，只是要仔细考虑。系统会跳过自动聚焦元素之前出现的序列中的所有元素。 我们将在[专题课程](/blogs/web/html/focus)中进一步讨论此属性。
 
 [`HTMLDialogElement`](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement) 接口包含一个 [`returnValue`](https://developer.mozilla.org/docs/Web/API/HTMLDialogElement/returnValue) 属性。使用 `method="dialog"` 提交表单时，会将 `returnValue` 设置为用于提交表单的提交按钮的 `name`（如果有）。如果我们编写了 `<button type="submit" name="toasty">close</button>`，`returnValue` 将为 `toasty`。
 

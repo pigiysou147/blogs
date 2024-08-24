@@ -121,7 +121,7 @@ overflow: hidden scroll;
 
 ### 滚动条在框模型中的定位
 
-滚动条会占用内边距框内的空间，如果为 `inline` 而非 `overlaid`，则滚动条可能会争用空间。[Box 模型模块](/web/css/box-model#the_areas_of_the_box_model)对此潜在布局偏移的原因进行了详细说明。
+滚动条会占用内边距框内的空间，如果为 `inline` 而非 `overlaid`，则滚动条可能会争用空间。[Box 模型模块](/blogs/web/css/box-model#the_areas_of_the_box_model)对此潜在布局偏移的原因进行了详细说明。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/BaReoEV?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上 web-dot-dev 的 Pen BaReoEV" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 

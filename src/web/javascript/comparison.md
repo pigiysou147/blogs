@@ -235,7 +235,7 @@ undefined??"My string";
 
 ## 逻辑赋值运算符
 
-使用赋值运算符将第二个运算符的值分配给第一个运算符。最常见的一个示例就是单个等号 (`=`)，用于[为声明的变量赋值](/web/javascript/data-types/variable#declaration)。
+使用赋值运算符将第二个运算符的值分配给第一个运算符。最常见的一个示例就是单个等号 (`=`)，用于[为声明的变量赋值](/blogs/web/javascript/data-types/variable#declaration)。
 
 使用逻辑赋值运算符，根据变量的真实值或假值有条件地向变量赋值。
 

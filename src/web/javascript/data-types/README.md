@@ -10,12 +10,12 @@ tag:
 
 原始数据类型有以下 7 种：
 
-* [数字](/web/javascript/data-types/number)
-* [字符串](/web/javascript/data-types/string)
-* [布尔值](/web/javascript/data-types/boolean)
-* [`null`](/web/javascript/data-types/null-undefined#null)
-* [`undefined`](/web/javascript/data-types/null-undefined#undefined)
-* [BigInt](/web/javascript/data-types/bigint)
-* [符号](/web/javascript/data-types/symbol)
+* [数字](/blogs/web/javascript/data-types/number)
+* [字符串](/blogs/web/javascript/data-types/string)
+* [布尔值](/blogs/web/javascript/data-types/boolean)
+* [`null`](/blogs/web/javascript/data-types/null-undefined#null)
+* [`undefined`](/blogs/web/javascript/data-types/null-undefined#undefined)
+* [BigInt](/blogs/web/javascript/data-types/bigint)
+* [符号](/blogs/web/javascript/data-types/symbol)
 
-如需了解更复杂的数据类型，请参阅[变量](/web/javascript/data-types/variable)。
+如需了解更复杂的数据类型，请参阅[变量](/blogs/web/javascript/data-types/variable)。

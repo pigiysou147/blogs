@@ -21,7 +21,7 @@ myObj.myProp;
 >"String value."
 ```
 
-您可以使用点表示法通过[赋值运算符](/web/javascript/data-types/variable#declaration)访问、更改或创建新属性：
+您可以使用点表示法通过[赋值运算符](/blogs/web/javascript/data-types/variable#declaration)访问、更改或创建新属性：
 
 ```javascript
 const myObj ={};
@@ -74,7 +74,7 @@ myObj.myMissingProp?.childProp;
 >undefined
 ```
 
-使用点表示法访问的键不会像字符串字面量一样用引号括起来。这意味着您可以使用点表示法来仅访问作为有效[标识符](/web/javascript/data-types/variable)的属性键：
+使用点表示法访问的键不会像字符串字面量一样用引号括起来。这意味着您可以使用点表示法来仅访问作为有效[标识符](/blogs/web/javascript/data-types/variable)的属性键：
 
 ```javascript
 const myObj ={
@@ -89,11 +89,11 @@ myObj.key with spaces;
 >UncaughtSyntaxError: unexpected token: keyword 'with'
 ```
 
-因此，在指定属性键时，最好遵循[标识符规则](/web/javascript/data-types/variable)。如果无法对给定键执行此操作，可使用替代*中括号表示法*语法设置和访问不遵循标识符规则的基于字符串的对象键。
+因此，在指定属性键时，最好遵循[标识符规则](/blogs/web/javascript/data-types/variable)。如果无法对给定键执行此操作，可使用替代*中括号表示法*语法设置和访问不遵循标识符规则的基于字符串的对象键。
 
 ## 方括号表示法
 
-方括号表示法使用一组方括号 (`[]`)，其中包含的值用于对表示属性键的字符串（或[符号](/web/javascript/data-types/symbol)）求值。
+方括号表示法使用一组方括号 (`[]`)，其中包含的值用于对表示属性键的字符串（或[符号](/blogs/web/javascript/data-types/symbol)）求值。
 
 ```javascript
 const myObj ={

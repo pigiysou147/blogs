@@ -7,9 +7,9 @@ tag:
 ---
 # 对象
 
-与每个[基元](/web/javascript/data-types)都是数据类型一样，对象也是一种离散数据类型，但有一个关键区别：与基元不同，对象是*可变*的。对象可以包含与标识符关联的数据（例如变量），但无论它包含什么数据，它都会保留其 `object` 数据类型。
+与每个[基元](/blogs/web/javascript/data-types)都是数据类型一样，对象也是一种离散数据类型，但有一个关键区别：与基元不同，对象是*可变*的。对象可以包含与标识符关联的数据（例如变量），但无论它包含什么数据，它都会保留其 `object` 数据类型。
 
-除了基元之外，所有 JavaScript 值都是对象，但由于[原型继承](/web/javascript/objects/prototypal-inheritance)，即使是基元字面量也会表现出类似于对象的行为，因此通常有人说 JavaScript 实际上是由对象组成的。
+除了基元之外，所有 JavaScript 值都是对象，但由于[原型继承](/blogs/web/javascript/objects/prototypal-inheritance)，即使是基元字面量也会表现出类似于对象的行为，因此通常有人说 JavaScript 实际上是由对象组成的。
 
 对象字面量是一对大括号，括住零个或多个称为“属性”的键值对，可包含任何 JavaScript 值。
 
@@ -19,7 +19,7 @@ tag:
 }
 ```
 
-属性键可以是任何[符号](/web/javascript/data-types/symbol)或[字符串](/web/javascript/data-types/string)。为变量分配标识符时，用作属性键的字符串应可预测且具有描述性：
+属性键可以是任何[符号](/blogs/web/javascript/data-types/symbol)或[字符串](/blogs/web/javascript/data-types/string)。为变量分配标识符时，用作属性键的字符串应可预测且具有描述性：
 
 ```javascript
 let carAttributes ={
@@ -30,7 +30,7 @@ carAttributes
 >Object{ color:"red"}
 ```
 
-属性键需要单个 (`'`) 或双引号 (`"`) 字符串字面量，而不是[模板字面量](/web/javascript/data-types/string#template-literals)：
+属性键需要单个 (`'`) 或双引号 (`"`) 字符串字面量，而不是[模板字面量](/blogs/web/javascript/data-types/string#template-literals)：
 
 ```javascript
 let carAttributes ={
@@ -111,7 +111,7 @@ let myObject ={
 };
 ```
 
-虽然 `new Object()` 没有什么实际用途，但可用于将原始数据值转换为相应类型的对象，例如使用 `new` 关键字及其[构造函数](/web/javascript/functions/new)函数返回的对象。例如，以下代码在功能上等效于 `new Number( 10 )`：
+虽然 `new Object()` 没有什么实际用途，但可用于将原始数据值转换为相应类型的对象，例如使用 `new` 关键字及其[构造函数](/blogs/web/javascript/functions/new)函数返回的对象。例如，以下代码在功能上等效于 `new Number( 10 )`：
 
 ```javascript
 let myObject =newObject(10);

@@ -6,9 +6,9 @@ tags:
 ---
 # 图片性能
 
-**重要提示** ：下面是图片性能的一般概览。如需深入了解该主题，请参阅[“学习图片”课程](/web/images/)，详细了解特定文件格式和[高性能图片工作流](/web/images/automating)等内容。图片通常是网络上[最庞大](https://almanac.httparchive.org/en/2022/page-weight#fig-8)且[最普遍](https://almanac.httparchive.org/en/2022/page-weight#fig-3)的资源。因此，优化图片可以显著提升您网站上的广告效果。 在大多数情况下，优化图片意味着通过减少发送的字节数来减少网络时间，但您也可以通过传送适合用户设备大小的图片，从而优化发送给用户的字节数。
+**重要提示** ：下面是图片性能的一般概览。如需深入了解该主题，请参阅[“学习图片”课程](/blogs/web/images/)，详细了解特定文件格式和[高性能图片工作流](/blogs/web/images/automating)等内容。图片通常是网络上[最庞大](https://almanac.httparchive.org/en/2022/page-weight#fig-8)且[最普遍](https://almanac.httparchive.org/en/2022/page-weight#fig-3)的资源。因此，优化图片可以显著提升您网站上的广告效果。 在大多数情况下，优化图片意味着通过减少发送的字节数来减少网络时间，但您也可以通过传送适合用户设备大小的图片，从而优化发送给用户的字节数。
 
-您可以使用 [`<img>` 或 `<picture>` 元素](/web/html/images)或 CSS [`background-image` 属性](https://developer.mozilla.org/docs/Web/CSS/background-image)将图片添加到网页中。
+您可以使用 [`<img>` 或 `<picture>` 元素](/blogs/web/html/images)或 CSS [`background-image` 属性](https://developer.mozilla.org/docs/Web/CSS/background-image)将图片添加到网页中。
 
 **注意** ：在少数情况下，可以通过将 `<svg>` 标记直接插入网页的 HTML 中，将 SVG 图片直接内嵌到网页中。这样便可在 JavaScript 中直接访问 SVG 的子元素。鉴于此模块重视图片性能，因此不涵盖 SVG 图片的这一用例。
 
@@ -237,7 +237,7 @@ return reply.from('image.jpg');
 
 您可以使用 [`loading`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/loading) 属性告知浏览器在图片显示在视口中时延迟加载图片。`lazy` 的属性值会告知浏览器：图片在进入（或靠近）视口时才会下载。这样可以节省带宽，让浏览器可以优先使用渲染视口中已有的关键内容所需的资源。
 
-**重要提示** ：如需深入了解延迟加载图片，请阅读[延迟加载图片和 `<iframe>` 元素](/web/performance/lazy-load-images-and-iframe-elements)模块。## `decoding`
+**重要提示** ：如需深入了解延迟加载图片，请阅读[延迟加载图片和 `<iframe>` 元素](/blogs/web/performance/lazy-load-images-and-iframe-elements)模块。## `decoding`
 
 [`decoding`](https://developer.mozilla.org/docs/Web/API/HTMLImageElement/decoding) 属性会告知浏览器应如何解码图片。值 `async` 会告知浏览器，图片可以异步解码，有可能缩短呈现其他内容的时间。值 `sync` 会告知浏览器，此图片应与其他内容同时呈现。`auto` 的默认值允许浏览器决定什么最适合用户。
 

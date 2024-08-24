@@ -60,7 +60,7 @@ category: html
 * 使用 [`<em>`](https://developer.mozilla.org/docs/Web/HTML/Element/em) 元素来强调或强调某一段内容。 `<em>` 元素可以嵌套，每个嵌套级别都表示强调程度更高。此元素具有语义含义，可用于告知听觉用户代理（例如屏幕阅读器、Alexa 和 Siri），以达到强调效果。
 * 使用 [`<mark>`](https://developer.mozilla.org/docs/Web/HTML/Element/mark) 元素来标识或突出显示某些相关的文本，例如突出显示（或“标记”）搜索结果中出现的搜索字词。这样可以快速识别标记的内容，而不会增加强调或重要性。
 * [`<strong>`](https://developer.mozilla.org/docs/Web/HTML/Element/strong) 元素将文本标识为具有强重要性。浏览器渲染内容时通常会采用较粗的字体。
-* [`<cite>`](https://developer.mozilla.org/docs/Web/HTML/Element/cite) 元素（如[文本基础知识](/web/html/text-basics#quotes_and_citations)中所述）用于标记图书、文章或其他创意作品的标题，或上述内容的缩写参考或引用元数据（例如图书的 ISBN 编号）。
+* [`<cite>`](https://developer.mozilla.org/docs/Web/HTML/Element/cite) 元素（如[文本基础知识](/blogs/web/html/text-basics#quotes_and_citations)中所述）用于标记图书、文章或其他创意作品的标题，或上述内容的缩写参考或引用元数据（例如图书的 ISBN 编号）。
 
 有三个元素已暂时弃用，但已重新添加到 HTML 中。应谨慎使用此类元素，因为它们仅能提供很少的语义值，甚至完全没有语义值，而且 CSS 应始终用于对 HTML 元素进行样式设置。
 

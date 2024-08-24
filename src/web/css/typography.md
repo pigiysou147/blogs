@@ -172,7 +172,7 @@ body {
 
 关键字 `lighter` 和 `bolder` 是相对于父元素计算的。请参阅 MDN 的[相对权重含义](https://developer.mozilla.org/docs/Web/CSS/font-weight#meaning_of_relative_weights)，查看显示此值计算方式的实用图表。
 
-**注意** ：大多数字体，尤其是[“网络安全”字体](/web/css/typography#change_the_typeface)，仅支持粗细 `400` (`normal`) 和 `700` (`bold`)。使用 `@font-face` 或 `@import` 导入字体时，您可以选择要提取的特定粗细。不过，非可变字体仅支持以 100 为单位的 `font-weight` 数值，例如 `100`、`200`、`300` 等。如果您想使用 `font-weight: 321`（举例来说），则必须使用[可变字体](/web/css/typography#variable_fonts)。
+**注意** ：大多数字体，尤其是[“网络安全”字体](/blogs/web/css/typography#change_the_typeface)，仅支持粗细 `400` (`normal`) 和 `700` (`bold`)。使用 `@font-face` 或 `@import` 导入字体时，您可以选择要提取的特定粗细。不过，非可变字体仅支持以 100 为单位的 `font-weight` 数值，例如 `100`、`200`、`300` 等。如果您想使用 `font-weight: 321`（举例来说），则必须使用[可变字体](/blogs/web/css/typography#variable_fonts)。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/gOxKxNz?height=580&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="在 Codepen 上通过 web-dot-dev 执行 gOxKxNz" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 580px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
@@ -219,7 +219,7 @@ body {
 
 ## `font` 简写形式
 
-您可以使用简写形式 [`font`](https://developer.mozilla.org/docs/Web/CSS/font) 属性一次设置多个与字体相关的属性。可能的属性包括 [`font-family`](/web/css/typography#change_the_typeface)、[`font-size`](/web/css/typography#change_the_size_of_text)、[`font-stretch`](https://developer.mozilla.org/docs/Web/CSS/font-stretch)、[`font-style`](/web/css/typography#use_italic_and_oblique_fonts)、[`font-variant`](/web/css/typography#font-variant)、[`font-weight`](/web/css/typography#make_text_bold) 和 [`line-height`](/web/css/typography#change_the_space_between_lines)。
+您可以使用简写形式 [`font`](https://developer.mozilla.org/docs/Web/CSS/font) 属性一次设置多个与字体相关的属性。可能的属性包括 [`font-family`](/blogs/web/css/typography#change_the_typeface)、[`font-size`](/blogs/web/css/typography#change_the_size_of_text)、[`font-stretch`](https://developer.mozilla.org/docs/Web/CSS/font-stretch)、[`font-style`](/blogs/web/css/typography#use_italic_and_oblique_fonts)、[`font-variant`](/blogs/web/css/typography#font-variant)、[`font-weight`](/blogs/web/css/typography#make_text_bold) 和 [`line-height`](/blogs/web/css/typography#change_the_space_between_lines)。
 
 如需详细了解如何对这些属性进行排序，请参阅 [MDN 的 `font` 文章](https://developer.mozilla.org/docs/Web/CSS/font#syntax)。
 
@@ -307,7 +307,7 @@ body {
 
 值 `left` 和 `right` 分别会将文本与代码块的左侧和右侧对齐。
 
-使用 `start` 和 `end` 表示当前书写模式下文本行的开始和结束位置。因此，`start` 映射到英语的 `left`，以及从右到左 (RTL) 的阿拉伯脚本中的 `right`。它们是逻辑对齐，如需了解详情，请参阅我们的[逻辑属性](/web/css/logical-properties)模块。
+使用 `start` 和 `end` 表示当前书写模式下文本行的开始和结束位置。因此，`start` 映射到英语的 `left`，以及从右到左 (RTL) 的阿拉伯脚本中的 `right`。它们是逻辑对齐，如需了解详情，请参阅我们的[逻辑属性](/blogs/web/css/logical-properties)模块。
 
 使用 `center` 将文本与文本块的中心对齐。
 
@@ -335,7 +335,7 @@ body {
 
 <BrowseSurport code="css.properties.text-orientation" />
 
-使用 [`text-orientation`](https://developer.mozilla.org/docs/Web/CSS/text-orientation) 可指定文本中字符的方向。此属性的有效值包括 `mixed` 和 `upright`。仅当 [`writing-mode`](/web/css/typography#change_the_flow_of_text) 设置为 `horizontal-tb` 以外的值时，此属性才相关。
+使用 [`text-orientation`](https://developer.mozilla.org/docs/Web/CSS/text-orientation) 可指定文本中字符的方向。此属性的有效值包括 `mixed` 和 `upright`。仅当 [`writing-mode`](/blogs/web/css/typography#change_the_flow_of_text) 设置为 `horizontal-tb` 以外的值时，此属性才相关。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/QWMrPGV?height=660&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="在 Codepen 上由 web-dot-dev 执行 QWMrPGV" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 660px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
@@ -347,7 +347,7 @@ body {
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/jOLxRVe?height=530&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="在 Codepen 上由 web-dot-dev 执行 jOLxRVe" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 530px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-如需了解详情，请参阅[“阴影”单元中的 `text-shadow` 部分](/web/css/shadows#text_shadow)。
+如需了解详情，请参阅[“阴影”单元中的 `text-shadow` 部分](/blogs/web/css/shadows#text_shadow)。
 
 ## 可变字体
 
@@ -356,7 +356,7 @@ body {
 
 ## 伪元素
 
-**关键术语** ：*伪元素*是元素的一部分，您可以使用 CSS 关键字来定位元素，而无需添加更多 HTML。如需深入了解此主题，请查看[伪元素相关单元](/web/css/pseudo-elements)！
+**关键术语** ：*伪元素*是元素的一部分，您可以使用 CSS 关键字来定位元素，而无需添加更多 HTML。如需深入了解此主题，请查看[伪元素相关单元](/blogs/web/css/pseudo-elements)！
 
 ## `::first-letter` 和 `::first-line` 伪元素
 

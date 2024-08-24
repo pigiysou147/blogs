@@ -14,7 +14,7 @@ category: 图片
 
 ## 自适应布局中的图片
 
-除了灵活的布局和 CSS 媒体查询的使用之外，“灵活的图片和媒体”是[自适应设计](/web/design)的三个定义方面之一。为了让图片变得灵活，开发者开始使用 CSS 在图片（或所有网站级图片）上设置 `max-width: 100%`，以指示浏览器的渲染引擎通过缩小图片来防止图片溢出其父级容器。从视觉上看，这非常行之有效，也就是能流畅地缩小[光栅图片](/web/images/raster-images)。使用 1-2 行 CSS 时，缩小后的图片始终看起来就像我们指定了一个应以该尺寸显示的图片来源一样。如果为渲染引擎提供的图片数据超过了图片在布局中占据的空间所必需的数据，渲染引擎能够就如何渲染缩小的图片做出明智的决策，并且既不会产生任何视觉伪影或模糊，也不会造成模糊。
+除了灵活的布局和 CSS 媒体查询的使用之外，“灵活的图片和媒体”是[自适应设计](/blogs/web/design)的三个定义方面之一。为了让图片变得灵活，开发者开始使用 CSS 在图片（或所有网站级图片）上设置 `max-width: 100%`，以指示浏览器的渲染引擎通过缩小图片来防止图片溢出其父级容器。从视觉上看，这非常行之有效，也就是能流畅地缩小[光栅图片](/blogs/web/images/raster-images)。使用 1-2 行 CSS 时，缩小后的图片始终看起来就像我们指定了一个应以该尺寸显示的图片来源一样。如果为渲染引擎提供的图片数据超过了图片在布局中占据的空间所必需的数据，渲染引擎能够就如何渲染缩小的图片做出明智的决策，并且既不会产生任何视觉伪影或模糊，也不会造成模糊。
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/YzjpXBP?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上 web-dot-dev 的 Pen YzjpXBP" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 

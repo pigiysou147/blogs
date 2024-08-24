@@ -9,7 +9,7 @@ tag:
 
 静态初始化块是一项全新的 JavaScript 功能，已在 ECMAScript 2022 中进行了标准化处理，仅在[现代浏览器](https://caniuse.com/mdn-javascript_classes_static_initialization_blocks)中受支持。通过静态初始化块，您可以使用跨越多个语句的逻辑动态设置静态字段的值。
 
-如需创建静态初始化块，请使用 `static` 关键字，后跟大括号 (`{}`) 中的[块语句](/web/javascript/introduction#block-statements)：
+如需创建静态初始化块，请使用 `static` 关键字，后跟大括号 (`{}`) 中的[块语句](/blogs/web/javascript/introduction#block-statements)：
 
 ```javascript
 classMyClass{

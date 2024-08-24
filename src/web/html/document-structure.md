@@ -67,7 +67,7 @@ HTML 文档包含一个文档类型声明和 `<html>` 根元素。`<html>` 元�
 
 ### 文档标题
 
-您的首页和所有其他网页都应该有一个唯一的标题。文档标题的内容、起始和结束 `<title>` 标记之间的文本会显示在浏览器标签页中、打开的窗口列表、历史记录、搜索结果以及社交媒体卡片（除非使用 [`<meta>` 标记](/web/html/metadata)重新定义）中。
+您的首页和所有其他网页都应该有一个唯一的标题。文档标题的内容、起始和结束 `<title>` 标记之间的文本会显示在浏览器标签页中、打开的窗口列表、历史记录、搜索结果以及社交媒体卡片（除非使用 [`<meta>` 标记](/blogs/web/html/metadata)重新定义）中。
 
 ```html
 <title>Machine Learning Workshop</title>
@@ -75,7 +75,7 @@ HTML 文档包含一个文档类型声明和 `<html>` 根元素。`<html>` 元�
 
 ### 视口元数据
 
-[viewport](/web/design/intro#a_meta_element_for_viewport) 元标记也应视为必不可少，它有助于提升网站响应速度，无论视口宽度如何，内容在默认情况下都能正常呈现。虽然[视口元标记](https://developer.mozilla.org/docs/Web/HTML/Viewport_meta_tag)自 2007 年 6 月以来就存在，但当第一款 iPhone 问世时，它最近才[在规范中载明](https://drafts.csswg.org/css-viewport/#viewport-meta)。强烈建议您使用它，因为它能够控制视口的大小和缩放比例，并防止将网站内容的尺寸缩小到 960px 的网站适应 320px 的屏幕。
+[viewport](/blogs/web/design/intro#a_meta_element_for_viewport) 元标记也应视为必不可少，它有助于提升网站响应速度，无论视口宽度如何，内容在默认情况下都能正常呈现。虽然[视口元标记](https://developer.mozilla.org/docs/Web/HTML/Viewport_meta_tag)自 2007 年 6 月以来就存在，但当第一款 iPhone 问世时，它最近才[在规范中载明](https://drafts.csswg.org/css-viewport/#viewport-meta)。强烈建议您使用它，因为它能够控制视口的大小和缩放比例，并防止将网站内容的尺寸缩小到 960px 的网站适应 320px 的屏幕。
 
 ```html
 <meta name="viewport" content="width=device-width" />
@@ -113,7 +113,7 @@ HTML 文档包含一个文档类型声明和 `<html>` 根元素。`<html>` 元�
 
 ### CSS
 
-`<head>` 是为 HTML 添加样式的位置。如果您想了解样式，但需要了解如何将这些样式添加到 HTML 文档中，请参阅[专门针对 CSS 的学习路线](/web/css)。
+`<head>` 是为 HTML 添加样式的位置。如果您想了解样式，但需要了解如何将这些样式添加到 HTML 文档中，请参阅[专门针对 CSS 的学习路线](/blogs/web/css)。
 
 您可以通过以下三种方式添加 CSS：`<link>`、`<style>` 和 `style` 属性。
 
@@ -165,7 +165,7 @@ HTML 文档包含一个文档类型声明和 `<html>` 根元素。`<html>` 元�
 
 `link` 元素用于创建 HTML 文档与外部资源之间的关系。部分资源可供下载，其他资源则仅供参考。关系的类型由 `rel` 属性的值定义。目前，[`rel` 属性有 25 个可用值](https://html.spec.whatwg.org/multipage/links.html#linkTypes)，这些值可以与 `<link>`、`<a>` 和 `<area>` 或 `<form>` 一起使用，但只有少数值可与所有值一起使用。最好在 `<body>` 中包含与标头中的元信息相关的字词和与性能相关的字词。
 
-现在，您的标题中将包含另外三种类型：`icon`、`alternate` 和 `canonical`。（在下一单元中，您将添加第四种类型，即 [`rel="manifest"`](/web/html/metadata)）。
+现在，您的标题中将包含另外三种类型：`icon`、`alternate` 和 `canonical`。（在下一单元中，您将添加第四种类型，即 [`rel="manifest"`](/blogs/web/html/metadata)）。
 
 #### 网站图标
 

@@ -61,7 +61,7 @@ typeof myString
 >string
 ```
 
-如[原型继承](/web/javascript/appendix#prototyal-inheritance)中所述，您几乎不需要将 `String` 对象用作构造函数。它会创建一个字符串对象，其中包含指定值以及 `String` 对象已提供的方法和属性，而不是字符串字面量。
+如[原型继承](/blogs/web/javascript/appendix#prototyal-inheritance)中所述，您几乎不需要将 `String` 对象用作构造函数。它会创建一个字符串对象，其中包含指定值以及 `String` 对象已提供的方法和属性，而不是字符串字面量。
 
 ```javascript
 let stringObj =newString("My new string.");
@@ -112,7 +112,7 @@ console.log(`The result is ${ 2 + 4 }.`);
 >The result is6.
 ```
 
-您可将模板字面量传递给[自定义函数](/web/javascript/functions)以创建 *带标记模板* ，这是一个函数调用，它使用单个模板字面量作为一组参数，并允许其占位符根据作者定义的逻辑进行填充。
+您可将模板字面量传递给[自定义函数](/blogs/web/javascript/functions)以创建 *带标记模板* ，这是一个函数调用，它使用单个模板字面量作为一组参数，并允许其占位符根据作者定义的逻辑进行填充。
 
 标记函数的第一个参数包含一个字符串值数组，其余参数定义占位符。通过在模板字面量包含的每个占位符处“拆分”模板字面量，即可创建此字符串值数组。数组中的第一个元素包含第一个占位符之前的所有字符，第二个元素包含第一个和第二个占位符之间的所有字符，依此类推。每个占位符都会作为包含相关占位符的独立值传递给代码函数。
 

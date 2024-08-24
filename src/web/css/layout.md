@@ -58,7 +58,7 @@ CSS 为我们提供了各种方法来解决横轴、纵轴或两者上的布局�
 
 ## Flexbox 和网格
 
-为多个元素创建布局规则的主要布局机制是 *[flexbox](/web/css/flexbox)* 和 *[grid](/web/css/grid)*。它们虽然有相似之处，但旨在解决不同的布局问题。
+为多个元素创建布局规则的主要布局机制是 *[flexbox](/blogs/web/css/flexbox)* 和 *[grid](/blogs/web/css/grid)*。它们虽然有相似之处，但旨在解决不同的布局问题。
 
 **注意** ：我们将在未来的单元中更详细地介绍这两项功能。不过，我们在此简要概述一下两者的用途。
 
@@ -242,4 +242,4 @@ img {
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/NWdNGZB?height=600&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="由 web-dot-dev 在 Codepen 上的 Pen NWdNGZB" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 600px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 ## 小结
 
-CSS 布局有很多选择余地，也很灵活。 要深入了解 CSS [Flexbox](/web/css/flexbox) 和 [Grid](/web/css/grid) 的强大功能，请继续学习接下来的几个模块。
+CSS 布局有很多选择余地，也很灵活。 要深入了解 CSS [Flexbox](/blogs/web/css/flexbox) 和 [Grid](/blogs/web/css/grid) 的强大功能，请继续学习接下来的几个模块。

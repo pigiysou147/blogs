@@ -4,9 +4,9 @@ category: html
 ---
 # 表格
 
-HTML 表格用于显示包含行和列的表格数据。决定是否使用 `<table>` 应基于您要展示的内容以及用户对此内容的需求。如果要对数据进行呈现、比较、排序、计算或交叉引用，那么 `<table>` 可能是正确的选择。如果您只想巧妙地布局非表格内容（例如大量缩略图），表格并不适合您：相反，您可以[创建图片列表](/web/html/lists)，并[使用 CSS 设置网格](/web/css/grid)的样式。
+HTML 表格用于显示包含行和列的表格数据。决定是否使用 `<table>` 应基于您要展示的内容以及用户对此内容的需求。如果要对数据进行呈现、比较、排序、计算或交叉引用，那么 `<table>` 可能是正确的选择。如果您只想巧妙地布局非表格内容（例如大量缩略图），表格并不适合您：相反，您可以[创建图片列表](/blogs/web/html/lists)，并[使用 CSS 设置网格](/blogs/web/css/grid)的样式。
 
-在本部分中，我们将讨论构成表格的所有元素，以及展示表格数据时应考虑的一些无障碍功能和易用性功能。虽然“学习 HTML”并非 CSS 的根本，但有一整套课程专门用于[学习 CSS](/web/css)，但我们将介绍一些特定于表格的 CSS 属性。
+在本部分中，我们将讨论构成表格的所有元素，以及展示表格数据时应考虑的一些无障碍功能和易用性功能。虽然“学习 HTML”并非 CSS 的根本，但有一整套课程专门用于[学习 CSS](/blogs/web/css)，但我们将介绍一些特定于表格的 CSS 属性。
 
 ## 表格元素（按顺序排列）
 
@@ -122,7 +122,7 @@ HTML 表格用于显示包含行和列的表格数据。决定是否使用 `<tab
 
 ## 呈现数据
 
-表格元素具有语义含义，辅助技术利用这些元素在行和列中导航而不会“丢失”。不应将 `<table>` 元素用于展示。如果您需要使用标题来覆盖列表，请使用[标题](/web/html/headings-and-sections#headings_h1-h6)和[列表](/web/html/lists)。如果您想以多列的形式布置内容，请使用[多列布局](https://developer.mozilla.org/docs/Web/CSS/CSS_Columns)。 如果您想在网格中布置内容，请使用 [CSS 网格](/web/css/grid)。仅使用表来存储数据。您不妨这样理解：如果您的数据需要使用电子表格才能在会议中展示，请使用 `<table>`。 如果您想使用演示文稿软件（如 Keynote 或 PowerPoint）中提供的功能，则可能需要[说明列表](/web/html/lists)。
+表格元素具有语义含义，辅助技术利用这些元素在行和列中导航而不会“丢失”。不应将 `<table>` 元素用于展示。如果您需要使用标题来覆盖列表，请使用[标题](/blogs/web/html/headings-and-sections#headings_h1-h6)和[列表](/blogs/web/html/lists)。如果您想以多列的形式布置内容，请使用[多列布局](https://developer.mozilla.org/docs/Web/CSS/CSS_Columns)。 如果您想在网格中布置内容，请使用 [CSS 网格](/blogs/web/css/grid)。仅使用表来存储数据。您不妨这样理解：如果您的数据需要使用电子表格才能在会议中展示，请使用 `<table>`。 如果您想使用演示文稿软件（如 Keynote 或 PowerPoint）中提供的功能，则可能需要[说明列表](/blogs/web/html/lists)。
 
 虽然对表格中的列进行排序是 JavaScript 的范畴，但标记标头以让用户知道该列可排序是 HTML 的范畴。 告知用户表格列可按升序、降序或未排序的图标进行排序。当前排序的列应包含带有排序方向枚举值的 [aria-sort](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-sort) 属性。`<caption>` 可以通过 [aria-live](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-live) 礼貌地通告对排序顺序进行的更新，以及动态更新的 span（该 span 对屏幕阅读器用户可见）。由于可以通过点击标题内容对列进行排序，因此标题内容应为 `<button>`。
 

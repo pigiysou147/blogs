@@ -4,7 +4,7 @@ category: 性能优化
 ---
 # 通过资源提示协助浏览器
 
-在关于[优化资源加载](/web/performance/optimize-resource-loading)的上一单元中，您了解了各种网页资源（如 CSS 和 JavaScript）对网页加载速度的影响，以及如何优化这些资源及其投放速度以加快网页的呈现速度。现在正好可以进入更高级的资源加载方面，这涉及使用资源提示帮助浏览器更快地加载它们。
+在关于[优化资源加载](/blogs/web/performance/optimize-resource-loading)的上一单元中，您了解了各种网页资源（如 CSS 和 JavaScript）对网页加载速度的影响，以及如何优化这些资源及其投放速度以加快网页的呈现速度。现在正好可以进入更高级的资源加载方面，这涉及使用资源提示帮助浏览器更快地加载它们。
 
 资源提示可以告知浏览器如何加载资源并确定资源优先级，从而帮助开发者进一步缩短网页加载时间。一组初始资源提示（例如 `preconnect` 和 `dns-prefetch`）是最先引入的资源提示。不过，随着时间的推移，`preload` 和 Fetch Priority API 相继提供了额外的功能。
 
@@ -69,7 +69,7 @@ DNS 查找的费用相当低廉，并且由于费用相对较小，在某些情�
 
 **注意** ：`preload` 指令是一项非常强大的性能优化，事实上可能会过度使用。使用 `preload` 指令下载的资源会以高优先级有效下载，如果过度使用，`preload` 可能会造成带宽争用，对网页加载速度产生负面影响。## `prefetch`
 
-**重要提示** ：这是对 `prefetch` 资源提示的非常宽泛的说明。因此，本部分不会详细介绍使用该方法时应考虑的一些注意事项和权衡。本课程的后续单元将详细介绍[如何以低优先级预提取近期所需的资源](/web/performance/prefetching-prerendering-precaching#prefetch_resources_needed_in_the_near_future_at_low_priority)，以及如何[预提取页面以加快日后的导航速度](/web/performance/prefetching-prerendering-precaching#prefetch_pages_to_speed_up_future_navigations)。`prefetch` 指令用于针对可能会用于未来导航的资源发起低优先级请求：
+**重要提示** ：这是对 `prefetch` 资源提示的非常宽泛的说明。因此，本部分不会详细介绍使用该方法时应考虑的一些注意事项和权衡。本课程的后续单元将详细介绍[如何以低优先级预提取近期所需的资源](/blogs/web/performance/prefetching-prerendering-precaching#prefetch_resources_needed_in_the_near_future_at_low_priority)，以及如何[预提取页面以加快日后的导航速度](/blogs/web/performance/prefetching-prerendering-precaching#prefetch_pages_to_speed_up_future_navigations)。`prefetch` 指令用于针对可能会用于未来导航的资源发起低优先级请求：
 
 ```html
 <link rel="prefetch" href="/next-page.css" as="style">

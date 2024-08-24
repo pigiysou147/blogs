@@ -49,7 +49,7 @@ falseObject.valueOf();
 >false
 ```
 
-由于所有对象本质上都是 [actualy](/web/javascript/comparison#truthy-falsy)，因此生成的布尔值对象始终松散求值为 true，即使它包含 `false` 值也是如此：
+由于所有对象本质上都是 [actualy](/blogs/web/javascript/comparison#truthy-falsy)，因此生成的布尔值对象始终松散求值为 true，即使它包含 `false` 值也是如此：
 
 ```javascript
 const falseBoolean =Boolean(0);

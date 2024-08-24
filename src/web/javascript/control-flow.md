@@ -13,7 +13,7 @@ category: javascript
 
 ### `if`…`else`
 
-`if` 语句对后面的匹配圆括号内的条件求值。如果圆括号内的条件求值为 `true`，则执行位于匹配圆括号后面的语句或[块语句](/web/javascript/introduction#block-statements)：
+`if` 语句对后面的匹配圆括号内的条件求值。如果圆括号内的条件求值为 `true`，则执行位于匹配圆括号后面的语句或[块语句](/blogs/web/javascript/introduction#block-statements)：
 
 ```javascript
 if(true) console.log("True.");
@@ -98,7 +98,7 @@ switch(2+2===4){
 >"True."
 ```
 
-系统会执行匹配的 `case` 之后的所有语句，即使它们包含在[块语句](/web/javascript/introduction#block-statements)中也是如此。
+系统会执行匹配的 `case` 之后的所有语句，即使它们包含在[块语句](/blogs/web/javascript/introduction#block-statements)中也是如此。
 
 ```javascript
 switch(2+2===4){
@@ -172,7 +172,7 @@ switch(20){
 >The value was ten.
 ```
 
-由于 `case` 子句不需要使用[块语句](/web/javascript/introduction#block-statements)来对多个语句进行分组，因此 `case` 和 `default` 子句本身不会创建[词法范围](/web/javascript/data-types/variable#scope)：
+由于 `case` 子句不需要使用[块语句](/blogs/web/javascript/introduction#block-statements)来对多个语句进行分组，因此 `case` 和 `default` 子句本身不会创建[词法范围](/blogs/web/javascript/data-types/variable#scope)：
 
 ```javascript
 let myVariable;
@@ -224,9 +224,9 @@ console.log("Continuing on.");
 >"Continuing on."
 ```
 
-如果在循环执行期间无法满足条件，则循环将无限期地继续下去。这些无限循环是一种常见的编程误区，会导致[主执行线程](/web/javascript/appendix#main-thread)无限期地暂停，甚至让浏览器标签页崩溃。
+如果在循环执行期间无法满足条件，则循环将无限期地继续下去。这些无限循环是一种常见的编程误区，会导致[主执行线程](/blogs/web/javascript/appendix#main-thread)无限期地暂停，甚至让浏览器标签页崩溃。
 
-只要布尔值 `true` 保持 `true` 状态，以下示例就会执行。由于[布尔值不可变](/web/javascript/data-types/boolean)，这会形成无限循环。
+只要布尔值 `true` 保持 `true` 状态，以下示例就会执行。由于[布尔值不可变](/blogs/web/javascript/data-types/boolean)，这会形成无限循环。
 
 **警告** ：执行以下代码可能会导致浏览器速度变慢或当前浏览器标签页崩溃。
 
@@ -248,7 +248,7 @@ console.log("Loop iteration.");
 
 ### `while`
 
-`while` 循环是使用 `while` 关键字后跟一对包含要求值条件的匹配圆括号创建的。如果指定条件最初的求值结果为 `true`，系统会执行位于这些圆括号后面的语句（或[块语句](/web/javascript/introduction#block-statements)）。否则，循环永远不会运行。每次迭代后，都会重新评估条件，如果仍为 `true`，则循环重复。
+`while` 循环是使用 `while` 关键字后跟一对包含要求值条件的匹配圆括号创建的。如果指定条件最初的求值结果为 `true`，系统会执行位于这些圆括号后面的语句（或[块语句](/blogs/web/javascript/introduction#block-statements)）。否则，循环永远不会运行。每次迭代后，都会重新评估条件，如果仍为 `true`，则循环重复。
 
 ```javascript
 let iterationCount =0;
@@ -319,7 +319,7 @@ console.log(`The correct number, ${ randomNum }, was found.`);
 
 `do`...`while` 是 `while` 循环的变体，其中条件评估在循环的每次迭代的*结束*时发生。这意味着循环正文始终至少执行一次。
 
-如需创建 `do`...`while` 循环，请使用 `do` 关键字，后跟要在循环每次迭代时执行的语句（或块语句）。[](/web/javascript/introduction#block-statements)在该语句之后，立即添加 `while` 和包含要评估的条件的匹配圆括号。如果此条件的求值结果不再为 `true`，则循环结束。
+如需创建 `do`...`while` 循环，请使用 `do` 关键字，后跟要在循环每次迭代时执行的语句（或块语句）。[](/blogs/web/javascript/introduction#block-statements)在该语句之后，立即添加 `while` 和包含要评估的条件的匹配圆括号。如果此条件的求值结果不再为 `true`，则循环结束。
 
 ```javascript
 let iterationCount =1;
@@ -359,7 +359,7 @@ console.log(`Yes, ${ randomNum } was the correct number.`);
 2. 确定循环是否应继续的条件
 3. 每个循环结束时要执行的表达式
 
-在这些圆括号后面，添加要在循环期间执行的语句（通常是[块语句](/web/javascript/introduction#block-statements)）。
+在这些圆括号后面，添加要在循环期间执行的语句（通常是[块语句](/blogs/web/javascript/introduction#block-statements)）。
 
 ```javascript
 for( let i =0; i <3; i++){
@@ -367,7 +367,7 @@ for( let i =0; i <3; i++){
 }
 ```
 
-第一个表达式初始化一个充当计数器的变量。此表达式在循环的第一次迭代之前计算一次。您可以像使用任何其他变量一样使用 `let`（过去，使用 `var`）初始化此变量，其作用域是循环正文。这些变量可以具有任何有效标识符，但通常用 `i` 来表示“迭代”或“索引”。这似乎与[关于可预测标识符名称的既定最佳做法](/web/javascript/data-types/variable)相悖，但惯例已经足够成熟，让其他开发者一眼就能明白。由于[已编入索引的集合都为零索引](/web/javascript/collections/indexed)，因此这些变量的初始值几乎总是 `0`。
+第一个表达式初始化一个充当计数器的变量。此表达式在循环的第一次迭代之前计算一次。您可以像使用任何其他变量一样使用 `let`（过去，使用 `var`）初始化此变量，其作用域是循环正文。这些变量可以具有任何有效标识符，但通常用 `i` 来表示“迭代”或“索引”。这似乎与[关于可预测标识符名称的既定最佳做法](/blogs/web/javascript/data-types/variable)相悖，但惯例已经足够成熟，让其他开发者一眼就能明白。由于[已编入索引的集合都为零索引](/blogs/web/javascript/collections/indexed)，因此这些变量的初始值几乎总是 `0`。
 
 与其他形式的循环一样，条件是一个表达式，用于确定是否应执行循环。这最常用于设置迭代计数器的上限。解释器在首次执行 `for` 循环之前评估条件。如果条件最初未求值为 `true`，则不执行循环正文。
 
@@ -385,13 +385,13 @@ for( let i =0; i <= myArray.length; i++){
 >true
 ```
 
-这种方法已经被淘汰，取而代之的是更现代的遍历[可迭代数据结构](/web/javascript/control-flow#iterators)的方法。
+这种方法已经被淘汰，取而代之的是更现代的遍历[可迭代数据结构](/blogs/web/javascript/control-flow#iterators)的方法。
 
 #### `for` **[.**.**.**] `of` **[.**.**.**]
 
-使用 `for`...`of`... 循环来遍历[可迭代数据结构](/web/javascript/control-flow#iterators)（如数组、集或映射）中存储的值。
+使用 `for`...`of`... 循环来遍历[可迭代数据结构](/blogs/web/javascript/control-flow#iterators)（如数组、集或映射）中存储的值。
 
-`for`...`of`... 循环使用 `for` 关键字，后跟一组包含变量的圆括号，接着是 `of`，然后是迭代的数据结构。该变量可以是使用 `let`、`const` 或 `var` 在此处执行的声明，也可以是之前在当前范围内声明的变量、对象属性或[解构赋值](/web/javascript/collections/indexed#destructuring-assignment)实例。它包含与循环的当前迭代相对应的元素值。
+`for`...`of`... 循环使用 `for` 关键字，后跟一组包含变量的圆括号，接着是 `of`，然后是迭代的数据结构。该变量可以是使用 `let`、`const` 或 `var` 在此处执行的声明，也可以是之前在当前范围内声明的变量、对象属性或[解构赋值](/blogs/web/javascript/collections/indexed#destructuring-assignment)实例。它包含与循环的当前迭代相对应的元素值。
 
 ```javascript
 const myIterable =[true,false,true];
@@ -432,7 +432,7 @@ for(const myKey in myObject ){
 >"mySecondProperty : false"
 ```
 
-从内置构造函数继承的属性是不可枚举的，这意味着 `for`...`in`... 不会遍历从 `Object` 构造函数继承的属性。但是，对象[原型链](/web/javascript/objects/property-descriptors)中的任何可枚举属性都会包含在内：
+从内置构造函数继承的属性是不可枚举的，这意味着 `for`...`in`... 不会遍历从 `Object` 构造函数继承的属性。但是，对象[原型链](/blogs/web/javascript/objects/property-descriptors)中的任何可枚举属性都会包含在内：
 
 ```javascript
 const myPrototype ={"protoProperty":true};
@@ -477,7 +477,7 @@ Object.keys( myObject );
 >Array["myProperty","mySecondProperty"]
 ```
 
-这样，您就可以迭代对象的键、值或键值对（使用[解构赋值](/web/javascript/collections/indexed#destructuring-assignment)），而无需包含该对象原型所拥有的属性：
+这样，您就可以迭代对象的键、值或键值对（使用[解构赋值](/blogs/web/javascript/collections/indexed#destructuring-assignment)），而无需包含该对象原型所拥有的属性：
 
 ```javascript
 const myPrototype ={"protoProperty":"Non-enumerable property value."};
@@ -506,7 +506,7 @@ for(const[ propKey, propValue ] of Object.entries( myObject )){
 
 #### `forEach()`
 
-[Array](/web/javascript/collections/indexed#array)、[Map](/web/javascript/collections/keyed#map)、[Set](/web/javascript/collections/keyed#set) 和 NodeList 构造函数提供的 `forEach()` 方法为在回调函数的上下文中迭代数据结构提供了有用的简写形式。与其他形式的循环不同，使用任何 `forEach()` 方法创建的循环无法使用 `break` 或 `continue` 来中断。
+[Array](/blogs/web/javascript/collections/indexed#array)、[Map](/blogs/web/javascript/collections/keyed#map)、[Set](/blogs/web/javascript/collections/keyed#set) 和 NodeList 构造函数提供的 `forEach()` 方法为在回调函数的上下文中迭代数据结构提供了有用的简写形式。与其他形式的循环不同，使用任何 `forEach()` 方法创建的循环无法使用 `break` 或 `continue` 来中断。
 
 `forEach` 是每个数据结构的原型所拥有的方法。每个 `forEach` 方法都需要将回调函数作为参数，但在调用该函数时包含的参数方面略有不同。第二个可选参数用于指定要用作回调函数调用上下文的 `this` 值。
 
@@ -550,7 +550,7 @@ mySet.forEach(( myValue, myKey, originalSet )=>{
 
 可迭代对象是由各个元素组成的任何数据结构，可以使用之前介绍的方法进行迭代。迭代器是一种遵循*迭代器协议*的可迭代对象，这意味着它必须实现一个 `next()` 方法，每次调用该方法时，它每次包含一个元素，从而以特定格式为每个序列元素返回一个对象。
 
-JavaScript 的内置可迭代数据结构（例如 [Array](/web/javascript/collections/indexed#array)、[Map](/web/javascript/collections/keyed#map) 和 [Set](/web/javascript/collections/keyed#set)）本身并不是迭代器，但它们都继承了 `iterator` 方法，可通过`@@iterator` [知名符号](/web/javascript/data-types/symbol#well-known)进行访问，该方法会返回根据可迭代数据结构创建的迭代器对象：
+JavaScript 的内置可迭代数据结构（例如 [Array](/blogs/web/javascript/collections/indexed#array)、[Map](/blogs/web/javascript/collections/keyed#map) 和 [Set](/blogs/web/javascript/collections/keyed#set)）本身并不是迭代器，但它们都继承了 `iterator` 方法，可通过`@@iterator` [知名符号](/blogs/web/javascript/data-types/symbol#well-known)进行访问，该方法会返回根据可迭代数据结构创建的迭代器对象：
 
 ```javascript
 const myIterable =[1,2,3];
@@ -590,7 +590,7 @@ myIterator.next();
 function* myGeneratorFunction(){};
 ```
 
-与[迭代器](/web/javascript/control-flow#iterators)一样，生成器函数也保持状态。调用生成器函数会返回一个新的 Generator 对象，但不会立即执行函数正文中的代码：
+与[迭代器](/blogs/web/javascript/control-flow#iterators)一样，生成器函数也保持状态。调用生成器函数会返回一个新的 Generator 对象，但不会立即执行函数正文中的代码：
 
 ```javascript
 function* myGeneratorFunction(){
@@ -605,7 +605,7 @@ typeof myGeneratorObject;
 >"object"
 ```
 
-生成器对象遵循[迭代器协议](/web/javascript/control-flow#iterators)。每次对生成器函数调用 `next()` 时返回的值都由 `yield` 表达式确定，该表达式会暂停生成器函数的执行并返回包含 `yield` 关键字的表达式的值。之后对 `next()` 的调用会继续执行该函数，在下一个 `yield` 表达式处暂停并返回关联的值。
+生成器对象遵循[迭代器协议](/blogs/web/javascript/control-flow#iterators)。每次对生成器函数调用 `next()` 时返回的值都由 `yield` 表达式确定，该表达式会暂停生成器函数的执行并返回包含 `yield` 关键字的表达式的值。之后对 `next()` 的调用会继续执行该函数，在下一个 `yield` 表达式处暂停并返回关联的值。
 
 ```javascript
 function* myGeneratorFunction(){
@@ -776,7 +776,7 @@ myIterator.next();
 
 ## 异步 JavaScript
 
-虽然 JavaScript 在执行过程中从本质上是[同步](/web/javascript/appendix#main-thread)，但有一些机制可让开发者利用[事件循环](/web/javascript/appendix#event-loop)来执行异步任务。
+虽然 JavaScript 在执行过程中从本质上是[同步](/blogs/web/javascript/appendix#main-thread)，但有一些机制可让开发者利用[事件循环](/blogs/web/javascript/appendix#event-loop)来执行异步任务。
 
 ### promise
 
@@ -863,7 +863,7 @@ myPromise
 
 #### 并发
 
-promise 构造函数提供四种方法，用于通过包含 promise 对象的 [iterable](/web/javascript/control-flow#iterators) 处理多个相关的 promise。这两个方法各自返回一个 promise，该 promise 根据传递给它的 promise 的状态来执行或拒绝。例如，`Promise.all()` 会创建一个仅在传递给该方法的每个 Promise 得到履行时才执行的 Promise：
+promise 构造函数提供四种方法，用于通过包含 promise 对象的 [iterable](/blogs/web/javascript/control-flow#iterators) 处理多个相关的 promise。这两个方法各自返回一个 promise，该 promise 根据传递给它的 promise 的状态来执行或拒绝。例如，`Promise.all()` 会创建一个仅在传递给该方法的每个 Promise 得到履行时才执行的 Promise：
 
 ```javascript
 const firstPromise  =newPromise(( fulfill, reject )=> fulfill("Successful. "));
@@ -896,7 +896,7 @@ Promise 并发方法如下：
 
 `Promise.all()`仅当所有提供的 Promise 都得到满足时才执行。`Promise.any()`如果提供的任何一个 Promise 得到满足，就执行；仅当所有 Promise 都被拒绝时，才会被拒绝。`Promise.allSettled()`当 promise 已结清时执行，无论结果如何。`Promise.race()`根据第一个要解决的 Promise 的结果而被拒绝或已执行，忽略所有后续解决的 Promise。#### `async`/`await`
 
-在[函数声明](/web/javascript/functions)或[函数表达式](/web/javascript/functions/function-expressions)前面使用 `async` 关键字时，函数返回的任何值都将作为包含该值的已执行 Promise 返回。这样，您就可以使用与同步开发相同的工作流来运行和管理异步操作。
+在[函数声明](/blogs/web/javascript/functions)或[函数表达式](/blogs/web/javascript/functions/function-expressions)前面使用 `async` 关键字时，函数返回的任何值都将作为包含该值的已执行 Promise 返回。这样，您就可以使用与同步开发相同的工作流来运行和管理异步操作。
 
 ```javascript
 async function myFunction(){

@@ -12,7 +12,7 @@ category: html
 
 除非您阅读的是本页的 PDF 或印刷版本，否则此内容均由各种 HTML 元素和文本组成。HTML 是 Web 的内容层。HTML 元素是构成[文档对象模型](https://developer.mozilla.org/docs/Web/API/Document_Object_Model)的节点。
 
-[层叠样式表](/web/css)提供页面的外观和风格，或表示层。[JavaScript](https://developer.mozilla.org/docs/Learn/JavaScript) 是行为层，通常用于操纵文档中的对象。使用 JavaScript 框架构建的网站实际上只是在操控 HTML。反之，请务必对 HTML 进行标记，以便脚本能够轻松解析，并让辅助技术能够轻松理解。这意味着，按照现代标准编写 HTML 代码。
+[层叠样式表](/blogs/web/css)提供页面的外观和风格，或表示层。[JavaScript](https://developer.mozilla.org/docs/Learn/JavaScript) 是行为层，通常用于操纵文档中的对象。使用 JavaScript 框架构建的网站实际上只是在操控 HTML。反之，请务必对 HTML 进行标记，以便脚本能够轻松解析，并让辅助技术能够轻松理解。这意味着，按照现代标准编写 HTML 代码。
 
 # 概览
 
@@ -24,88 +24,88 @@ category: html
 
 您将了解以下内容：
 
-### [HTML 概述](/web/html/overview)
+### [HTML 概述](/blogs/web/html/overview)
 
 简要介绍 HTML 中的关键概念。
 
-### [文档结构](/web/html/document-structure)
+### [文档结构](/blogs/web/html/document-structure)
 
 了解如何在坚实基础上构建 HTML 文档。
 
-### [Metadata](/web/html/metadata)
+### [Metadata](/blogs/web/html/metadata)
 
 如何使用元标记提供文档相关信息。
 
-### [语义 HTML](/web/html/semantic-html)
+### [语义 HTML](/blogs/web/html/semantic-html)
 
 使用正确的 HTML 元素来描述文档内容。
 
-### [标题和部分](/web/html/headings-and-sections)
+### [标题和部分](/blogs/web/html/headings-and-sections)
 
 如何正确使用版块元素来赋予内容的含义。
 
-### [属性](/web/html/attributes)
+### [属性](/blogs/web/html/attributes)
 
 了解不同的全局属性以及特定于特定 HTML 元素的属性。
 
-### [文字基础知识](/web/html/text-basics)
+### [文字基础知识](/blogs/web/html/text-basics)
 
 如何使用 HTML 设置文本格式。
 
-### [链接](/web/html/links)
+### [链接](/blogs/web/html/links)
 
 你需要知道的关于链接的所有信息。
 
-### [列表](/web/html/lists)
+### [列表](/blogs/web/html/lists)
 
 使用列表和其他内容分组方式。
 
-### [导航](/web/html/navigation)
+### [导航](/blogs/web/html/navigation)
 
 导航是任何应用网站的关键元素，以 HTML 开头。
 
-### [表](/web/html/tables)
+### [表](/blogs/web/html/tables)
 
 了解如何使用表格标记表格数据。
 
-### [表单](/web/html/forms)
+### [表单](/blogs/web/html/forms)
 
 HTML 中的表单概述。
 
-### [Images](/web/html/images)
+### [Images](/blogs/web/html/images)
 
 HTML 图片概述。
 
-### [音频和视频](/web/html/audio-video)
+### [音频和视频](/blogs/web/html/audio-video)
 
 了解如何使用 HTML 媒体（如音频和视频）。
 
-### [模板、槽和阴影](/web/html/template)
+### [模板、槽和阴影](/blogs/web/html/template)
 
 对模板、槽位和阴影的说明。
 
-### [HTML API](/web/html/apis)
+### [HTML API](/blogs/web/html/apis)
 
 了解如何使用 JavaScript 公开和操纵 HTML 信息。
 
-### [焦点](/web/html/focus)
+### [焦点](/blogs/web/html/focus)
 
 如何管理 HTML 文档中的焦点顺序。
 
-### [其他内嵌文本元素](/web/html/inline-text)
+### [其他内嵌文本元素](/blogs/web/html/inline-text)
 
 简要介绍用于标记文本的元素范围。
 
-### [详细信息和摘要](/web/html/details)
+### [详细信息和摘要](/blogs/web/html/details)
 
 了解非常有用的细节和摘要元素的运作方式，以及在哪里使用它们。
 
-### [对话](/web/html/dialog)
+### [对话](/blogs/web/html/dialog)
 
 `<dialog> `元素是一个很有用的元素，用于表示任何类型的 HTML 对话框。了解其工作原理。
 
-### [总结和后续步骤](/web/html/conclusion)
+### [总结和后续步骤](/blogs/web/html/conclusion)
 
 最后再向您介绍一些资源。
 
-那么，准备好学习 HTML 了吗？[让我们开始吧](/web/html/overview)。
+那么，准备好学习 HTML 了吗？[让我们开始吧](/blogs/web/html/overview)。

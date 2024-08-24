@@ -80,7 +80,7 @@ li {
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/GREoMgK?height=500&amp;theme-id=light&amp;default-tab=css%2Cresult&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="web-dot-dev 上的 Pen GREoMgK" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-**注意** ：此属性在控制项目符号的位置和大小方面存在一些限制，因此建议使用 [`::marker`](/web/css/lists#marker_pseudo-element) 属性以获得自定义程度更高的方法。
+**注意** ：此属性在控制项目符号的位置和大小方面存在一些限制，因此建议使用 [`::marker`](/blogs/web/css/lists#marker_pseudo-element) 属性以获得自定义程度更高的方法。
 
 ### `list-style-type`
 

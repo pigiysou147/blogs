@@ -6,7 +6,7 @@ tags:
 ---
 # 边框 
 
-在[ 盒子模型](/web/css/box-model)模块中，我们考虑了使用帧类比来描述框模型的每个部分。
+在[ 盒子模型](/blogs/web/css/box-model)模块中，我们考虑了使用帧类比来描述框模型的每个部分。
 
 ![三幅相框，彼此相邻。 中间的框架在其顶部叠加了盒子模型的各个部分](images/three-picture-frames-next-2c5f17f191fea.jpg)
 
@@ -76,7 +76,7 @@ tags:
 
 ## 逻辑属性
 
-在[逻辑属性](/web/css/logical-properties)模块中，您了解了如何指代块流和内嵌流，而不是显式的顶部、右侧、底部或左侧。
+在[逻辑属性](/blogs/web/css/logical-properties)模块中，您了解了如何指代块流和内嵌流，而不是显式的顶部、右侧、底部或左侧。
 
 您也可以使用边框功能：
 

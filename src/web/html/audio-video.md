@@ -9,7 +9,7 @@ tag:
 # 音频和视频
 
 
-正如您在[图片](/web/html/images)模块中学到的，HTML 支持将媒体嵌入网页。在本部分，我们将介绍音频和视频文件，包括如何嵌入它们、用户控件、为视频提供静态图片占位符，以及使音频和视频文件可供访问的最佳做法。
+正如您在[图片](/blogs/web/html/images)模块中学到的，HTML 支持将媒体嵌入网页。在本部分，我们将介绍音频和视频文件，包括如何嵌入它们、用户控件、为视频提供静态图片占位符，以及使音频和视频文件可供访问的最佳做法。
 
 ## `<audio>`和`<video>`
 
@@ -48,7 +48,7 @@ tag:
 
 请务必定义视频的宽高比，因为在视频加载时，海报图片与视频之间的尺寸差异会导致重排和重绘。
 
-始终包含[boolean](/web/html/attributes#boolean_attributes) `controls` 属性。这会向用户显示控件，使用户能够控制音量、完全将音频静音以及将视频展开至全屏。省略 `controls` 会导致糟糕的用户体验，特别是在包含布尔值 `autoplay` 属性的情况下。请注意，如果省略布尔值 `muted` 属性，某些浏览器将不会留意 `autoplay` 属性指令，因为自动播放媒体文件通常会导致糟糕的用户体验，即使在静音且具有可见控件的情况下也是如此。
+始终包含[boolean](/blogs/web/html/attributes#boolean_attributes) `controls` 属性。这会向用户显示控件，使用户能够控制音量、完全将音频静音以及将视频展开至全屏。省略 `controls` 会导致糟糕的用户体验，特别是在包含布尔值 `autoplay` 属性的情况下。请注意，如果省略布尔值 `muted` 属性，某些浏览器将不会留意 `autoplay` 属性指令，因为自动播放媒体文件通常会导致糟糕的用户体验，即使在静音且具有可见控件的情况下也是如此。
 
 ## 曲目
 
@@ -69,7 +69,7 @@ tag:
 
 `kind="description"` 适用于视频中视觉内容的文字说明，供无法观看视频的用户使用，无论他们使用的是没有屏幕的系统（例如 Google Home 或 Alexa），还是失明的用户。
 
-**注意 ** ：[了解无障碍](/web/accessibility)的[音频和视频](/web/accessibility/video-audio)部分详细介绍了[字幕](/web/accessibility/video-audio#captions)、[transcripts](/web/accessibility/video-audio#transcripts)和[语音描述](/web/accessibility/video-audio#audio_descriptions)。使用 [WebVTT 格式](https://developer.mozilla.org/docs/Web/API/WebVTT_API)[提供字幕](https://developer.mozilla.org/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video)，以便听障人士也能看懂视频。请记住，残障不是一个人与其当前环境之间的差异。听力受损可能是由于用户周围环境嘈杂、扬声器故障或耳机损坏，或者用户听力受损或失聪。确保内容易于访问对很多人来说，这对每个人都是有益的。
+**注意 ** ：[了解无障碍](/blogs/web/accessibility)的[音频和视频](/blogs/web/accessibility/video-audio)部分详细介绍了[字幕](/blogs/web/accessibility/video-audio#captions)、[transcripts](/blogs/web/accessibility/video-audio#transcripts)和[语音描述](/blogs/web/accessibility/video-audio#audio_descriptions)。使用 [WebVTT 格式](https://developer.mozilla.org/docs/Web/API/WebVTT_API)[提供字幕](https://developer.mozilla.org/docs/Web/Guide/Audio_and_video_delivery/Adding_captions_and_subtitles_to_HTML5_video)，以便听障人士也能看懂视频。请记住，残障不是一个人与其当前环境之间的差异。听力受损可能是由于用户周围环境嘈杂、扬声器故障或耳机损坏，或者用户听力受损或失聪。确保内容易于访问对很多人来说，这对每个人都是有益的。
 
 ## 后台视频注意事项
 

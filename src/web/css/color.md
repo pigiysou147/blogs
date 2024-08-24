@@ -114,7 +114,7 @@ Alpha 是在 `hsl()` 中定义的，方式与 `rgb()` 相同，即在色相、�
 
 对于背景，您可以将颜色设置为 `background` 或 `background-color` 的值。颜色也可以在渐变中使用，例如 `linear-gradient`。渐变是一种可在 CSS 中以编程方式定义的图片。渐变接受两种或更多种颜色格式的任意组合，例如十六进制、RGB 或 hsl。
 
-**注意：** 关于渐变需要学习很多内容，因此我们编写了关于如何使用渐变的[一课](/web/css/gradients)。
+**注意：** 关于渐变需要学习很多内容，因此我们编写了关于如何使用渐变的[一课](/blogs/web/css/gradients)。
 
 最后，`border-color` 和 `outline-color` 用于设置框上的边框和轮廓的颜色。`box-shadow` 属性也接受 color 作为值之一。
 

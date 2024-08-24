@@ -10,7 +10,7 @@ category: html
 
 ## 必需的 `<meta>` **标记，已重新访问**
 
-我们再来看看已经介绍的两个必要 `<meta>` 标记：[字符集声明](/web/html/document-structure#character_encoding)和[视口元标记](/web/html/document-structure#viewport_metadata)，在此过程中更好地了解 `<meta>` 标记。
+我们再来看看已经介绍的两个必要 `<meta>` 标记：[字符集声明](/blogs/web/html/document-structure#character_encoding)和[视口元标记](/blogs/web/html/document-structure#viewport_metadata)，在此过程中更好地了解 `<meta>` 标记。
 
 `<meta>` 元素的 `charset` 属性以独特的方式生成。最初，字符集元数据编写为 `<meta http-equiv="Content-Type" content="text/html; charset=<characterset>" />`，但很多开发者将 `content` 属性误输入为 `content="text/html" charset="<characterset>"`，以至于浏览器开始支持字符集作为属性。它现在在 HTML 现行标准中已标准化为 `<meta charset="<charset>" />`，其中对于 HTML，`<charset>` 是不区分大小写的字符串“utf-8”。
 
@@ -18,13 +18,13 @@ category: html
 
 ## 官方定义的元标记
 
-元标记主要分为两类：包含 `http-equiv` 属性（例如过去包含的字符集元标记）和已命名的元标记类型（例如带有 `name` 属性的视口元标记，我们在[文档结构](/web/html/document-structure)部分讨论过）。`name` 和 `http-equiv` 元类型都必须包含 `content` 属性，该属性用于定义所列元数据类型的内容。
+元标记主要分为两类：包含 `http-equiv` 属性（例如过去包含的字符集元标记）和已命名的元标记类型（例如带有 `name` 属性的视口元标记，我们在[文档结构](/blogs/web/html/document-structure)部分讨论过）。`name` 和 `http-equiv` 元类型都必须包含 `content` 属性，该属性用于定义所列元数据类型的内容。
 
 ### Pragma 指令
 
 `http-equiv` 属性的值为 pragma 指令。这些指令描述了应如何解析网页。如果您无法直接设置 HTTP 标头，可以使用支持的 `http-equiv` 值来启用设置指令。
 
-该规范定义了 7 个 [pragma 指令](https://html.spec.whatwg.org/multipage/semantics.html#pragma-directives)，其中大多数指令都有其他设置方法。例如，虽然您可以使用 `<meta http-equiv="content-language" content="en-us" />` 添加语言指令，但我们已经讨论过如何对 HTML 元素使用 [`lang` 属性](/web/html/document-structure#content_language)，这也就应该使用该属性。
+该规范定义了 7 个 [pragma 指令](https://html.spec.whatwg.org/multipage/semantics.html#pragma-directives)，其中大多数指令都有其他设置方法。例如，虽然您可以使用 `<meta http-equiv="content-language" content="en-us" />` 添加语言指令，但我们已经讨论过如何对 HTML 元素使用 [`lang` 属性](/blogs/web/html/document-structure#content_language)，这也就应该使用该属性。
 
 最常见的 pragma 指令是 `refresh` 指令。
 
@@ -75,7 +75,7 @@ category: html
 
 #### 主题颜色
 
-通过 [`theme-color`](/web/design/theming#customize_the_browser_interface) 值，您可以定义一种颜色来自定义浏览器界面。相应浏览器和操作系统将使用 content 属性中的颜色值，以便您为支持为标题栏、标签页栏或其他 Chrome 组件着色的用户代理提供建议颜色。此元标记对[渐进式 Web 应用](/web/pwa)特别有用。但是，如果您要添加 PWA 所需的清单文件，则可以改为在其中添加主题颜色。不过，在 HTML 中定义相应颜色可确保在呈现之前可立即找到相应颜色，这在首次加载时可能比等待清单更快。
+通过 [`theme-color`](/blogs/web/design/theming#customize_the_browser_interface) 值，您可以定义一种颜色来自定义浏览器界面。相应浏览器和操作系统将使用 content 属性中的颜色值，以便您为支持为标题栏、标签页栏或其他 Chrome 组件着色的用户代理提供建议颜色。此元标记对[渐进式 Web 应用](/blogs/web/pwa)特别有用。但是，如果您要添加 PWA 所需的清单文件，则可以改为在其中添加主题颜色。不过，在 HTML 中定义相应颜色可确保在呈现之前可立即找到相应颜色，这在首次加载时可能比等待清单更快。
 
 要将主题颜色设置为网站背景颜色的蓝色调，请包含以下内容：
 
@@ -171,7 +171,7 @@ Open Graph 元标记均有两个属性：`property` 属性（而不是 `name` �
 <link rel="manifest" href="/mlw.webmanifest" />
 ```
 
-本系列课程的重点是 HTML，不过您可以查看[有关渐进式 Web 应用的 web.dev 课程](/web/pwa/web-app-manifest)或 [MDN 的 Web 应用清单文档](https://developer.mozilla.org/docs/Web/Manifest)。
+本系列课程的重点是 HTML，不过您可以查看[有关渐进式 Web 应用的 web.dev 课程](/blogs/web/pwa/web-app-manifest)或 [MDN 的 Web 应用清单文档](https://developer.mozilla.org/docs/Web/Manifest)。
 
 现在，您的 HTML 如下所示：
 

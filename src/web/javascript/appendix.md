@@ -143,7 +143,7 @@ function myFunction(){
 }
 ```
 
-严格模式会阻止某些“不安全”操作或已弃用的功能，抛出显式错误来代替常见的“静默”错误，并禁止使用可能与未来语言功能冲突的语法。例如，在围绕[变量范围](/web/javascript/data-types/variable#scope)的早期设计决策中，由于省略了 `var` 关键字，因此开发者在声明变量时更有可能错误地“污染”全局范围（无论其包含的上下文如何）：
+严格模式会阻止某些“不安全”操作或已弃用的功能，抛出显式错误来代替常见的“静默”错误，并禁止使用可能与未来语言功能冲突的语法。例如，在围绕[变量范围](/blogs/web/javascript/data-types/variable#scope)的早期设计决策中，由于省略了 `var` 关键字，因此开发者在声明变量时更有可能错误地“污染”全局范围（无论其包含的上下文如何）：
 
 ```javascript
 (function(){
@@ -164,7 +164,7 @@ mySloppyGlobal;
 >UncaughtReferenceError: assignment to undeclared variable mySloppyGlobal
 ```
 
-您必须将 `"use strict"` 编写为[字符串字面量](https://262.ecma-international.org/6.0/#sec-directive-prologues-and-the-use-strict-directive)。[模板字面量](/web/javascript/data-types/string#template-literals) (`use strict`) 不起作用。您还必须在预期上下文中的任何可执行代码之前添加 `"use strict"`。否则，解释器会忽略它。
+您必须将 `"use strict"` 编写为[字符串字面量](https://262.ecma-international.org/6.0/#sec-directive-prologues-and-the-use-strict-directive)。[模板字面量](/blogs/web/javascript/data-types/string#template-literals) (`use strict`) 不起作用。您还必须在预期上下文中的任何可执行代码之前添加 `"use strict"`。否则，解释器会忽略它。
 
 ```javascript
 (function(){
@@ -187,7 +187,7 @@ mySloppyGlobal;
 
 ## 按引用、按值
 
-任何变量（包括对象的属性、[函数参数](/web/javascript/functions)以及[数组](/web/javascript/collections/indexed#array)、[集](/web/javascript/collections/keyed#set)或[映射](/web/javascript/collections/keyed#map)中的元素）都可以包含基元值或 *引用值* 。
+任何变量（包括对象的属性、[函数参数](/blogs/web/javascript/functions)以及[数组](/blogs/web/javascript/collections/indexed#array)、[集](/blogs/web/javascript/collections/keyed#set)或[映射](/blogs/web/javascript/collections/keyed#map)中的元素）都可以包含基元值或 *引用值* 。
 
 将原始值从一个变量分配给另一个变量时，JavaScript 引擎会创建该值的副本，并将其分配给变量。
 

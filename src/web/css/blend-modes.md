@@ -10,7 +10,7 @@ tags:
 
 <iframe allow="camera; clipboard-read; clipboard-write; encrypted-media; geolocation; microphone; midi;" loading="lazy" src="https://codepen.io/web-dot-dev/embed/bGgvYMG?height=500&amp;theme-id=light&amp;default-tab=result&amp;editable=true" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-title="Codepen 上 web-dot-dev 的 Pen bGgvYMG" style="color-scheme: initial; box-sizing: inherit; border: 0px; height: 500px; width: 100%; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px;"></iframe>
 
-使用混合模式以及您学到的其他技术（例如[滤镜](/web/css/filters)和[伪元素](/web/css/pseudo-elements)），您可以对任何图片应用此效果。
+使用混合模式以及您学到的其他技术（例如[滤镜](/blogs/web/css/filters)和[伪元素](/blogs/web/css/pseudo-elements)），您可以对任何图片应用此效果。
 
 ## 什么是混合模式？
 
@@ -239,7 +239,7 @@ tags:
 <BrowseSurport code="css.properties.isolation" />
 
 
-如果您将 [`isolation`](https://developer.mozilla.org/docs/Web/CSS/isolation) 属性的值设为 `isolate`，则该属性会创建一个新的堆叠上下文，从而阻止其与背景幕层混合。如 [Z-index 模块](/web/css/z-index)中所学，当您创建新的堆叠上下文时，该层将成为基础层。这意味着，父级别混合模式将不再应用，但设置了 `isolation: isolate` 的元素内部的元素仍然可以混合。
+如果您将 [`isolation`](https://developer.mozilla.org/docs/Web/CSS/isolation) 属性的值设为 `isolate`，则该属性会创建一个新的堆叠上下文，从而阻止其与背景幕层混合。如 [Z-index 模块](/blogs/web/css/z-index)中所学，当您创建新的堆叠上下文时，该层将成为基础层。这意味着，父级别混合模式将不再应用，但设置了 `isolation: isolate` 的元素内部的元素仍然可以混合。
 
 请注意，这不适用于 `background-blend-mode`，因为后台属性已隔离。
 

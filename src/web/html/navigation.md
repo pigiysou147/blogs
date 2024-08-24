@@ -4,7 +4,7 @@ category: html
 ---
 # 导航
 
-如[链接](/web/html/links)部分所述，具有 `href` 属性的 `<a>` 元素会创建链接，用户可以通过点击或点按来访问这些链接。在[清单](/web/html/lists)中，您学习了如何创建内容列表。在本部分中，您将了解如何将链接列表分组在一起来创建导航。
+如[链接](/blogs/web/html/links)部分所述，具有 `href` 属性的 `<a>` 元素会创建链接，用户可以通过点击或点按来访问这些链接。在[清单](/blogs/web/html/lists)中，您学习了如何创建内容列表。在本部分中，您将了解如何将链接列表分组在一起来创建导航。
 
 导航分为多种类型，显示方式也有多种。链接到同一网站内其他网页的文本内的命名锚标记被视为本地导航。本地导航称为面包屑导航，由一系列链接组成，这些链接显示当前页面（与网站结构相关的页面）的层次结构，或用户访问后到达当前页面的页面。页面的目录是另一种类型的本地导航。包含指向网站上每个网页的分层链接的网页称为“站点地图”。导航部分指向网站的顶级页面（在每个页面上都有），称为全局导航。 全局导航可通过多种不同的方式显示，包括导航栏、下拉菜单和浮出菜单。 同一网站会以不同的方式显示其全局导航，具体取决于视口大小。
 
@@ -79,7 +79,7 @@ category: html
 
 添加 [`aria-label`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-label) 属性可简要说明导航的目的。在这种情况下，由于该属性的值对于页面上可见的文本来说是多余的，因此最好使用 [`aria-labelledby`](https://developer.mozilla.org/docs/Web/Accessibility/ARIA/Attributes/aria-labelledby) 来引用可见文本。
 
-我们可以将非语义 `<div>` 更改为段落 `<p>`，然后添加 [`id`](/web/html/attributes#id)，以便引用该段落。然后，我们使用 `aria-labelledby`：
+我们可以将非语义 `<div>` 更改为段落 `<p>`，然后添加 [`id`](/blogs/web/html/attributes#id)，以便引用该段落。然后，我们使用 `aria-labelledby`：
 
 ```html
 <nav aria-labelledby="tocTitle">
@@ -248,7 +248,7 @@ const sections = url.hostname + url.pathname.split('/');
 </li>
 ```
 
-如果这不是您第一次访问此页面，则系统不会显示对勾标记。如果您过去访问过此页面，`data-complete` [自定义属性](/web/html/attributes)会设为 `true`，并显示对勾标记。每个链接中都包含对勾标记，但 CSS 会根据缺少 `data-complete="true"` 属性和值，通过 `display: none` 向之前未访问过此页面的用户隐藏该复选框：
+如果这不是您第一次访问此页面，则系统不会显示对勾标记。如果您过去访问过此页面，`data-complete` [自定义属性](/blogs/web/html/attributes)会设为 `true`，并显示对勾标记。每个链接中都包含对勾标记，但 CSS 会根据缺少 `data-complete="true"` 属性和值，通过 `display: none` 向之前未访问过此页面的用户隐藏该复选框：
 
 ```css
 .course .stack-nav a:not([data-complete="true"]) svg {
@@ -274,5 +274,5 @@ const sections = url.hostname + url.pathname.split('/');
 
 此页面的页脚包含三个额外的 `<nav>` 元素：页脚导航、Google 开发者以及条款和政策，每个元素都是一个链接。页脚导航包括如何在 GitHub 上为 web.dev 做贡献、Google 在 web.dev 之外提供的其他培训内容，以及外部“如何连接”链接。
 
-`<footer>` 中的这三个导航是 `<nav>` 元素，具有 `aria-label` 为这些地标角色提供无障碍名称。我们看到的所有导航都是嵌套在导航内的[列表](/web/html/links)中的[链接](/web/html/lists)。我们涵盖了创建自己的导航栏所需了解的所有内容。
+`<footer>` 中的这三个导航是 `<nav>` 元素，具有 `aria-label` 为这些地标角色提供无障碍名称。我们看到的所有导航都是嵌套在导航内的[列表](/blogs/web/html/links)中的[链接](/blogs/web/html/lists)。我们涵盖了创建自己的导航栏所需了解的所有内容。
 

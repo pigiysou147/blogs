@@ -4,7 +4,7 @@ category: html
 ---
 # 图像
 
-**目标** ：本单元简要介绍了 HTML 中图片的各种应用场景。如果您想深入了解该主题，请访问[“学习图片”课程](/web/images/)。装饰性图片（例如按钮的背景渐变，或部分内容或整页中的背景图片）只具有外观效果，应通过 CSS 应用。当图片为文档添加上下文时，图片就是内容，应该嵌入 HTML。
+**目标** ：本单元简要介绍了 HTML 中图片的各种应用场景。如果您想深入了解该主题，请访问[“学习图片”课程](/blogs/web/images/)。装饰性图片（例如按钮的背景渐变，或部分内容或整页中的背景图片）只具有外观效果，应通过 CSS 应用。当图片为文档添加上下文时，图片就是内容，应该嵌入 HTML。
 
 添加图片的主要方法是使用 [`<img>`](https://developer.mozilla.org/docs/Web/HTML/Element/img) 标记，其中 `src` 属性引用图片资源，`alt` 属性用于描述图片。
 
@@ -12,7 +12,7 @@ category: html
 <img src="images/eve.png" alt="Eve">
 ```
 
-`<img>` 元素上的 [`srcset`](/web/images/descriptive) 属性和 [`<picture>`](/web/images/prescriptive) 元素都提供了一种方法，可包含具有关联媒体查询的多个图片来源，每个图片来源都具有后备图片来源，从而能够根据设备的分辨率、浏览器功能和视口大小提供最合适的图片文件。借助 `srcset` 属性，您可以根据分辨率提供多个图片版本，还可以与 `sizes` 属性一起提供浏览器视口大小。
+`<img>` 元素上的 [`srcset`](/blogs/web/images/descriptive) 属性和 [`<picture>`](/blogs/web/images/prescriptive) 元素都提供了一种方法，可包含具有关联媒体查询的多个图片来源，每个图片来源都具有后备图片来源，从而能够根据设备的分辨率、浏览器功能和视口大小提供最合适的图片文件。借助 `srcset` 属性，您可以根据分辨率提供多个图片版本，还可以与 `sizes` 属性一起提供浏览器视口大小。
 
 ```html
 <img src="images/eve.png" alt="Eve"
@@ -30,7 +30,7 @@ category: html
 </picture>
 ```
 
-除了这些内置的 HTML [自适应图片方法](/web/design/responsive-images)之外，HTML 还支持通过各种属性提高图片渲染性能。`<img>` 标记以及图形提交按钮 [`<input type="image">`](https://developer.mozilla.org/docs/Web/HTML/Element/input/image) 可以包含 `height` 和 `width` 属性，用于设置图片的宽高比，以减少内容布局偏移。`lazy` 属性用于启用[延迟加载](/web/images/performance-issues#deferring_image_requests)。
+除了这些内置的 HTML [自适应图片方法](/blogs/web/design/responsive-images)之外，HTML 还支持通过各种属性提高图片渲染性能。`<img>` 标记以及图形提交按钮 [`<input type="image">`](https://developer.mozilla.org/docs/Web/HTML/Element/input/image) 可以包含 `height` 和 `width` 属性，用于设置图片的宽高比，以减少内容布局偏移。`lazy` 属性用于启用[延迟加载](/blogs/web/images/performance-issues#deferring_image_requests)。
 
 HTML 还支持直接使用 [`<svg>`](https://www.w3.org/Graphics/SVG/) 包含 SVG 图片，但可以使用 `<img>` 元素嵌入具有 `.svg` 扩展项（或 [data-uri](https://css-tricks.com/data-uris/)）的 SVG 图片。
 
@@ -50,11 +50,11 @@ HTML 还支持直接使用 [`<svg>`](https://www.w3.org/Graphics/SVG/) 包含 SV
 <img src="switch.svg" alt="light switch" role="img" />
 ```
 
-**注意 ** ：这些示例以斜杠结尾，也被错误命名为自结束标记；这是 XML 的功能，包括 SVG 和 XHTML，但不包括 HTML。如需了解详情，请参阅 [forms](/web/html/forms) 模块中的备注。## 撰写有效的 `alt` **图片描述**
+**注意 ** ：这些示例以斜杠结尾，也被错误命名为自结束标记；这是 XML 的功能，包括 SVG 和 XHTML，但不包括 HTML。如需了解详情，请参阅 [forms](/blogs/web/html/forms) 模块中的备注。## 撰写有效的 `alt` **图片描述**
 
 Alt 属性力求简洁明了，可提供图片传达的所有相关信息，同时省略与文档中其他内容重复或无用的信息。撰写文本时，语气应反映网站的语气。
 
-要写出有效的替代文字，请设想一个人看不到整个网页，而您则是读了整个网页。通过使用[语义](/web/html/semantic-html#the_role_attribute) `<img>` 元素，屏幕阅读器用户和机器人可得知该元素是图片。在 `alt` 中添加“This is a image/screenshot/photo of”是多余的。用户不必知道存在图片，但需要知道图片传达的信息。
+要写出有效的替代文字，请设想一个人看不到整个网页，而您则是读了整个网页。通过使用[语义](/blogs/web/html/semantic-html#the_role_attribute) `<img>` 元素，屏幕阅读器用户和机器人可得知该元素是图片。在 `alt` 中添加“This is a image/screenshot/photo of”是多余的。用户不必知道存在图片，但需要知道图片传达的信息。
 
 正常情况下，您不能说“这是一只戴着红色帽子的狗有颗粒化的图片”。相反，您应该传达图片传达的内容（相对于文档其余部分的上下文）；您传达的内容将根据上下文和周围文本的内容而变化。
 
@@ -124,9 +124,9 @@ MachineLearningWorkshop.com 包含七张前景图片，因此共有七张具备 
 
 ### `<img> srcset` **个属性**
 
-借助 [`srcset`](/web/design/responsive-images#responsive_images_with_srcset) 属性，浏览器可以根据多个媒体查询（包括视口尺寸和屏幕分辨率）选择要请求的图片，从而推荐多个图片文件。
+借助 [`srcset`](/blogs/web/design/responsive-images#responsive_images_with_srcset) 属性，浏览器可以根据多个媒体查询（包括视口尺寸和屏幕分辨率）选择要请求的图片，从而推荐多个图片文件。
 
-每个 `<img>` 元素可以有一个 `srcset` 属性，但该 `srcset` 可以链接到多张图片。`srcset` 属性接受逗号分隔值列表，每个值包含素材资源的网址，后跟一个空格，接着是该图片选项的描述符。如果使用宽度描述符，您还必须为每个 `srcset` 选项（最后一个选项除外）添加 `sizes` 属性，并附上媒体查询或来源大小。介绍[使用 `srcset` 的自适应图片](/web/design/responsive-images#responsive_images_with_srcset)和[描述性语法](/web/images/descriptive)的“学习”部分值得阅读。
+每个 `<img>` 元素可以有一个 `srcset` 属性，但该 `srcset` 可以链接到多张图片。`srcset` 属性接受逗号分隔值列表，每个值包含素材资源的网址，后跟一个空格，接着是该图片选项的描述符。如果使用宽度描述符，您还必须为每个 `srcset` 选项（最后一个选项除外）添加 `sizes` 属性，并附上媒体查询或来源大小。介绍[使用 `srcset` 的自适应图片](/blogs/web/design/responsive-images#responsive_images_with_srcset)和[描述性语法](/blogs/web/images/descriptive)的“学习”部分值得阅读。
 
 如果有匹配项，`srcset` 图片将优先于 `src` 图片。
 
@@ -136,13 +136,13 @@ MachineLearningWorkshop.com 包含七张前景图片，因此共有七张具备 
 
 [`<source>`](https://developer.mozilla.org/docs/Web/HTML/Element/source) 属性包括 `srcset`、`sizes`、`media`、`width` 和 `height`。`srcset` 属性是 `img`、`source` 和 `link` 的通用属性，但通常在来源上的实现方式略有不同，因为媒体查询可以改为在 `<srcset>` 的媒体属性中列出。`<source>` 还支持在 `type` 属性中定义的图片格式。
 
-浏览器会考虑每个子级 `<source>` 元素，并从中选择最匹配的元素。如果未找到匹配项，则系统会选择 `<img>` 元素的 [`src`](https://developer.mozilla.org/docs/Web/HTML/Element/img#attr-src) 属性的网址。可访问名称来自嵌套 `<img>` 的 `alt` 属性。另外，值得一读的“学习”部分介绍了 [`<picture>`](/web/design/picture-element) 元素和[规范语法](/web/images/prescriptive)。
+浏览器会考虑每个子级 `<source>` 元素，并从中选择最匹配的元素。如果未找到匹配项，则系统会选择 `<img>` 元素的 [`src`](https://developer.mozilla.org/docs/Web/HTML/Element/img#attr-src) 属性的网址。可访问名称来自嵌套 `<img>` 的 `alt` 属性。另外，值得一读的“学习”部分介绍了 [`<picture>`](/blogs/web/design/picture-element) 元素和[规范语法](/blogs/web/images/prescriptive)。
 
 ## 其他性能功能
 
 ### 延迟加载
 
-[`loading` 属性](/web/design/responsive-images#preloading_hints)用于告知启用 JS 的浏览器如何加载图片。默认的 `eager` 值表示图片会在 HTML 解析后立即加载，即使图片位于可见视口之外也是如此。通过设置 [`loading="lazy"`](https://web.dev/articles/lazy-loading)，系统会延迟图片加载，直到它有可能进入视口为止。“可能”由浏览器根据图片与视口的距离来定义。当用户滚动屏幕时，该值会更新。延迟加载有助于节省带宽和 CPU，从而为大多数用户提高性能。如果 JavaScript 处于停用状态，出于安全考虑，所有图片将默认采用 `eager`。
+[`loading` 属性](/blogs/web/design/responsive-images#preloading_hints)用于告知启用 JS 的浏览器如何加载图片。默认的 `eager` 值表示图片会在 HTML 解析后立即加载，即使图片位于可见视口之外也是如此。通过设置 [`loading="lazy"`](https://web.dev/articles/lazy-loading)，系统会延迟图片加载，直到它有可能进入视口为止。“可能”由浏览器根据图片与视口的距离来定义。当用户滚动屏幕时，该值会更新。延迟加载有助于节省带宽和 CPU，从而为大多数用户提高性能。如果 JavaScript 处于停用状态，出于安全考虑，所有图片将默认采用 `eager`。
 
 ```html
 <img src="switch.svg" alt="light switch" loading="lazy" />
@@ -152,7 +152,7 @@ MachineLearningWorkshop.com 包含七张前景图片，因此共有七张具备 
 
 浏览器在收到 HTML 后会开始呈现它，并在遇到资源时发出资源请求。这意味着，当浏览器遇到 `<img>` 标记并发出请求时，已经在呈现 HTML。图片可能需要一些时间才能加载完毕。 默认情况下，除了呈现 `alt` 文本所需的大小之外，浏览器不会为图片预留空间。
 
-`<img>` 元素始终支持无单位 `height` 和 `width` 属性。这些属性已不再使用，取而代之的是 CSS。CSS 可以定义图片尺寸，通常会设置单个尺寸（例如 `max-width: 100%;`），以确保宽高比保持不变。 由于 CSS 通常包含在 `<head>` 中，因此系统会在遇到任何 `<img>` 之前对其进行解析。但未明确列出 `height` 或宽高比，预留的空间就是 `alt` 文本的高度（或宽度）。由于大多数开发者只声明宽度，因此在接收和渲染图片时会导致累计布局偏移，这会危害网页指标。为解决此问题，浏览器应支持图片宽高比。在 `<img>` 上添加 `height` 和 `width` 属性充当大小调整提示，告知浏览器宽高比，从而为最终的图片渲染预留适量空间。[](/web/design/responsive-images#sizing_hints)为图片添加高度和宽度值后，浏览器就知道该图片的宽高比。当浏览器遇到单个尺寸（例如我们的 50% 示例）时，它会为遵循 CSS 尺寸的图片和保持宽高比的另一个尺寸的图片节省空间。
+`<img>` 元素始终支持无单位 `height` 和 `width` 属性。这些属性已不再使用，取而代之的是 CSS。CSS 可以定义图片尺寸，通常会设置单个尺寸（例如 `max-width: 100%;`），以确保宽高比保持不变。 由于 CSS 通常包含在 `<head>` 中，因此系统会在遇到任何 `<img>` 之前对其进行解析。但未明确列出 `height` 或宽高比，预留的空间就是 `alt` 文本的高度（或宽度）。由于大多数开发者只声明宽度，因此在接收和渲染图片时会导致累计布局偏移，这会危害网页指标。为解决此问题，浏览器应支持图片宽高比。在 `<img>` 上添加 `height` 和 `width` 属性充当大小调整提示，告知浏览器宽高比，从而为最终的图片渲染预留适量空间。[](/blogs/web/design/responsive-images#sizing_hints)为图片添加高度和宽度值后，浏览器就知道该图片的宽高比。当浏览器遇到单个尺寸（例如我们的 50% 示例）时，它会为遵循 CSS 尺寸的图片和保持宽高比的另一个尺寸的图片节省空间。
 
 ```html
 <img src="switch.svg" alt="light switch" role="img" width="70" height="112" />
