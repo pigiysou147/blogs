@@ -1,0 +1,5 @@
+
+User-agent:*
+Disallow:
+
+Sitemap: https://pigiysou147.github.io/blogs/sitemap.xml
