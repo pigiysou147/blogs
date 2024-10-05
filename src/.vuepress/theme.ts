@@ -106,9 +106,9 @@ export default hopeTheme({
     },
 
     docsearch: {
-      appId: "YTV220JG6D",
-      apiKey: "3b72d77a58e52810b9ee148fd8c71464",
-      indexName: "silly-hope-blogs",
+      appId: "Y5Z3QRLODH",
+      apiKey: "ff033466a19dee2f233404a851e80fef",
+      indexName: "pigiysou147io",
     },
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
