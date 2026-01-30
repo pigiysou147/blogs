@@ -37,14 +37,21 @@ JavaScript 编写构建工具的时代正在逐渐远去，Rust 正在接管一�
 - **Rolldown 与 Rspack**：Vite 的底层打包器 Rolldown (基于 Rust) 以及字节跳动的 Rspack，将进一步压缩构建时间。毫秒级的 HMR (热更新) 和秒级的生产构建将成为标配。
 - **工具链整合**：类似 Biome 这样集成了格式化、Linting、编译等功能的“全家桶”工具，将挑战 ESLint + Prettier 的组合，提供更统一、更快速的开发体验。
 
-## 4. WebAssembly (Wasm) 的更多应用场景
+## 4. JavaScript 运行时的静态化探索
+
+传统 JavaScript 引擎依赖 JIT (Just-in-Time) 编译，但这带来了冷启动慢和内存占用高的问题。2026 年，我们看到更多关于 **静态编译 (AOT)** 的尝试。
+
+- **Static Hermes**：Meta 推出的 Static Hermes 尝试将 TypeScript 编译为原生字节码甚至机器码。这意味着 JS 也可以像 C++ 或 Rust 一样拥有确定的性能特征，消除了 JIT 预热的开销，极大提升了应用的启动速度。
+- **TypeScript 的原生编译**：随着类型系统的普及，未来的工具链可能不仅仅是擦除类型，而是利用类型信息来指导编译器生成更高效的机器码。
+
+## 5. WebAssembly (Wasm) 的更多应用场景
 
 WebAssembly 不再仅仅是浏览器端的“黑科技”，它正在成为连接不同语言生态的桥梁。
 
 - **浏览器端的高性能计算**：图像处理、视频剪辑、复杂的 3D 渲染等场景将更多地迁移到 Wasm。
 - **WASI (WebAssembly System Interface)**：随着 WASI 标准的推进，组件化模型 (Component Model) 将允许开发者用不同语言编写模块并在同一个应用中无缝协作。
 
-## 5. CSS 的现代化与原生能力增强
+## 6. CSS 的现代化与原生能力增强
 
 CSS 每年都在进化，许多以前需要 JS 才能实现的效果现在可以原生实现。
 
@@ -52,7 +59,7 @@ CSS 每年都在进化，许多以前需要 JS 才能实现的效果现在可以
 - **CSS Anchor Positioning**：更方便地实现弹出层、Tooltip 等依赖锚点定位的 UI 组件。
 - **Style Queries**：容器查询 (Container Queries) 的进一步增强，允许根据父容器的样式值来应用样式。
 
-## 6. 边缘计算与全栈前端
+## 7. 边缘计算与全栈前端
 
 前端工程师的边界继续向后端延伸，但不是传统的 Node.js 后端，而是边缘计算 (Edge Computing)。
 
