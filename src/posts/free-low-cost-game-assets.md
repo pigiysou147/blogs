@@ -23,6 +23,56 @@ tag:
 
 Stable Diffusion 是目前最流行的开源 AI 图像生成模型，可以本地部署，完全免费使用。
 
+**服务器/硬件配置要求：**
+
+| 配置级别 | GPU | 显存 | 内存 | 适用场景 |
+|---------|-----|------|------|---------|
+| **最低配置** | GTX 1060 / RTX 2060 | 6GB | 16GB | SD 1.5 基础使用，速度较慢 |
+| **推荐配置** | RTX 3060 / RTX 4060 | 12GB | 32GB | SD 1.5/SDXL 流畅运行 |
+| **高端配置** | RTX 3090 / RTX 4080 | 24GB | 64GB | SDXL + ControlNet，批量生成 |
+| **专业配置** | RTX 4090 / A100 | 24GB+ | 64GB+ | 大模型、高分辨率、商业部署 |
+
+**不同模型的显存需求：**
+
+| 模型 | 最低显存 | 推荐显存 | 说明 |
+|------|---------|---------|------|
+| SD 1.5 | 4GB | 8GB | 经典模型，资源需求低 |
+| SD 2.1 | 6GB | 8GB | 改进版本 |
+| SDXL | 8GB | 12GB | 高质量输出，主流选择 |
+| SDXL + Refiner | 12GB | 16GB | 二次精炼，效果更好 |
+| FLUX.1 | 12GB | 24GB | 最新模型，效果出色 |
+| SD 3.5 | 10GB | 16GB | 最新官方版本 |
+
+**云服务器方案（适合无显卡用户）：**
+
+| 平台 | GPU 类型 | 价格参考 | 特点 |
+|------|---------|---------|------|
+| [Vast.ai](https://vast.ai/) | RTX 3090/4090 | $0.15-0.5/小时 | 最便宜，社区机器 |
+| [RunPod](https://www.runpod.io/) | RTX 3090/4090/A100 | $0.2-0.8/小时 | 稳定，一键部署模板 |
+| [Lambda Labs](https://lambdalabs.com/) | A100/H100 | $1.1-2/小时 | 专业级，大规模使用 |
+| [Google Colab](https://colab.google/) | T4/V100 | 免费/Pro $10/月 | 入门体验，有时长限制 |
+| [Paperspace](https://www.paperspace.com/) | RTX 4000-A100 | $0.5-3/小时 | 提供免费 GPU 层级 |
+| [AutoDL](https://www.autodl.com/) | RTX 3090/4090 | ¥1-3/小时 | 国内平台，网络友好 |
+| [恒源云](https://gpushare.com/) | RTX 3090/4090 | ¥1-2/小时 | 国内平台 |
+
+**本地部署优化技巧：**
+
+1. **显存不足解决方案：**
+   - 启用 `--medvram` 或 `--lowvram` 参数
+   - 使用 FP16 半精度模式
+   - 降低生成分辨率（512x512 起步）
+   - 使用 xformers 优化显存
+
+2. **加速技巧：**
+   - 安装 xformers：`pip install xformers`
+   - 启用 TensorRT 加速（NVIDIA 显卡）
+   - 使用 SDXL Turbo / LCM 加速模型（4步出图）
+
+3. **macOS 用户（Apple Silicon）：**
+   - M1/M2/M3 芯片原生支持（通过 MPS）
+   - 推荐 16GB+ 统一内存
+   - 速度约为 RTX 3060 的 50-70%
+
 **推荐工具：**
 - **[ComfyUI](https://github.com/comfyanonymous/ComfyUI)** - 节点式工作流，灵活强大
 - **[Automatic1111 WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)** - 最流行的 Web 界面
